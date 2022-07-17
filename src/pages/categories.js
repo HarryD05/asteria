@@ -10,19 +10,19 @@ import _ from './../constants/constants';
 
 import './../styles/index.scss';
 
-const IndexPage = () => {
+const CategoriesPage = () => {
   return (
     <>
       <Navbar></Navbar>
       <main>
-        <SEO seo={_.Home.SEO} />
+        <SEO seo={_.Categories.SEO} />
 
-        <h1>Homepage</h1>
-        <p>Article showcase</p>
-        <p>Article archive - chronological order</p>
+        <h1>Categories</h1>
+        <p>Persistent side selector (Coloured circle buttons to scroll to subject section)</p>
+        <p>Categories (Title followed by horizontal scroller of articles)</p>
       </main>
     </>
   )
 }
 
-export default IndexPage
+export default CategoriesPage;

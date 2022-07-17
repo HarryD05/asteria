@@ -10,19 +10,17 @@ import _ from './../constants/constants';
 
 import './../styles/index.scss';
 
-const IndexPage = () => {
+const AboutPage = () => {
   return (
     <>
       <Navbar></Navbar>
       <main>
-        <SEO seo={_.Home.SEO} />
+        <SEO seo={_.About.SEO} />
 
-        <h1>Homepage</h1>
-        <p>Article showcase</p>
-        <p>Article archive - chronological order</p>
+        <h1>About</h1>
       </main>
     </>
   )
 }
 
-export default IndexPage
+export default AboutPage;

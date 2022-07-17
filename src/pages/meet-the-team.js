@@ -10,19 +10,19 @@ import _ from './../constants/constants';
 
 import './../styles/index.scss';
 
-const IndexPage = () => {
+const MeetTheTeamPage = () => {
   return (
     <>
       <Navbar></Navbar>
       <main>
-        <SEO seo={_.Home.SEO} />
+        <SEO seo={_.MeetTheTeam.SEO} />
 
-        <h1>Homepage</h1>
-        <p>Article showcase</p>
-        <p>Article archive - chronological order</p>
+        <h1>Meet the Team</h1>
+        <p>Role selector (Editor, writer, designer, all)</p>
+        <p>Profile gallery (Photo, name, roles)</p>
       </main>
     </>
   )
 }
 
-export default IndexPage
+export default MeetTheTeamPage;
