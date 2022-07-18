@@ -1,5 +1,5 @@
 //Importing React Dependencies
-import * as React from "react"
+import React, {useState, useEffect} from "react"
 
 //Importing constants
 import _ from './../constants/constants';
@@ -22,7 +22,7 @@ const MeetTheTeamPage = ({data}) => {
   });
   const [profiles, setProfiles] = React.useState([])
 
-  React.useEffect(() => {
+  useEffect(() => {
     const profileList = [];
     data.allMarkdownRemark.edges.forEach(profile => {
       profile = profile.node.frontmatter;
@@ -50,6 +50,7 @@ const MeetTheTeamPage = ({data}) => {
           Role={profile.Role}
           Image={profile.Image}
           LinkTo={profile.LinkTo}
+          Subject={profile.Subject}
         />
       });
     } else {
@@ -96,6 +97,7 @@ export const pageQuery = graphql`
 query profileQuery2{
   allMarkdownRemark(
     limit: 100
+    filter: { frontmatter: { type: { eq: "Profile" } } }
   ){
     edges{
       node{

@@ -1,5 +1,5 @@
 //Importing React Dependencies
-import * as React from "react"
+import React from "react";
 
 //Importing components
 import Navbar from "../components/navbar";

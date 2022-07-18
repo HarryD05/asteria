@@ -86,14 +86,16 @@ const ProfileDetails = ({ data }) => {
 export default ProfileDetails;
 export const pageQuery = graphql`
   query profileQuery1 {
-    allMarkdownRemark(limit: 1000){
+    allMarkdownRemark(
+      limit: 1000
+      filter: { frontmatter: { type: { eq: "Profile" } } }
+    ){
       edges{
         node{
           html
           frontmatter {
             first_name
             surname
-            id
             school
             pronouns
             role

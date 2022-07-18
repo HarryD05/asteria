@@ -6,6 +6,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     {
       allMarkdownRemark(
         limit: 1000
+        filter: { frontmatter: { type: { eq: "Profile" } } }
       ) {
         edges {
           node {
