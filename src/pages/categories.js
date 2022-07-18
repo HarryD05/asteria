@@ -59,16 +59,7 @@ const CategoriesPage = ({data}) => {
         <div className="previews">
           {articleList.map((article, index) => {
             if (article.Subject === info[0]) {
-              return <><ArticlePreview key={index} Image={article.Image} Title={article.Title} Author={article.Author} LinkTo={article.LinkTo} Subject={article.Subject}/>
-              <ArticlePreview key={index + 1} Image={article.Image} Title={article.Title} Author={article.Author} LinkTo={article.LinkTo} Subject={article.Subject}/>
-              <ArticlePreview key={index + 2} Image={article.Image} Title={article.Title} Author={article.Author} LinkTo={article.LinkTo} Subject={article.Subject}/>
-              <ArticlePreview key={index + 3} Image={article.Image} Title={article.Title} Author={article.Author} LinkTo={article.LinkTo} Subject={article.Subject}/>
-              <ArticlePreview key={index + 4} Image={article.Image} Title={article.Title} Author={article.Author} LinkTo={article.LinkTo} Subject={article.Subject}/>
-              <ArticlePreview key={index + 5} Image={article.Image} Title={article.Title} Author={article.Author} LinkTo={article.LinkTo} Subject={article.Subject}/>
-              <ArticlePreview key={index + 6} Image={article.Image} Title={article.Title} Author={article.Author} LinkTo={article.LinkTo} Subject={article.Subject}/>
-              <ArticlePreview key={index + 7} Image={article.Image} Title={article.Title} Author={article.Author} LinkTo={article.LinkTo} Subject={article.Subject}/>
-              <ArticlePreview key={index + 8} Image={article.Image} Title={article.Title} Author={article.Author} LinkTo={article.LinkTo} Subject={article.Subject}/>
-              <ArticlePreview key={index + 9} Image={article.Image} Title={article.Title} Author={article.Author} LinkTo={article.LinkTo} Subject={article.Subject}/></>
+              return <ArticlePreview key={index} Image={article.Image} Title={article.Title} Author={article.Author} LinkTo={article.LinkTo} Subject={article.Subject}/>
             }
           })}
         </div>

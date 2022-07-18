@@ -9,7 +9,7 @@ const SEO = ({ seo = {} }) => {
   let title = defaultTitle;
 
   if (seo["title"] !== null && seo["title"] !== undefined && seo["title"] !== "") {
-    title = seo["title"];
+    title += " | " + seo["title"];
     metaTags.push({ name: "twitter:title", content: seo["title"] });
     metaTags.push({ name: "og:title", content: seo["title"] });
     metaTags.push({ itemprop: "name", content: seo["title"] });
