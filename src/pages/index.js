@@ -14,7 +14,7 @@ const IndexPage = () => {
   return (
     <>
       <Navbar></Navbar>
-      <main>
+      <main className="home">
         <SEO seo={_.Home.SEO} />
 
         <h1>Homepage</h1>

@@ -3,8 +3,17 @@
   padding: 0;
 }
 
+.home {
+  width: 100%;
+  padding: 1rem;
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
   @import "navbar";
+  @import "about";
+  @import "categories";
+  @import "profileDetails";
+  @import "meetTheTeam";
 }

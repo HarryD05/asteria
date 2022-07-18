@@ -14,7 +14,7 @@ const CategoriesPage = () => {
   return (
     <>
       <Navbar></Navbar>
-      <main>
+      <main className="categories">
         <SEO seo={_.Categories.SEO} />
 
         <h1>Categories</h1>

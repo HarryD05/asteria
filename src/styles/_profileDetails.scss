@@ -1,0 +1,29 @@
+.profileDetails {
+  max-width: 80%;
+  width: 800px;
+  margin: auto;
+  margin-top: 1rem;
+
+  .top {
+    width: 100%;
+    display: flex;
+    margin-bottom: 1rem;
+
+    img {
+      width: 150px;
+      border-radius: 8px;
+      margin-right: 8px;
+    }
+
+    .details {
+      width:100%;
+
+      .name {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+}

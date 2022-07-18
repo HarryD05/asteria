@@ -5,7 +5,7 @@ import React from "react";
 import Logo from "./../assets/images/GatsbyLogo.png";
 import InstagramLogo from "./../assets/images/social-media-logos/Instagram.png";
 import TwitterLogo from "./../assets/images/social-media-logos/Twitter.png";
-import DiscordLogo from "./../assets/images/social-media-logos/Discord.png";
+import FacebookLogo from "./../assets/images/social-media-logos/Facebook.png";
 
 const Navbar = () => {
   return (
@@ -20,7 +20,7 @@ const Navbar = () => {
         <div className="social-media">
           <img src={InstagramLogo} alt="Instagram logo"></img>
           <img src={TwitterLogo} alt="Twitter logo"></img>
-          <img src={DiscordLogo} alt="Discord logo"></img>
+          <img src={FacebookLogo} alt="Facebook logo"></img>
         </div>
       </div>
     </div>

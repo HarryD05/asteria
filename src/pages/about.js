@@ -14,7 +14,7 @@ const AboutPage = () => {
   return (
     <>
       <Navbar></Navbar>
-      <main>
+      <main className="About">
         <SEO seo={_.About.SEO} />
 
         <h1>About</h1>

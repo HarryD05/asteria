@@ -1,0 +1,48 @@
+.MTT {
+  width: calc(100% - 2rem);
+  padding: 1rem;
+
+  .selector {
+    margin: auto;
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+
+    .shown {
+      text-decoration: underline;
+    }
+  
+    .hidden {
+      text-decoration: none;
+    }
+
+    button {
+      all: unset;
+      
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .profiles {
+    width: 100%;
+    display: flex;
+
+    .profilePreview {
+      width: 200px;
+      padding: 8px;
+
+      a {
+        text-align: center;
+        text-decoration: none;
+        color: black;
+
+        img {
+          width: 192px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
