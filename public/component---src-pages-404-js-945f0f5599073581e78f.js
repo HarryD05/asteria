@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunksteam_project=self.webpackChunksteam_project||[]).push([[883],{429:function(e,t,n){n.r(t);var l=n(7294);t.default=function(){return l.createElement("main",null,l.createElement("title",null,"Not found"),l.createElement("h1",null,"Page not found"))}}}]);
-//# sourceMappingURL=component---src-pages-404-js-945f0f5599073581e78f.js.map
