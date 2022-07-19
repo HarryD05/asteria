@@ -34,14 +34,17 @@ const ArticleDetails = ({ data }) => {
   const url = typeof window !== 'undefined' ? window.location.href.split(/[?#]/)[0] : '';
 
   const [ArticleDetails, setArticleDetails] = useState(null);
-  const articleId = url.slice(url.indexOf("articles") + 9);
+  let articleId = url.slice(url.indexOf("articles") + 9);
+
+  if (articleId[articleId.length - 1] === '/') {
+    articleId = articleId.slice(0, articleId.length - 1);
+  }
 
   const articles = [];
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [articleId]);
-
 
   useEffect(() => {
     (async () => {
@@ -53,6 +56,7 @@ const ArticleDetails = ({ data }) => {
 
       var Article = {};
       for (var i = 0; i < articles.length; i++) {
+        console.log(articles[i])
         if (articles[i].slug.slice(10) === articleId) {
           articles[i]["html"] = data.allMarkdownRemark.edges[i].node.html;
 
@@ -60,7 +64,7 @@ const ArticleDetails = ({ data }) => {
           break;
         }
       }
-
+      console.log(ArticleDetailsMapper(Article))
       setArticleDetails(ArticleDetailsMapper(Article));
     })();
   }, [articleId]);
@@ -69,7 +73,7 @@ const ArticleDetails = ({ data }) => {
     <>
       <SEO seo={{
         ..._.ArticleDetails.SEO,
-        title: ArticleTitle(ArticleDetails),
+        title: `STEAM Project | ${ArticleTitle(ArticleDetails)}`,
         image: ArticleImage(ArticleDetails),
         url
       }} />

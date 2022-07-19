@@ -1,34 +1,74 @@
 .profileDetails {
-  max-width: 80%;
-  width: 800px;
-  margin: auto;
-  margin-top: 1rem;
+  width: calc(100% - 2rem);
+  padding: 1rem;
 
-  .top {
-    width: 100%;
-    display: flex;
-    margin-bottom: 1rem;
-
-    img {
-      width: 150px;
-      border-radius: 8px;
-      margin-right: 8px;
-    }
-
-    .details {
-      width:100%;
-
-      .name {
+  .article-list {
+    .issues {
+      width: 100%;
+  
+      .issue-articles {
         width: 100%;
         display: flex;
-        align-items: center;
+        flex-wrap: wrap;
+      }
+    }
+  }
 
-        h1 {
-          margin-right: 1rem;
-        }
+  .details {
+    max-width: 80%;
+    width: 640px;
+    margin: auto;
+    margin-top: 1rem;
 
-        p {
-          color: grey;
+    .content {
+      img {
+        border-radius: 20px;
+      }
+    
+      h2 {
+        margin: 0 0 10px;
+        font-size: 1.6em;
+        font-weight: 500;
+        letter-spacing: -0.2px;
+        line-height: 1.18;
+      }
+    
+      ul,
+      ol,
+      p {
+        margin: 0 auto 15px;
+        font-size: 1em;
+        letter-spacing: 0.4px;
+        line-height: 1.2;
+      }
+    } 
+
+    .top {
+      width: 100%;
+      display: flex;
+      margin-bottom: 1rem;
+
+      img {
+        width: 150px;
+        border-radius: 8px;
+        margin-right: 8px;
+      }
+
+      .details {
+        width:100%;
+
+        .name {
+          width: 100%;
+          display: flex;
+          align-items: center;
+
+          h1 {
+            margin-right: 1rem;
+          }
+
+          p {
+            color: grey;
+          }
         }
       }
     }

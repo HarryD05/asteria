@@ -9,9 +9,10 @@ export const ArticlesMapper = Articles =>
     Subject: Article.subject,
     Author: 'Not setup yet',
     LinkTo: Article.slug,
+    Issue: Article.issue
   }));
 
-export const ArticleDetailsMapper = Article =>
+export const ArticleDetailsMapper = (Article, includeMarkDown=true) =>
   Article &&
   Article.articles &&
   Article.articles[0] && {
@@ -20,7 +21,10 @@ export const ArticleDetailsMapper = Article =>
     Subject: Article.articles[0].subject,
     Description: Article.articles[0].description,
     Author: 'Not setup yet',
-    MarkDownContent: new TurndownService().turndown(Article.articles[0].html)
+    Issue: Article.articles[0].issue,
+    LinkTo: Article.articles[0].slug,
+    MarkDownContent: (includeMarkDown ? new TurndownService().turndown(Article.articles[0].html) : null),
+    ArticleID: (includeMarkDown ? null : Article.articles[0].articleID) 
   };
 
 export const ArticleTitle = details => {
@@ -60,6 +64,14 @@ export const ArticleMarkdown = details => {
     return '';
   } else {
     return details.MarkDownContent;
+  }
+}
+
+export const ArticleLinkTo = details => {
+  if (details === null || details === undefined) {
+    return '';
+  } else {
+    return details.LinkTo;
   }
 }
 

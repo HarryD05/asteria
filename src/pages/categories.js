@@ -42,14 +42,11 @@ const CategoriesPage = ({data}) => {
       articleList.push(article);
     })
 
-    console.log(articleList)
-
     setArticles(articleList);
   }, [data])
 
   const createSubjects = () => {
     const articleList = ArticlesMapper(articles);
-    console.log(articleList)
 
     if (articleList === 0) return <p>No articles</p>;
 

@@ -29,26 +29,6 @@
         display: flex;
         flex-wrap: wrap;
         min-height: 300px;
-
-        .articlePreview {
-          width: 200px;
-          text-align: left;
-          border-radius: 8px;
-          padding: 8px;
-          transition: ease-in-out 0.2s all;
-          margin: 4px;
-
-          a {
-            text-align: center;
-            text-decoration: none;
-            color: black;
-
-            img {
-              width: 192px;
-              border-radius: 8px;
-            }
-          }
-        }
       }
     }
   }

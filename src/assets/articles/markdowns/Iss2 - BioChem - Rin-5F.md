@@ -3,9 +3,9 @@ type: "Article"
 title: "Effect of IAPP on the proteome of cultured Rin-5F cells"
 description: "Islet amyloid polypeptide (IAPP) or amylin deposits can be found in the islets of type 2 diabetes patients. The peptide is suggested to be involved in the etiology of the disease through formation of amyloid deposits and destruction of β islet cells, though the underlying molecular events leading from IAPP deposition to β cell death are still largely unknown."
 subject: "2BB760"
-issue: 1
+issue: 2
 preview_image: "BioChemImg1.png"
-userID: "573a2ab7-0d60-4548-85f2-d85271e10267"
+userID: "ba8c2047-d40a-4441-ba57-9a6fb94381f9"
 articleID: "cb2cd7a4-41f7-4989-ae89-87aeb64803fc"
 slug: "/articles/cb2cd7a4-41f7-4989-ae89-87aeb64803fc"
 ---

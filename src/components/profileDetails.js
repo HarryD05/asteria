@@ -11,58 +11,97 @@ import Navbar from "./navbar";
 
 //Importing helpers
 import {ProfileDetailsMapper, ProfileMarkdown, ProfileImage, ProfileName, ProfilePronouns, ProfileRole, ProfileSchool} from './profileHelperFunctions';
+import {ArticleDetailsMapper, ArticleTitle, ArticleImage, ArticleSubject, ArticleLinkTo} from './articleHelperFunctions';
 
 import { graphql } from "gatsby";
 
 import "./../styles/index.scss";
+import ArticlePreview from "./articlePreview";
 
 const ProfileDetails = ({ data }) => {
 
   const url = typeof window !== 'undefined' ? window.location.href.split(/[?#]/)[0] : '';
 
   const [ProfileDetails, setProfileDetails] = useState(null);
-  const profileId = url.slice(url.indexOf("profiles") + 9);
+  const [ArticlesDetails, setArticlesDetails] = useState([]);
+  let profileId = url.slice(url.indexOf("profiles") + 9);
+
+  if (profileId[profileId.length - 1] === '/') {
+    profileId = profileId.slice(0, profileId.length - 1);
+  }
 
   const profiles = [];
+  const articles = [];
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [profileId]);
 
-
   useEffect(() => {
     (async () => {
       {
-        data.allMarkdownRemark.edges.map(profile => (
-          profiles.push(profile.node.frontmatter)
-        ))
+        data.allMarkdownRemark.edges.map((info, index) => {
+          if (info.node.frontmatter.type === "Profile") {
+            profiles.push({...info.node.frontmatter, index})
+          } else {
+            if (info.node.frontmatter.userID === profileId) {
+              articles.push({...info.node.frontmatter, index})
+            }
+          }
+        })
       }
 
-      var Profile = {};
-      for (var i = 0; i < profiles.length; i++) {
+      let Profile = {};
+      for (let i = 0; i < profiles.length; i++) {
         if (profiles[i].slug.slice(10) === profileId) {
-          profiles[i]["html"] = data.allMarkdownRemark.edges[i].node.html;
+          profiles[i]["html"] = data.allMarkdownRemark.edges[profiles[i].index].node.html;
 
           Profile["profiles"] = [profiles[i]];
           break;
         }
       }
 
+      const ArticleList = articles.map(article => ArticleDetailsMapper({"articles": [article]}, false));
+      setArticlesDetails([...ArticlesDetails, ...ArticleList])
+
       setProfileDetails(ProfileDetailsMapper(Profile));
     })();
   }, [profileId]);
+
+  const createIssues = () => {
+    if (ArticlesDetails.length === 0) return <p>No articles...</p>
+    
+    const issues = {};
+
+    ArticlesDetails.forEach((article, index) => {
+      if (!issues.hasOwnProperty(article.Issue)) {
+        issues[article.Issue] = [];
+      } 
+
+      issues[article.Issue].push(<ArticlePreview 
+        key={index} Image={article.Image} Title={article.Title} Author={article.Author} LinkTo={article.LinkTo} Subject={article.Subject} includeAuthor={false}
+      />)
+    })
+
+    let content = [];
+    for (let i = 1; i <= Object.keys(issues).length; i++) {
+      content.push(<div key={i}><h3>Issue {i}</h3><div className="issue-articles">{issues[i].map(article => article)}</div></div>)
+    }
+
+    return content;
+  }
 
   return (ProfileDetails ?
     <>
       <SEO seo={{
         ..._.ProfileDetails.SEO,
-        title: ProfileName(ProfileDetails),
+        title: `STEAM Project | ${ProfileName(ProfileDetails)}`,
         image: ProfileImage(ProfileDetails),
         url
       }} />
-      <main>
+      <main className="profileDetails">
         <Navbar />
-        <div className="profileDetails">
+        <div className="details">
           <div className="top">
             <img src={ProfileImage(ProfileDetails)} alt={`profile picture of ${ProfileName(ProfileDetails)}`}></img>
             <div className="details">
@@ -74,9 +113,13 @@ const ProfileDetails = ({ data }) => {
               <p>{ProfileRole(ProfileDetails)}</p>
             </div>
           </div>
-          <Markdown>{ProfileMarkdown(ProfileDetails)}</Markdown>
-          <br />
-          <p>Content to add: Issues</p>
+          <Markdown className="content">{ProfileMarkdown(ProfileDetails)}</Markdown>
+        </div>
+        <div className="article-list">
+          <h2>Articles</h2>
+          <div className="issues">
+            {createIssues()}
+          </div>
         </div>
       </main>
     </> : null
@@ -88,12 +131,12 @@ export const pageQuery = graphql`
   query profileQuery1 {
     allMarkdownRemark(
       limit: 1000
-      filter: { frontmatter: { type: { eq: "Profile" } } }
     ){
       edges{
         node{
           html
           frontmatter {
+            type
             first_name
             surname
             school
@@ -101,6 +144,12 @@ export const pageQuery = graphql`
             role
             slug
             profile_picture
+            title
+            subject
+            userID
+            articleID
+            preview_image
+            issue
           }
         }
       }
