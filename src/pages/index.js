@@ -3,16 +3,17 @@ import React, {useState, useEffect} from "react";
 
 //Importing components
 import Navbar from "../components/navbar";
-import SEO from './../components/seo';
-import ArticlePreview from '../components/articlePreview';
-import { ArticlesMapper } from '../components/articleHelperFunctions';
+import SEO from "./../components/seo";
+import ArticleShowcase from "./../components/articleShowcase";
+import ArticlePreview from "./../components/articles/articlePreview";
+import { ArticlesMapper } from "./../components/articles/articleHelperFunctions";
 
 //Importing constants
-import _ from './../constants/constants';
+import _ from "./../constants/constants";
 
 import { graphql } from "gatsby";
 
-import './../styles/index.scss';
+import "./../styles/index.scss";
 
 const IndexPage = ({data}) => {
   const [articles, setArticles] = useState([])
@@ -28,7 +29,7 @@ const IndexPage = ({data}) => {
 
     setArticles(articleList);
   }, [data])
-
+    
   const createIssues = () => {
     const issues = {};
 
@@ -46,9 +47,12 @@ const IndexPage = ({data}) => {
       />)
     })
 
-    let content = [];
-    for (let i = Object.keys(issues).length; i > 0; i--) {
-      content.push(<><h3>Issue {i}</h3><div className="issue-articles">{issues[i].map(article => article)}</div></>)
+    const content = [];
+    const keys = Object.keys(issues).map(issue => Number(issue));
+    for (let i = Math.max(...keys); i >= Math.min(...keys); i--) {
+      if (issues.hasOwnProperty(i)) {
+        content.push(<><h3>Issue {i}</h3><div className="issue-articles">{issues[i].map(article => article)}</div></>)
+      }
     }
 
     return content;
@@ -60,7 +64,7 @@ const IndexPage = ({data}) => {
       <main className="home">
         <SEO seo={_.Home.SEO} />
 
-        <p>Article showcase</p><br />
+        <ArticleShowcase />
 
         <h2>Archive</h2>
         <div className="issues">{createIssues()}</div>

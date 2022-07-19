@@ -11,10 +11,10 @@
     background: #f1f1f1;
   }
   ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #888888;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #555555;
   }
 
   .subjects {
@@ -29,6 +29,7 @@
         display: flex;
         flex-wrap: wrap;
         min-height: 300px;
+        padding-left: 1rem;
       }
     }
   }

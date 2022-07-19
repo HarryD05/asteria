@@ -4,14 +4,14 @@ import React, {useState, useEffect} from 'react';
 //Importing components
 import Navbar from '../components/navbar';
 import SEO from './../components/seo';
-import ArticlePreview from '../components/articlePreview';
+import ArticlePreview from '../components/articles/articlePreview';
 import ArticleScroller from '../components/articleScroller';
 
 //Importing constants
 import _ from './../constants/constants';
 
 //Importing helpers
-import { ArticlesMapper } from '../components/articleHelperFunctions';
+import { ArticlesMapper } from '../components/articles/articleHelperFunctions';
 
 import './../styles/index.scss';
 

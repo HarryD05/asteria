@@ -1,7 +1,7 @@
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
 
-  const ProfileTemplate = require.resolve(`./src/components/profileDetails.js`)
+  const ProfileTemplate = require.resolve(`./src/components/profiles/profileDetails.js`)
   const profileData = await graphql(`
     {
       allMarkdownRemark(
@@ -32,7 +32,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     })
   })
 
-  const ArticleTemplate = require.resolve(`./src/components/articleDetails.js`)
+  const ArticleTemplate = require.resolve(`./src/components/articles/articleDetails.js`)
   const articleData = await graphql(`
     {
       allMarkdownRemark(

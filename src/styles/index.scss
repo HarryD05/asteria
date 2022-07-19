@@ -5,6 +5,19 @@
 
 html {
   scroll-behavior: smooth;
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888888;
+    border-radius: 8px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555555;
+  }
 }
 
 body {
@@ -16,6 +29,7 @@ body {
   @import "profileDetails";
   @import "meetTheTeam";
   @import "articleDetails";
+  @import "colours";
 }
 
 .home {
@@ -27,8 +41,75 @@ body {
 
     .issue-articles {
       width: 100%;
+      padding-left: 1rem;
       display: flex;
       flex-wrap: wrap;
+    }
+  }
+
+  .articleShowcase {
+    width: 720px;
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px 0 #00000035;
+    padding: 1rem;
+    border-radius: 32px;
+
+    //Moving the dots to select articles up
+    .slick-dots {
+      bottom: -10px !important;
+    }
+
+    .slide {
+      width: calc(100% - 2rem);
+      height: 256px;
+      display: flex !important;
+      justify-content: space-between;
+      padding: 1rem;
+
+      &:active {
+        cursor: grabbing;
+      }
+
+      .info {
+        width: 50%;
+
+        a {
+          text-decoration: none;
+          color: black;
+        }
+
+        p {
+          margin-top: 8px;
+        }
+
+        :nth-child(1) {
+          font-weight: bold;
+          font-size: large;
+        }
+
+        :nth-child(3) {
+          color: #343434;
+          font-style: italic;
+        }
+      }
+
+      a {
+        width: 30%;
+        max-width: 280px;
+        margin: auto;
+
+        img {
+          width: 100%;
+          border-radius: 12px;
+          transition: all ease-in-out 0.3s;
+
+          &:hover {
+            border-top-right-radius: 0;
+          }
+        }
+      }
     }
   }
 }
@@ -46,7 +127,8 @@ body {
   background-color: #202020e3;
   border-radius: 4px;
 
-  transition: all ease-in-out 0.3s;
+  transition: all ease 0.4s;
+  transition-delay: -0.1s;
 
   &:hover {
     right: -10px;
@@ -64,11 +146,13 @@ body {
 
   .circle {
     position: fixed;
-    right: -10px;
+    right: 10px;
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    transition: all ease-in-out 0.3s;
+    transition: all ease 0.4s;
+    transition-delay: -0.095s;
+    box-shadow: 0 2px 4px 0 #00000035;
   }
 }
 
@@ -79,149 +163,24 @@ body {
   padding: 8px;
   transition: ease-in-out 0.2s all;
   margin: 4px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  box-shadow: 0 2px 4px 0 #00000035;
 
-  a {
+  h2 {
     width: 100%;
-    text-align: center;
-    text-decoration: none;
-    color: black;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+  }
 
-    h2 {
-      width: 100%;
-      padding: 0;
-      margin: 0;
-      line-height: 1;
-    }
-
-    img {
-      width: 192px;
-      border-radius: 8px;
-      padding: 0;
-      margin: 0;
-    }
+  img {
+    max-width: 192px;
+    max-height: 128px;
+    border-radius: 8px;
+    padding: 0;
+    margin: 0;
   }
 }
 
-.bg2BB760 {
-  background-color: #2bb760;
-
-  &-light {
-    background-color: #2bb76040;
-  }
-
-  &-light:hover {
-    background-color: #2bb76060;
-  }
-}
-
-.bg9C2111 {
-  background-color: #9C2111;
-
-  &-light {
-    background-color: #9C211140;
-  }
-
-  &-light:hover {
-    background-color: #9C211160;
-  }
-}
-
-.bgBFAA34 {
-  background-color: #BFAA34;
-
-  &-light {
-    background-color: #BFAA3440;
-  }
-
-  &-light:hover {
-    background-color: #BFAA3460;
-  }
-}
-
-.bgC8792C {
-  background-color: #C8792C;
-
-  &-light {
-    background-color: #C8792C40;
-  }
-
-  &-light:hover {
-    background-color: #C8792C60;
-  }
-}
-
-.bg622058 {
-  background-color: #622058;
-
-  &-light {
-    background-color: #62205840;
-  }
-
-  &-light:hover {
-    background-color: #62205860;
-  }
-}
-
-.bg376B70 {
-  background-color: #376B70;
-
-  &-light {
-    background-color: #376B7040;
-  }
-
-  &-light:hover {
-    background-color: #376B7060;
-  }
-}
-
-.bgAF70BD {
-  background-color: #AF70BD;
-
-  &-light {
-    background-color: #AF70BD40;
-  }
-
-  &-light:hover {
-    background-color: #AF70BD60;
-  }
-}
-
-.bgCDCEED {
-  background-color: #CDCEED;
-
-  &-light {
-    background-color: #CDCEED40;
-  }
-
-  &-light:hover {
-    background-color: #CDCEED60;
-  }
-}
-
-.bg3E5FCA {
-  background-color: #3E5FCA;
-
-  &-light {
-    background-color: #3E5FCA40;
-  }
-
-  &-light:hover {
-    background-color: #3E5FCA60;
-  }
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}

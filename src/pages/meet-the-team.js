@@ -7,20 +7,20 @@ import _ from './../constants/constants';
 //Importing components
 import Navbar from "./../components/navbar";
 import SEO from './../components/seo';
-import ProfilePreview from "../components/profilePreview";
+import ProfilePreview from "./../components/profiles/profilePreview";
 
 //Importing helpers
-import {ProfilesMapper} from './../components/profileHelperFunctions';
+import {ProfilesMapper} from './../components/profiles/profileHelperFunctions';
 
 import { graphql } from "gatsby";
 
 import './../styles/index.scss';
 
 const MeetTheTeamPage = ({data}) => {
-  const [selected, setSelected] = React.useState({
+  const [selected, setSelected] = useState({
     editor: true, designer: true, writer: true
   });
-  const [profiles, setProfiles] = React.useState([])
+  const [profiles, setProfiles] = useState([])
 
   useEffect(() => {
     const profileList = [];
