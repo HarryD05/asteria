@@ -4,7 +4,7 @@ export const ArticlesMapper = Articles =>
   Articles &&
   Articles.length &&
   Articles.map(Article => ({
-    Image: require(`./../assets/articles/images/${Article.preview_image}`).default,
+    Image: require(`./../assets/articles/images/${Article.preview_image}`),
     Title: Article.title,
     Subject: Article.subject,
     Author: 'Not setup yet',
@@ -82,7 +82,7 @@ export const ArticleImage = details => {
     if (details.Image === null || details.Image === undefined || details.Image === "") {
       return null;
     } else {
-      return details.Image.default;
+      return details.Image;
     }
   }
 }

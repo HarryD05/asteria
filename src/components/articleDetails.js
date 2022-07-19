@@ -86,7 +86,10 @@ const ArticleDetails = ({ data }) => {
           </div>
 
           <div className="top">
-            <img src={ArticleImage(ArticleDetails)} alt={`Cover image of ${ArticleTitle(ArticleDetails)}`}></img>
+            <img 
+              src={(typeof(ArticleImage(ArticleDetails)) === "string") ? ArticleImage(ArticleDetails) : ArticleImage(ArticleDetails).default} 
+              alt={`Cover image of ${ArticleTitle(ArticleDetails)}`}>
+            </img>
             <div className="details">
               <h1>{ArticleTitle(ArticleDetails)}</h1> 
               <p>{ArticleDescription(ArticleDetails)}</p>

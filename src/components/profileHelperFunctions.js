@@ -4,7 +4,7 @@ export const ProfilesMapper = Profiles =>
   Profiles &&
   Profiles.length &&
   Profiles.map(Profile => ({
-    Image: require(`./../assets/profiles/images/${Profile.profile_picture}`).default,
+    Image: require(`./../assets/profiles/images/${Profile.profile_picture}`),
     Name: `${Profile.first_name} ${Profile.surname}`,
     Role: Profile.role,
     LinkTo: Profile.slug,
@@ -69,7 +69,7 @@ export const ProfileImage = details => {
     if (details.Image === null || details.Image === undefined || details.Image === "") {
       return null;
     } else {
-      return details.Image.default;
+      return details.Image;
     }
   }
 }

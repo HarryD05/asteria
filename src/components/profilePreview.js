@@ -10,7 +10,10 @@ const ProfilePreview = ({ Image, Name, Role, LinkTo }) => {
   return (
     <div className="profilePreview">
       <a href={LinkTo}>
-        <img src={Image} alt={`profile picture of ${Name}`}></img>
+        <img 
+          src={(typeof(Image) === "string") ? Image : Image.default} 
+          alt={`profile picture of ${Name}`}>
+        </img>
         <div className="details">
           <h2>{Name}</h2> 
           <p>{Role}</p>

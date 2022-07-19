@@ -11,7 +11,7 @@ import Navbar from "./navbar";
 
 //Importing helpers
 import {ProfileDetailsMapper, ProfileMarkdown, ProfileImage, ProfileName, ProfilePronouns, ProfileRole, ProfileSchool} from './profileHelperFunctions';
-import {ArticleDetailsMapper, ArticleTitle, ArticleImage, ArticleSubject, ArticleLinkTo} from './articleHelperFunctions';
+import {ArticleDetailsMapper} from './articleHelperFunctions';
 
 import { graphql } from "gatsby";
 
@@ -103,7 +103,12 @@ const ProfileDetails = ({ data }) => {
         <Navbar />
         <div className="details">
           <div className="top">
-            <img src={ProfileImage(ProfileDetails)} alt={`profile picture of ${ProfileName(ProfileDetails)}`}></img>
+            {console.log(ProfileImage(ProfileDetails))}
+            {console.log(typeof(ProfileImage(ProfileDetails)))}
+            <img 
+              src={(typeof(ProfileImage(ProfileDetails)) === "string") ? ProfileImage(ProfileDetails) : ProfileImage(ProfileDetails).default} 
+              alt={`profile picture of ${ProfileName(ProfileDetails)}`}>
+            </img>
             <div className="details">
               <div className="name">
                 <h1>{ProfileName(ProfileDetails)}</h1> 

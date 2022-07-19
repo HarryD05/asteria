@@ -10,7 +10,10 @@ const ArticlePreview = ({ Image, Subject, Title, Author, LinkTo, includeAuthor=t
   return (
     <div className={`articlePreview bg${Subject}-light`}>
       <a href={LinkTo}>
-        <img src={Image} alt={`Preview picture for article: ${Title}`}></img>
+        <img 
+          src={(typeof(Image) === "string") ? Image : Image.default} 
+          alt={`Preview picture for article: ${Title}`}>
+        </img>
         <div className="details">
           <h2>{Title}</h2> 
           {includeAuthor ? <p>{Author}</p> : <p></p>}
