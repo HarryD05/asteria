@@ -2,7 +2,8 @@
 import React, {useState, useEffect} from "react";
 
 //Importing components
-import Navbar from "../components/navbar";
+import Navbar from "./../components/navbar";
+import Footer from "./../components/footer";
 import SEO from "./../components/seo";
 import ArticleShowcase from "./../components/articleShowcase";
 import ArticlePreview from "./../components/articles/articlePreview";
@@ -69,7 +70,7 @@ const IndexPage = ({data}) => {
 
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar />
       <main className="home">
         <SEO seo={_.Home.SEO} />
 
@@ -78,6 +79,7 @@ const IndexPage = ({data}) => {
         <h2>Archive</h2>
         <div className="issues">{createIssues()}</div>
       </main>
+      <Footer />
     </>
   )
 }

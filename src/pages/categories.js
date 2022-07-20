@@ -3,6 +3,7 @@ import React, {useState, useEffect} from 'react';
 
 //Importing components
 import Navbar from '../components/navbar';
+import Footer from "./../components/footer";
 import SEO from './../components/seo';
 import ArticlePreview from '../components/articles/articlePreview';
 import ArticleScroller from '../components/articleScroller';
@@ -80,7 +81,7 @@ const CategoriesPage = ({data}) => {
 
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar />
       <main className="categories">
         <SEO seo={_.Categories.SEO} />
         <ArticleScroller />
@@ -89,6 +90,7 @@ const CategoriesPage = ({data}) => {
 
         <div className="subjects">{createSubjects()}</div>
       </main>
+      <Footer />
     </>
   )
 }

@@ -1,5 +1,6 @@
 .MTT {
   width: calc(100% - 2rem);
+  min-height: 100vh;
   padding: 1rem;
 
   @media (max-width: 640px) {

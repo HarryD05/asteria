@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunksteam_project=self.webpackChunksteam_project||[]).push([[682],{4633:function(e,t,n){n.r(t);var a=n(7294),l=n(8879),u=n(262),c=n(6025);t.default=function(){return a.createElement(a.Fragment,null,a.createElement(l.Z,null),a.createElement("main",{className:"about"},a.createElement(u.Z,{seo:c.Z.About.SEO}),a.createElement("h1",null,"About")))}}}]);
-//# sourceMappingURL=component---src-pages-about-js-604ca520cd89123557d2.js.map

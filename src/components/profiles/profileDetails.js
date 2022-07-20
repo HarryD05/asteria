@@ -9,6 +9,7 @@ import _ from "./../../constants/constants";
 import SEO from "./../seo";
 import Navbar from "./../navbar";
 import ArticlePreview from "./../articles/articlePreview";
+import Footer from "./../footer";
 
 //Importing helpers
 import {ProfileDetailsMapper, ProfileMarkdown, ProfileImage, ProfileName, ProfilePronouns, ProfileRole, ProfileSchool} from './profileHelperFunctions';
@@ -127,6 +128,7 @@ const ProfileDetails = ({ data }) => {
           </div>
         </div>
       </main>
+      <Footer />
     </> : null
   );
 };

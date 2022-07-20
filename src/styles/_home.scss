@@ -1,0 +1,117 @@
+.home {
+  width: calc(100% - 2rem);
+  padding: 1rem;
+  text-align: left;
+
+  @media (max-width: 640px) {
+    text-align: center;
+  }
+
+  .issues {
+    width: 100%;
+
+    .issue-articles {
+      width: 100%;
+      padding-left: 1rem;
+      margin-bottom: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: left;
+
+      @media (max-width: 640px) {
+        justify-content: space-around;
+        padding: 0;
+      }
+    }
+  }
+
+  .articleShowcase {
+    width: 720px;
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px 0 #00000035;
+    padding: 1rem;
+    border-radius: 32px;
+
+    //Moving the dots to select articles up
+    .slick-dots {
+      bottom: -10px !important;
+    }
+
+    .slide {
+      width: calc(100% - 2rem);
+      height: 256px;
+      display: flex !important;
+      justify-content: space-between;
+      flex-direction: row;
+      padding: 1rem;
+
+      @media (max-width: 640px) {
+        height: 400px;
+        flex-direction: column;
+        margin-left: -16px;
+      }
+
+      &:active {
+        cursor: grabbing;
+      }
+
+      .info {
+        width: 50%;
+
+        @media (max-width: 640px) {
+          width: 100%;
+          font-size: small;
+          margin-bottom: 8px;
+        }
+
+        a {
+          text-decoration: none;
+          color: black;
+        }
+
+        p {
+          margin-top: 8px;
+        }
+
+        :nth-child(1) {
+          font-weight: bold;
+          font-size: large;
+        }
+
+        :nth-child(3) {
+          color: #343434;
+          font-style: italic;
+        }
+      }
+
+      a {
+        width: 30%;
+        max-width: 280px;
+        margin: auto;
+
+        @media (max-width: 640px) {
+          width: 100%;
+        }
+
+        img {
+          width: 100%;
+          border-radius: 12px;
+          transition: all ease-in-out 0.3s;
+
+          &:hover {
+            transform: scale(1.05);
+          }
+
+          @media (max-width: 640px) {
+            margin: auto;
+            max-height: 96px;
+            width: auto;
+            max-width: 80%;
+          }
+        }
+      }
+    }
+  }
+}

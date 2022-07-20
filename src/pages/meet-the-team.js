@@ -6,6 +6,7 @@ import _ from './../constants/constants';
 
 //Importing components
 import Navbar from "./../components/navbar";
+import Footer from "./../components/footer";
 import SEO from './../components/seo';
 import ProfilePreview from "./../components/profiles/profilePreview";
 
@@ -72,7 +73,7 @@ const MeetTheTeamPage = ({data}) => {
 
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar />
       <main className="MTT">
         <SEO seo={_.MeetTheTeam.SEO} />
 
@@ -88,6 +89,7 @@ const MeetTheTeamPage = ({data}) => {
           {displayProfiles()}
         </div>
       </main>
+      <Footer />
     </>
   )
 }

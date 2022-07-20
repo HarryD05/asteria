@@ -8,6 +8,7 @@ import _ from "./../../constants/constants";
 //Importing components
 import SEO from "./../seo";
 import Navbar from "./../navbar";
+import Footer from "./../footer";
 
 //Importing helpers
 import {
@@ -129,6 +130,7 @@ const ArticleDetails = ({ data }) => {
           <Markdown className="content">{ArticleMarkdown(ArticleDetails)}</Markdown>
         </div>
       </main>
+      <Footer />
     </> : null
   );
 };

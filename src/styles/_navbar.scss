@@ -149,6 +149,10 @@ $border-height: 5px;
 
       img {
         width: 35px;
+
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
   }
@@ -219,6 +223,9 @@ $border-height: 5px;
 
         img {
           padding: 0;
+          &:hover {
+            cursor: pointer;
+          }
         }
       }
 
