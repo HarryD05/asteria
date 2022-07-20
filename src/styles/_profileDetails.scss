@@ -3,24 +3,40 @@
   padding: 1rem;
 
   .article-list {
+    margin-top: 1rem;
+
+    @media (max-width: 640px) {
+      text-align: center;
+    }
+
     .issues {
       width: 100%;
   
-      .issue-articles {
-        width: 100%;
-        padding-left: 1rem;
-        display: flex;
-        flex-wrap: wrap;
+      .issueSection {
+        margin-bottom: 1rem;
 
-        .articlePreview {
-          height: 200px;
+        .issueArticles {
+          width: 100%;
+          padding-left: 1rem;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: left;
 
-          .img {
-            width: 200px;
+          @media (max-width: 640px) {
+            justify-content: space-around;
+            padding: 0;
           }
 
-          .articleDetails {
-            width: 200px;
+          .articlePreview {
+            height: 200px;
+
+            .img {
+              width: 200px;
+            }
+
+            .articleDetails {
+              width: 200px;
+            }
           }
         }
       }
@@ -31,7 +47,6 @@
     max-width: 80%;
     width: 640px;
     margin: auto;
-    margin-top: 1rem;
 
     .content {
       img {
@@ -46,9 +61,7 @@
         line-height: 1.18;
       }
     
-      ul,
-      ol,
-      p {
+      ul, ol, p {
         margin: 0 auto 15px;
         font-size: 1em;
         letter-spacing: 0.4px;
@@ -59,12 +72,23 @@
     .top {
       width: 100%;
       display: flex;
+      flex-direction: row;
       margin-bottom: 1rem;
+
+      @media (max-width: 640px) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
 
       img {
         width: 150px;
         border-radius: 8px;
         margin-right: 8px;
+
+        @media (max-width: 640px) {
+          margin: 0;
+        }
       }
 
       .details {
@@ -73,6 +97,7 @@
         .name {
           width: 100%;
           display: flex;
+          flex-direction: row;
           align-items: center;
 
           h1 {
@@ -81,6 +106,14 @@
 
           p {
             color: grey;
+          }
+
+          @media (max-width: 640px) {
+            flex-direction: column;
+
+            h1 {
+              margin: 0;
+            }
           }
         }
       }

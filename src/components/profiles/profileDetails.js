@@ -86,7 +86,7 @@ const ProfileDetails = ({ data }) => {
     const keys = Object.keys(issues).map(issue => Number(issue));
     for (let i = Math.min(...keys); i <= Math.max(...keys); i++) {
       if (issues.hasOwnProperty(i)) {
-        content.push(<div key={i}><h3>Issue {i}</h3><div className="issue-articles">{issues[i].map(article => article)}</div></div>)
+        content.push(<div className="issueSection" key={i}><h3>Issue {i}</h3><div className="issueArticles">{issues[i].map(article => article)}</div></div>)
       }
     }
 

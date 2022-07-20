@@ -14,6 +14,7 @@
     border-radius: 8px;
     box-shadow: 0 2px 4px 0 #00000035;
     text-decoration: none;
+    padding: 0;
 
     p {
       padding: 0;
@@ -30,6 +31,7 @@
   .top {
     width: 100%;
     display: flex;
+    flex-direction: row;
     margin-bottom: 1rem;
 
     img {
@@ -43,10 +45,21 @@
     .details {
       width: 100%;
     }
+
+    @media (max-width: 640px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      img {
+        margin: 0;
+      }
+    }
   }
 
   .author {
     display: flex;
+    flex-direction: row;
     width: 300px;
     max-width: 80%;
     margin: auto;
@@ -59,11 +72,29 @@
     text-decoration: none;
     color: black;
 
+    &:hover {
+      img {
+        transform: scale(1.025);
+      }
+    }
+
     .authorImg {
       width: 96px;
     
       img {
         border-radius: 8px;
+        transition: all ease-in-out 0.3s;
+      }
+    }
+
+    @media (max-width: 640px) {
+      width: 200px;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      .authorImg {
+        margin-top: 8px;
       }
     }
   }

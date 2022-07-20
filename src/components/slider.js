@@ -8,7 +8,7 @@ const SliderSettings = {
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
-  autoplay: true
+  autoplay: false
 };
 
 const SliderComponent = React.forwardRef(
