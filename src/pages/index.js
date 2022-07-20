@@ -20,11 +20,20 @@ const IndexPage = ({data}) => {
 
   useEffect(() => {
     const articleList = [];
+    const authors = {};
 
-    data.allMarkdownRemark.edges.forEach(article => {
-      article = article.node.frontmatter;
+    data.allMarkdownRemark.edges.forEach(info => {
+      info = info.node.frontmatter;
 
-      articleList.push(article);
+      if (info.type === "Article") {
+        articleList.push(info);
+      } else {
+        authors[info.userID] = info;
+      }
+    })
+
+    articleList.forEach(article => {
+      article.author = authors[article.userID]
     })
 
     setArticles(articleList);
@@ -76,19 +85,20 @@ const IndexPage = ({data}) => {
 export default IndexPage
 export const pageQuery = graphql`
 query articleQuery3{
-  allMarkdownRemark(
-    limit: 100
-    filter: { frontmatter: { type: { eq: "Article" } } }
-  ){
+  allMarkdownRemark{
     edges{
       node{
         frontmatter {
+          type
           title
           description
           subject
           issue
           preview_image
           slug
+          first_name
+          surname
+          userID
         }
       }
     }

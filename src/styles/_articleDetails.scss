@@ -2,19 +2,28 @@
   max-width: 80%;
   width: 800px;
   margin: auto;
-  margin-top: 1rem;
+  margin-top: 3rem;
   margin-bottom: 1rem;
 
   .subject-hover {
+    display: block;
     position: absolute;
-    top: 84px;
-    right: -0;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    height: 24px;
+    top: 75px;
+    right: calc(50vw - 100px);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px 0 #00000035;
+    text-decoration: none;
+
+    p {
+      padding: 0;
+      width: 100%;
+      text-align: center;
+      color: black;
+    }
 
     .circle {
-      position: absolute;
-      right: 201px;
+      width: 0;
     }
   }
 
@@ -33,6 +42,28 @@
 
     .details {
       width: 100%;
+    }
+  }
+
+  .author {
+    display: flex;
+    width: 300px;
+    max-width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px 0 #00000035;
+    padding: 1rem;
+    border-radius: 32px;
+    text-decoration: none;
+    color: black;
+
+    .authorImg {
+      width: 96px;
+    
+      img {
+        border-radius: 8px;
+      }
     }
   }
 

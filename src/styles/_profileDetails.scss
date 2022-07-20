@@ -11,6 +11,18 @@
         padding-left: 1rem;
         display: flex;
         flex-wrap: wrap;
+
+        .articlePreview {
+          height: 200px;
+
+          .img {
+            width: 200px;
+          }
+
+          .articleDetails {
+            width: 200px;
+          }
+        }
       }
     }
   }

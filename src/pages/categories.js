@@ -31,15 +31,29 @@ const subjects = [
 ]
 
 const CategoriesPage = ({data}) => {
-  const [articles, setArticles] = useState([])
+  const [articles, setArticles] = useState([]);
 
   useEffect(() => {
+    if (window.localStorage.getItem('hash') != null) {
+      window.location.hash = window.localStorage.getItem('hash');
+      window.localStorage.clear()
+    }
+
     const articleList = [];
+    const authors = {};
 
-    data.allMarkdownRemark.edges.forEach(article => {
-      article = article.node.frontmatter;
+    data.allMarkdownRemark.edges.forEach(info => {
+      info = info.node.frontmatter;
 
-      articleList.push(article);
+      if (info.type === "Article") {
+        articleList.push(info);
+      } else {
+        authors[info.userID] = info;
+      }
+    })
+
+    articleList.forEach(article => {
+      article.author = authors[article.userID]
     })
 
     setArticles(articleList);
@@ -82,19 +96,20 @@ const CategoriesPage = ({data}) => {
 export default CategoriesPage;
 export const pageQuery = graphql`
 query articleQuery2{
-  allMarkdownRemark(
-    limit: 100
-    filter: { frontmatter: { type: { eq: "Article" } } }
-  ){
+  allMarkdownRemark{
     edges{
       node{
         frontmatter {
+          type
           title
           description
           subject
           issue
           preview_image
           slug
+          first_name
+          surname
+          userID
         }
       }
     }

@@ -1,5 +1,5 @@
 //Import React dependencies
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import Markdown from "markdown-to-jsx";
 
 //Importing constants
@@ -10,7 +10,10 @@ import SEO from "./../seo";
 import Navbar from "./../navbar";
 
 //Importing helpers
-import {ArticleDescription, ArticleDetailsMapper, ArticleImage, ArticleIssue, ArticleMarkdown, ArticleSubject, ArticleTitle} from './articleHelperFunctions';
+import {
+  ArticleDescription, ArticleDetailsMapper, ArticleImage, ArticleMarkdown, ArticleSubject, ArticleTitle, 
+  AuthorName, AuthorLinkTo, AuthorImage, AuthorPronouns, AuthorSchool
+} from './articleHelperFunctions';
 
 import { graphql } from "gatsby";
 
@@ -41,6 +44,7 @@ const ArticleDetails = ({ data }) => {
   }
 
   const articles = [];
+  const authors = {};
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -49,16 +53,25 @@ const ArticleDetails = ({ data }) => {
   useEffect(() => {
     (async () => {
       {
-        data.allMarkdownRemark.edges.map(article => (
-          articles.push(article.node.frontmatter)
-        ))
+        data.allMarkdownRemark.edges.forEach((info, index) => {
+          info = info.node.frontmatter;
+
+          if (info.type === "Article") {
+            articles.push({...info, index});
+          } else {
+            authors[info.userID] = info;
+          }
+        })
+
+        articles.forEach(article => {
+          article.author = authors[article.userID]
+        })
       }
 
-      var Article = {};
-      for (var i = 0; i < articles.length; i++) {
-        console.log(articles[i])
+      const Article = {};
+      for (let i = 0; i < articles.length; i++) {
         if (articles[i].slug.slice(10) === articleId) {
-          articles[i]["html"] = data.allMarkdownRemark.edges[i].node.html;
+          articles[i]["html"] = data.allMarkdownRemark.edges[articles[i].index].node.html;
 
           Article["articles"] = [articles[i]];
           break;
@@ -68,6 +81,10 @@ const ArticleDetails = ({ data }) => {
       setArticleDetails(ArticleDetailsMapper(Article));
     })();
   }, [articleId]);
+
+  const changePage = () => {
+    window.localStorage.setItem('hash', ArticleSubject(ArticleDetails))
+  }
 
   return (ArticleDetails ?
     <>
@@ -80,10 +97,9 @@ const ArticleDetails = ({ data }) => {
       <main>
         <Navbar />
         <div className="articleDetails">
-          <div className="subject-hover">
-            <div className={`circle bg${ArticleSubject(ArticleDetails)}`}></div>
+          <a className={`subject-hover bg${ArticleSubject(ArticleDetails)}-light`} href={`/categories`} onClick={changePage}>
             <p>{`${subjects[ArticleSubject(ArticleDetails)]}`}</p>
-          </div>
+          </a>
 
           <div className="top">
             <img 
@@ -95,9 +111,22 @@ const ArticleDetails = ({ data }) => {
               <p>{ArticleDescription(ArticleDetails)}</p>
             </div>
           </div>
+
+          <a href={AuthorLinkTo(ArticleDetails)} className="author">
+            <div className="authorDetails">
+              <h3>{AuthorName(ArticleDetails)}</h3>
+              <i>{AuthorPronouns(ArticleDetails)}</i>
+              <p>{AuthorSchool(ArticleDetails)}</p>
+            </div>
+            <div className="authorImg">
+              <img 
+              src={(typeof(AuthorImage(ArticleDetails)) === "string") ? AuthorImage(ArticleDetails) : AuthorImage(ArticleDetails).default} 
+              alt={`Profile picture of ${AuthorName(ArticleDetails)}`}>
+            </img>
+            </div>
+          </a>
+
           <Markdown className="content">{ArticleMarkdown(ArticleDetails)}</Markdown>
-          <br />
-          <p>Content to add: Author stuff, name, image?, potentially their other articles</p>
         </div>
       </main>
     </> : null
@@ -107,20 +136,24 @@ const ArticleDetails = ({ data }) => {
 export default ArticleDetails;
 export const pageQuery = graphql`
   query articleQuery1 {
-    allMarkdownRemark(
-      limit: 1000
-      filter: { frontmatter: { type: { eq: "Article" } } }
-    ){
+    allMarkdownRemark{
       edges{
         node{
           html
           frontmatter {
+            type
             title
             description
             subject
             issue
             slug
             preview_image
+            first_name
+            surname
+            pronouns
+            school
+            profile_picture
+            userID
           }
         }
       }

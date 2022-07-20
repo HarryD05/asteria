@@ -96,7 +96,6 @@ export default MeetTheTeamPage;
 export const pageQuery = graphql`
 query profileQuery2{
   allMarkdownRemark(
-    limit: 100
     filter: { frontmatter: { type: { eq: "Profile" } } }
   ){
     edges{

@@ -134,9 +134,7 @@ const ProfileDetails = ({ data }) => {
 export default ProfileDetails;
 export const pageQuery = graphql`
   query profileQuery1 {
-    allMarkdownRemark(
-      limit: 1000
-    ){
+    allMarkdownRemark{
       edges{
         node{
           html
