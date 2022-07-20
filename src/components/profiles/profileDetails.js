@@ -60,7 +60,7 @@ const ProfileDetails = ({ data }) => {
         }
       }
 
-      const ArticleList = articles.map(article => ArticleDetailsMapper({"articles": [article]}, false));
+      const ArticleList = articles.map(article => ArticleDetailsMapper({"articles": [article]}, false, false));
       setArticlesDetails([...ArticlesDetails, ...ArticleList])
 
       setProfileDetails(ProfileDetailsMapper(Profile));

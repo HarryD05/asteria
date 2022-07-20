@@ -12,7 +12,7 @@ export const ArticlesMapper = Articles =>
     Issue: Article.issue
   }));
 
-export const ArticleDetailsMapper = (Article, includeMarkDown=true) =>
+export const ArticleDetailsMapper = (Article, includeMarkDown=true, includeAuthor=true) =>
   Article &&
   Article.articles &&
   Article.articles[0] && {
@@ -20,13 +20,13 @@ export const ArticleDetailsMapper = (Article, includeMarkDown=true) =>
     Image: require(`./../../assets/articles/images/${Article.articles[0].preview_image}`),
     Subject: Article.articles[0].subject,
     Description: Article.articles[0].description,
-    Author: {
+    Author: (includeAuthor ? {
       Name: `${Article.articles[0].author.first_name} ${Article.articles[0].author.surname}`,
       LinkTo: Article.articles[0].author.slug,
       Pronouns: Article.articles[0].author.pronouns,
       School: Article.articles[0].author.school,
       Image: require(`./../../assets/profiles/images/${Article.articles[0].author.profile_picture}`),
-    },
+    } : null),
     Issue: Article.articles[0].issue,
     LinkTo: Article.articles[0].slug,
     MarkDownContent: (includeMarkDown ? new TurndownService().turndown(Article.articles[0].html) : null),
