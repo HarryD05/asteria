@@ -1,5 +1,5 @@
 //Importing React dependencies
-import React, {useState, useEffect} from "react";
+import React from "react";
 
 //Importing assets
 import InstagramLogo from "./../assets/images/social-media-logos/Instagram.png";
@@ -28,7 +28,7 @@ const Footer = () => {
             <img src={KendrickSchoolLogo} alt="Kendrick logo"></img>
           </a>
           <a href="https://www.reading-school.co.uk/">
-            <img className="rbs" src={ReadingSchoolLogo} alt="Kendrick logo"></img>
+            <img src={ReadingSchoolLogo} alt="Reading School logo"></img>
           </a>
         </div>
       </div>
