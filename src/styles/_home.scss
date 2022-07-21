@@ -31,12 +31,20 @@
     margin: auto;
     margin-bottom: 1rem;
     box-shadow: 0 2px 4px 0 #00000035;
+    background-color: var(--navbar-bg);
     padding: 1rem;
     border-radius: 32px;
 
     //Moving the dots to select articles up
     .slick-dots {
       bottom: -10px !important;
+      
+
+      li {
+        button:before {
+          color: var(--text);
+        }
+      }
     }
 
     .slide {
@@ -68,7 +76,7 @@
 
         a {
           text-decoration: none;
-          color: black;
+          color: var(--text);
         }
 
         p {
@@ -81,7 +89,7 @@
         }
 
         :nth-child(3) {
-          color: #343434;
+          color: var(--author);
           font-style: italic;
         }
       }

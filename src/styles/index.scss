@@ -21,8 +21,27 @@ html {
   }
 }
 
+:root {
+  --navbar-bg: #ffffff;
+  --bg: #ffffff;
+  --text: #000000;
+  --author: #343434;
+  --footer-url: url('./../assets/images/waves/wave1.png');
+}
+
+[data-theme="dark"] {
+  --navbar-bg: #222222;
+  --bg: #333333;
+  --text: #f0f0f0;
+  --author: #dedede;
+  --footer-url: url('./../assets/images/waves/wave2.png');
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  background-color: var(--bg);
+  color: var(--text);
 
   @import "navbar";
   @import "footer";
@@ -32,7 +51,7 @@ body {
   @import "profileDetails";
   @import "meetTheTeam";
   @import "articleDetails";
-  @import "colours";
+  @import "colours"; 
 }
 
 .subject-hover {
@@ -89,7 +108,7 @@ body {
   margin: 4px;
   text-align: center;
   text-decoration: none;
-  color: black;
+  color: var(--text);
   box-shadow: 0 2px 4px 0 #00000035;
   display: grid;
   grid-template-areas: 
@@ -134,7 +153,7 @@ body {
     }
     p {
       grid-area: author;
-      color: #343434;
+      color: var(--author);
       font-style: italic;
     }
   }

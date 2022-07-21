@@ -1,6 +1,7 @@
 .profileDetails {
   width: calc(100% - 2rem);
   padding: 1rem;
+  min-height: 100vh;
 
   .article-list {
     margin-top: 1rem;
@@ -105,7 +106,7 @@
           }
 
           p {
-            color: grey;
+            color: var(--author);
           }
 
           @media (max-width: 640px) {

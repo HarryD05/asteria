@@ -1,13 +1,13 @@
 .footer {
   p {
-    margin-top: -40px;
+    margin-top: -20px;
     text-align: center;
   }
 
   .footerContent {
     width: 100%;
     height: 400px;
-    background-image: url('./../assets/images/waves/wave1.png');
+    background-image: var(--footer-url);
     background-repeat: no-repeat;
     background-size: cover;
 

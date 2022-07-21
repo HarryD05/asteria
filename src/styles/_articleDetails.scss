@@ -1,6 +1,7 @@
 .articleDetails {
   max-width: 80%;
   width: 800px;
+  min-height: 100vh;
   margin: auto;
   margin-top: 3rem;
   margin-bottom: 1rem;
@@ -20,7 +21,7 @@
       padding: 0;
       width: 100%;
       text-align: center;
-      color: black;
+      color: var(--text);
     }
 
     .circle {
@@ -70,7 +71,8 @@
     padding: 1rem;
     border-radius: 32px;
     text-decoration: none;
-    color: black;
+    color: var(--text);
+    background-color: var(--navbar-bg);
 
     &:hover {
       img {

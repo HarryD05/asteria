@@ -50,6 +50,33 @@ const Navbar = () => {
     setSideOpen(!sideOpen);
   }
 
+  useEffect(() => {
+    if (localStorage.getItem('isDark') == undefined) {
+      const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (isDark) {
+        localStorage.setItem('isDark', '1');
+        document.body.setAttribute('data-theme', 'dark');
+      } else {
+        localStorage.setItem('isDark', '0');
+        document.body.removeAttribute('data-theme');
+      }
+    } else if (localStorage.getItem('isDark') === '1') {
+      document.body.setAttribute('data-theme', 'dark');
+    } else {
+      document.body.removeAttribute('data-theme');
+    }
+  }, [])
+
+  const toggleDarkMode = () => {
+    if (localStorage.getItem('isDark') === '0') {
+      localStorage.setItem('isDark', '1'); 
+      document.body.setAttribute('data-theme', 'dark');
+    } else {
+      localStorage.setItem('isDark', '0'); 
+      document.body.removeAttribute('data-theme');
+    }
+  } 
+
   return (
     <div className="navbar">
       <DrawerToggleButton isOpen={sideOpen} click={toggleSideOpen}></DrawerToggleButton>
@@ -67,6 +94,7 @@ const Navbar = () => {
           <img src={FacebookLogo} alt="Facebook logo"></img>
         </div>
       </div>
+      <button className="dark-btn" onClick={toggleDarkMode}>Toggle</button>
     </div>
   );
 }
