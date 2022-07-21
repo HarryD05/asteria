@@ -32,7 +32,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <p>&#169; 2022 STEAM Project | All Rights Reserved</p>
+      <p>&#169; 2022 Asteria | All Rights Reserved</p>
     </div>
   );
 }

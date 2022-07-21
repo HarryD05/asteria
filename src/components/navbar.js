@@ -1,5 +1,5 @@
 //Importing React dependencies
-import React, {useState, useEffect} from "react";
+import React, {useEffect, useState} from "react";
 
 //Importing assets
 import Logo from "./../assets/images/GatsbyLogo.png";
@@ -19,7 +19,8 @@ const DrawerToggleButton = ({click, isOpen}) => {
   )
 }
 
-const SideDrawer = ({isOpen}) => {
+const SideDrawer = ({isOpen, isDark}) => {
+  const socialClasses = () => isDark ? 'invert' : 'noinvert' ;
   const sideClasses = () => `sideDrawer ${isOpen ? 'show': 'hide'}`;
   const bdClasses = () => `backdrop ${isOpen ? 'show': 'hide'}`;
 
@@ -34,9 +35,9 @@ const SideDrawer = ({isOpen}) => {
           <a href="/about">About</a>
         </div>
         <div className="social-media">
-          <img src={InstagramLogo} alt="Instagram logo"></img>
-          <img src={TwitterLogo} alt="Twitter logo"></img>
-          <img src={FacebookLogo} alt="Facebook logo"></img>
+          <img className={socialClasses()} src={InstagramLogo} alt="Instagram logo"></img>
+          <img className={socialClasses()} src={TwitterLogo} alt="Twitter logo"></img>
+          <img className={socialClasses()} src={FacebookLogo} alt="Facebook logo"></img>
         </div>
       </div>
     </>
@@ -44,43 +45,56 @@ const SideDrawer = ({isOpen}) => {
 }
 
 const Navbar = () => {
-  const [sideOpen, setSideOpen] = useState(false);
-
-  const toggleSideOpen = e => {
-    setSideOpen(!sideOpen);
-  }
-
-  useEffect(() => {
+  const checkDark = () => {
     if (localStorage.getItem('isDark') == undefined) {
       const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
       if (isDark) {
         localStorage.setItem('isDark', '1');
         document.body.setAttribute('data-theme', 'dark');
+        setIsDark(true);
       } else {
         localStorage.setItem('isDark', '0');
         document.body.removeAttribute('data-theme');
+        setIsDark(false);
       }
-    } else if (localStorage.getItem('isDark') === '1') {
+    } else if (window.localStorage.getItem('isDark') === '1') {
       document.body.setAttribute('data-theme', 'dark');
+      setIsDark(true);
     } else {
       document.body.removeAttribute('data-theme');
+      setIsDark(false);
     }
+  }
+
+  const [sideOpen, setSideOpen] = useState(false);
+  const [isDark, setIsDark] = useState(true);
+
+  useEffect(() => {
+    checkDark();
   }, [])
+
+  const toggleSideOpen = e => {
+    setSideOpen(!sideOpen);
+  }
 
   const toggleDarkMode = () => {
     if (localStorage.getItem('isDark') === '0') {
-      localStorage.setItem('isDark', '1'); 
+      window.localStorage.setItem('isDark', '1'); 
       document.body.setAttribute('data-theme', 'dark');
+      setIsDark(true);
     } else {
       localStorage.setItem('isDark', '0'); 
       document.body.removeAttribute('data-theme');
+      setIsDark(false);
     }
   } 
+
+  const socialClasses = () => isDark ? 'invert' : 'noinvert' ;
 
   return (
     <div className="navbar">
       <DrawerToggleButton isOpen={sideOpen} click={toggleSideOpen}></DrawerToggleButton>
-      <SideDrawer isOpen={sideOpen}></SideDrawer>
+      <SideDrawer isDark={isDark} isOpen={sideOpen}></SideDrawer>
       <div className="contents">
         <a href="/"><img src={Logo} alt="Gatsby logo"></img></a>
         <div className="pages">
@@ -89,12 +103,12 @@ const Navbar = () => {
           <a href="/about">About</a>
         </div>
         <div className="social-media">
-          <img src={InstagramLogo} alt="Instagram logo"></img>
-          <img src={TwitterLogo} alt="Twitter logo"></img>
-          <img src={FacebookLogo} alt="Facebook logo"></img>
+          <img className={socialClasses()} src={InstagramLogo} alt="Instagram logo"></img>
+          <img className={socialClasses()} src={TwitterLogo} alt="Twitter logo"></img>
+          <img className={socialClasses()} src={FacebookLogo} alt="Facebook logo"></img>
         </div>
       </div>
-      <button className="dark-btn" onClick={toggleDarkMode}>Toggle</button>
+      <button className="dark-btn" onClick={toggleDarkMode}><div className={`icon ${isDark ? 'invert': 'noinvert'}`}></div></button>
     </div>
   );
 }

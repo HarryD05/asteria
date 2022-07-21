@@ -13,7 +13,7 @@
     top: 75px;
     right: calc(50vw - 100px);
     border-radius: 8px;
-    box-shadow: 0 2px 4px 0 #00000035;
+    box-shadow: 0 2px 4px 0 var(--shadow-colour);
     text-decoration: none;
     padding: 0;
 
@@ -37,10 +37,11 @@
 
     img {
       width: 250px;
-      height:fit-content;
+      height: auto;
       border-radius: 8px;
       margin-right: 8px;
       align-self: center;
+      
     }
 
     .details {
@@ -67,7 +68,7 @@
     margin-bottom: 1rem;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 4px 0 #00000035;
+    box-shadow: 0 2px 4px 0 var(--shadow-colour);
     padding: 1rem;
     border-radius: 32px;
     text-decoration: none;
@@ -104,6 +105,13 @@
   .content {
     img {
       border-radius: 20px;
+      padding: 4px;
+      width: 640px;
+      max-width: 80%;
+      margin: auto;
+      background-color: white;
+      display: flex;
+      justify-self: center;
     }
 
     h2 {

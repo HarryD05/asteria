@@ -17,7 +17,7 @@ const ArticlePreview = ({ Image, Subject, Title, Author, LinkTo, includeAuthor=t
           alt={`Preview picture for article: ${Title}`}>
         </img>
       </div>
-      <div className="articleDetails">
+      <div className="articleDetail">
         <h2>{Title}</h2> 
         {includeAuthor ? <p>{`${Author.first_name} ${Author.surname}`}</p> : <p></p>}
       </div>

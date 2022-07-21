@@ -1,8 +1,8 @@
 {
-  "name": "steam-project",
+  "name": "asteria",
   "version": "1.0.0",
-  "private": true,
-  "description": "steam-project",
+  "private": false,
+  "description": "Asteria is a blog website hosting the STEAM articles created by Reading School and Kendrick students",
   "author": "Harry Davis",
   "keywords": [
     "gatsby"
