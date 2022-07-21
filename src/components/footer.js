@@ -5,7 +5,7 @@ import React from "react";
 import InstagramLogo from "./../assets/images/social-media-logos/Instagram.png";
 import TwitterLogo from "./../assets/images/social-media-logos/Twitter.png";
 import FacebookLogo from "./../assets/images/social-media-logos/Facebook.png";
-import ReadingSchoolLogo from "./../assets/svgs/ReadingSchool.svg";
+import ReadingSchoolLogo from "./../assets/images/schools/ReadingSchool.png";
 import KendrickSchoolLogo from "./../assets/images/schools/Kendrick.png";
 
 import "./../styles/index.scss";
@@ -24,10 +24,10 @@ const Footer = () => {
           <button>Feedback</button>
         </div>
         <div className="schools">
-          <a href="https://www.kendrick.reading.sch.uk/">
+          <a href="https://www.kendrick.reading.sch.uk/" target="_blank" rel="noreferrer">
             <img src={KendrickSchoolLogo} alt="Kendrick logo"></img>
           </a>
-          <a href="https://www.reading-school.co.uk/">
+          <a href="https://www.reading-school.co.uk/" target="_blank" rel="noreferrer">
             <img src={ReadingSchoolLogo} alt="Reading School logo"></img>
           </a>
         </div>

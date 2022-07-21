@@ -52,7 +52,7 @@
       margin-bottom: 120px;
       display: flex;
       justify-content: space-evenly;
-      align-items: center;
+      align-items: center;   
 
       button {
         width: 128px;
@@ -63,6 +63,7 @@
         border-radius: 16px;
         outline: none;
         transition: all ease-in-out 0.3s;
+        color: black;
 
         &:hover {
           cursor: pointer;
