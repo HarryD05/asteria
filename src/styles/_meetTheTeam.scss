@@ -11,9 +11,9 @@
 
   .selector {
     margin: 1rem auto;
-    width: 250px;
+    width: 320px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 
     .shown {
       text-decoration: underline;
@@ -44,7 +44,13 @@
     
     .profilePreview {
       width: 200px;
+      display: flex;
+      justify-content: center;
       padding: 8px;
+
+      .details {
+        width: 100%;
+      }
 
       a {
         text-align: center;
@@ -63,6 +69,18 @@
           box-shadow: 0 3px 4px 0 var(--shadow-colour);
           transition: all ease-in-out 0.3s;
 
+        }
+      }
+
+      @media (max-width: 640px) {
+        width: 150px;
+        h2 {
+          font-size: medium;
+        }
+        a {
+          img {
+            width: 128px;
+          }
         }
       }
     }

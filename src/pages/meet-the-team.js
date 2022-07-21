@@ -19,7 +19,7 @@ import './../styles/index.scss';
 
 const MeetTheTeamPage = ({data}) => {
   const [selected, setSelected] = useState({
-    editor: true, designer: true, writer: true
+    editor: true, designer: true, writer: true, 'co-ordinator': true
   });
   const [profiles, setProfiles] = useState([])
 
@@ -30,9 +30,11 @@ const MeetTheTeamPage = ({data}) => {
 
       let display = false;
       Object.keys(selected).forEach(key => {
-        if (selected[key] && profile.role.toLowerCase() === key) {
-          display = true;
-        }
+        profile.role.forEach(role => {
+          if (selected[key] && role.toLowerCase() === key) {
+            display = true;
+          }
+        })
       })
 
       if (display) {
@@ -83,6 +85,7 @@ const MeetTheTeamPage = ({data}) => {
           <button className={getClass("writer")} onClick={changeSelector} value="writer">Writers</button>
           <button className={getClass("editor")} onClick={changeSelector} value="editor">Editors</button>
           <button className={getClass("designer")} onClick={changeSelector} value="designer">Designers</button>
+          <button className={getClass("co-ordinator")} onClick={changeSelector} value="co-ordinator">Co-ordinator</button>
         </div>
 
         <div className="profiles">

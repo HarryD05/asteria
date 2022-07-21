@@ -2,8 +2,9 @@
   z-index: 1;
 
   p {
-    margin-top: -60px;
+    margin-top: -30px;
     text-align: center;
+    z-index: 2;
   }
 
   .footerContent {
@@ -12,7 +13,7 @@
     background-image: var(--footer-url);
     background-repeat: no-repeat;
     background-size: cover;
-    filter: drop-shadow(2px 2px 4px var(--shadow-colour));   
+    //filter: drop-shadow(2px 2px 4px var(--shadow-colour));   
 
     display: grid;
     grid-template-areas:  'forms schools'
@@ -36,7 +37,6 @@
       margin-top: -360px;
 
       img {
-        background-color: #ffffff;
         border-radius: 50%;
         width: 64px;
 

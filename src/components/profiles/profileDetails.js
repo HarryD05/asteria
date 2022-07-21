@@ -116,7 +116,7 @@ const ProfileDetails = ({ data }) => {
                 <p>{ProfilePronouns(ProfileDetails)}</p>
               </div>
               <p>{ProfileSchool(ProfileDetails)}</p>
-              <p>{ProfileRole(ProfileDetails)}</p>
+              <p>{ProfileRole(ProfileDetails).join(', ')}</p>
             </div>
           </div>
           <Markdown className="content">{ProfileMarkdown(ProfileDetails)}</Markdown>

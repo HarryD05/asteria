@@ -3,7 +3,7 @@ type: "Profile"
 first_name: "Rishabh"
 surname: "Luthra"
 school: "Reading School"
-role: "Writer"
+role: ["Editor", "Writer"]
 pronouns: "HE/HIM"
 userID: "ba8c2047-d40a-4441-ba57-9a6fb94381f9"
 slug: "/profiles/ba8c2047-d40a-4441-ba57-9a6fb94381f9"

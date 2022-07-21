@@ -15,6 +15,7 @@ $border-height: 5px;
   height: 64px;
   background-color: var(--navbar-bg);
   color: var(--text);
+  transition: all ease-in-out 0.3s;
 
   .toggle-btn {
     visibility: hidden;
@@ -139,22 +140,46 @@ $border-height: 5px;
 
     box-shadow: 0 2px 4px 0 #00000012;
 
-    a {
-      width: 10%;
-      img {
-        padding-left: 8px;
+    .logo {
+      max-width: 20%;
+      width: 100%;
+
+      a {
+        max-width: 20%;
         width: 50px;
+        margin-left: 8px;
+
+        img {
+          width: 50px;
+          transition: all 1s ease-in-out;
+          &:hover {
+            transform: rotate(360deg);
+          }
+        }
+      }
+      @media (max-width: 640px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+
+        a {
+          width: 50px;
+          height: 50px;
+        }
       }
     }
+    
 
     .pages {
-      width: 70%;
+      max-width: 70%;
+      width: 480px;
       height: 100%;
       display: flex;
       justify-content: space-around;
 
       a {
-        width: 120px;
+        min-width: 120px;
         text-align: center;
         padding-top: 20px;
         padding-bottom: 20px;
@@ -195,7 +220,6 @@ $border-height: 5px;
         width: 32px;
         height: 32px;
         margin-left: 20px;
-        background: #ffffff;
         border-radius: 50%;
 
         &:hover {

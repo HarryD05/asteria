@@ -16,7 +16,7 @@ const ProfilePreview = ({ Image, Name, Role, LinkTo }) => {
         </img>
         <div className="details">
           <h2>{Name}</h2> 
-          <p>{Role}</p>
+          <p>{Role.join(', ')}</p>
         </div>
       </a>
     </div>
