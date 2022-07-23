@@ -19,6 +19,7 @@ export const ProfileDetailsMapper = Profile =>
     Role: Profile.profiles[0].role,
     School: Profile.profiles[0].school,
     Pronouns: Profile.profiles[0].pronouns,
+    SchoolImage: require(`./../../assets/profiles/images/${Profile.profiles[0].school}.png`),
     MarkDownContent: new TurndownService().turndown(Profile.profiles[0].html)
   };
 
@@ -70,6 +71,18 @@ export const ProfileImage = details => {
       return null;
     } else {
       return details.Image;
+    }
+  }
+}
+
+export const SchoolImage = details => {
+  if (details === null || details === undefined) {
+    return null;
+  } else {
+    if (details.SchoolImage === null || details.SchoolImage === undefined || details.SchoolImage === "") {
+      return null;
+    } else {
+      return details.SchoolImage;
     }
   }
 }

@@ -12,12 +12,17 @@ import ArticlePreview from "./../articles/articlePreview";
 import Footer from "./../footer";
 
 //Importing helpers
-import {ProfileDetailsMapper, ProfileMarkdown, ProfileImage, ProfileName, ProfilePronouns, ProfileRole, ProfileSchool} from './profileHelperFunctions';
+import {ProfileDetailsMapper, ProfileMarkdown, ProfileImage, SchoolImage, ProfileName, ProfilePronouns, ProfileRole, ProfileSchool} from './profileHelperFunctions';
 import {ArticleDetailsMapper} from './../articles/articleHelperFunctions';
 
 import { graphql } from "gatsby";
 
 import "./../../styles/index.scss";
+
+const schoolURLs = {
+  'Reading School': 'https://www.reading-school.co.uk/',
+  'Kendrick School': 'https://www.kendrick.reading.sch.uk/'
+}
 
 const ProfileDetails = ({ data }) => {
   const url = typeof window !== 'undefined' ? window.location.href.split(/[?#]/)[0] : '';
@@ -106,10 +111,12 @@ const ProfileDetails = ({ data }) => {
       <main className="profileDetails">
         <div className="details">
           <div className="top">
-            <img 
-              src={(typeof(ProfileImage(ProfileDetails)) === "string") ? ProfileImage(ProfileDetails) : ProfileImage(ProfileDetails).default} 
-              alt={`profile picture of ${ProfileName(ProfileDetails)}`}>
-            </img>
+            <div className="profilePicture">
+              <img 
+                src={(typeof(ProfileImage(ProfileDetails)) === "string") ? ProfileImage(ProfileDetails) : ProfileImage(ProfileDetails).default} 
+                alt={`profile picture of ${ProfileName(ProfileDetails)}`}>
+              </img>
+            </div>
             <div className="details">
               <div className="name">
                 <h1>{ProfileName(ProfileDetails)}</h1> 
@@ -117,6 +124,14 @@ const ProfileDetails = ({ data }) => {
               </div>
               <p>{ProfileSchool(ProfileDetails)}</p>
               <p>{ProfileRole(ProfileDetails).join(', ')}</p>
+            </div>
+            <div className="schoolPicture">
+              <a href={schoolURLs[ProfileSchool(ProfileDetails)]} target="_blank" rel="noreferrer">
+                <img 
+                  src={(typeof(SchoolImage(ProfileDetails)) === "string") ? SchoolImage(ProfileDetails) : SchoolImage(ProfileDetails).default} 
+                  alt={`Logo of ${ProfileSchool(ProfileDetails)}`}>
+                </img>
+              </a>
             </div>
           </div>
           <Markdown className="content">{ProfileMarkdown(ProfileDetails)}</Markdown>

@@ -25,10 +25,10 @@ const Footer = () => {
         </div>
         <div className="schools">
           <a href="https://www.kendrick.reading.sch.uk/" target="_blank" rel="noreferrer">
-            <img src={KendrickSchoolLogo} alt="Kendrick logo"></img>
+            <img src={KendrickSchoolLogo} alt="Kendrick logo" title="Kendrick School"></img>
           </a>
           <a href="https://www.reading-school.co.uk/" target="_blank" rel="noreferrer">
-            <img src={ReadingSchoolLogo} alt="Reading School logo"></img>
+            <img src={ReadingSchoolLogo} alt="Reading School logo" title="Reading School"></img>
           </a>
         </div>
       </div>
