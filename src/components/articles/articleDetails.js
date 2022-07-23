@@ -91,7 +91,7 @@ const ArticleDetails = ({ data }) => {
     <>
       <SEO seo={{
         ..._.ArticleDetails.SEO,
-        title: `STEAM Project | ${ArticleTitle(ArticleDetails)}`,
+        title: `Asteria | ${ArticleTitle(ArticleDetails)}`,
         image: ArticleImage(ArticleDetails),
         url
       }} />

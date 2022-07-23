@@ -98,7 +98,7 @@ const ProfileDetails = ({ data }) => {
     <>
       <SEO seo={{
         ..._.ProfileDetails.SEO,
-        title: `STEAM Project | ${ProfileName(ProfileDetails)}`,
+        title: `Asteria | ${ProfileName(ProfileDetails)}`,
         image: ProfileImage(ProfileDetails),
         url
       }} />

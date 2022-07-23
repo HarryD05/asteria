@@ -62,13 +62,13 @@
       button {
         width: 128px;
         height: 48px;
-        background: transparent;
+        background: #636E78;
         padding: 16px;
         border: solid black 2px;
         border-radius: 16px;
         outline: none;
         transition: all ease-in-out 0.3s;
-        color: black;
+        color: white;
 
         &:hover {
           cursor: pointer;

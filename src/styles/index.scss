@@ -26,10 +26,11 @@ html {
   --bg: #ffffff;
   --text: #000000;
   --author: #343434;
-  --footer-url: url('./../assets/images/waves/wave1.png');
+  --footer-url: url('./../assets/images/waves/wave3.png');
   --toggle-icon: url('./../assets/images/moon.png');
-  --footer-primary: #FFEDA2;
+  --footer-primary: #9A69A6;
   --shadow-colour: #0000004e;
+  --nav-hover: #8499C1; //#9A69A6;
 }
 
 [data-theme="dark"] {
@@ -37,10 +38,10 @@ html {
   --bg: #333333;
   --text: #f0f0f0;
   --author: #dedede;
-  --footer-url: url('./../assets/images/waves/wave2.png');
   --toggle-icon: url('./../assets/images/sun.png');
-  --footer-primary: #A5C9CA;
+  --footer-primary: #9A69A6;
   --shadow-colour: #f2f2f232;
+  --nav-hover: #9A69A6; //#8499C1;
 }
 
 body {

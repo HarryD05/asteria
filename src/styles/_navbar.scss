@@ -114,7 +114,7 @@ $border-height: 5px;
         justify-content: center;
 
         &:nth-child(1), &:nth-child(2) {
-          border-bottom: solid var(--text) 1px;
+          border-bottom: solid var(--nav-hover) 1px;
         }
       }
     }
@@ -196,7 +196,7 @@ $border-height: 5px;
           left: 50%;
           bottom: 0;
           height: 4px;
-          background: var(--text);
+          background: var(--nav-hover);
         }
 
         &:hover {
@@ -262,7 +262,7 @@ $border-height: 5px;
         height: 2px;
         background: var(--text);
         transition: all ease-in-out 0.3s;
-        background-color: var(--text);
+        background-color: var(--nav-hover);
       }
     }
 
