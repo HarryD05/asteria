@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 
-const defaultTitle = "STEAM Project";
+const defaultTitle = "Asteria";
 const defaultURL = "<URL>";
 
 const SEO = ({ seo = {} }) => {
@@ -16,7 +16,7 @@ const SEO = ({ seo = {} }) => {
 
     metaTags.push({ name: "twitter:card", content: "summary_large_image" });
     metaTags.push({ name: "og:type", content: "website" });
-    metaTags.push({ name: "og:site_name", content: "STEAM Project" });
+    metaTags.push({ name: "og:site_name", content: "Asteria" });
 
     if (seo["description"] !== null && seo["description"] !== undefined) {
       metaTags.push({ name: "description", content: seo["description"] });
