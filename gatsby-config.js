@@ -43,5 +43,11 @@ module.exports = {
         name: `images`  
       }
     },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: `${__dirname}/src/assets/images/logo-lilac.png`,
+      },
+    },
   ]
 };

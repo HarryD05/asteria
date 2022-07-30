@@ -2,7 +2,6 @@
 import React, {useEffect, useState} from "react";
 
 //Importing assets
-import Logo from "./../assets/images/GatsbyLogo.png";
 import InstagramLogo from "./../assets/images/social-media-logos/Instagram.png";
 import TwitterLogo from "./../assets/images/social-media-logos/Twitter.png";
 import FacebookLogo from "./../assets/images/social-media-logos/Facebook.png";
@@ -89,25 +88,23 @@ const Navbar = () => {
     }
   } 
 
-  const socialClasses = () => isDark ? 'invert' : 'noinvert' ;
+  const invertClasses = () => isDark ? 'invert' : 'noinvert' ;
 
   return (
     <div className="navbar">
       <DrawerToggleButton isOpen={sideOpen} click={toggleSideOpen}></DrawerToggleButton>
       <SideDrawer isDark={isDark} isOpen={sideOpen}></SideDrawer>
       <div className="contents">
-        <div className="logo">
-          <a href="/"><img src={Logo} alt="Gatsby logo"></img></a>
-        </div>
+        <a href="/" className="logo"></a>
         <div className="pages">
           <a href="/categories">Categories</a>
           <a href="/meet-the-team">Meet the Team</a>
           <a href="/about">About</a>
         </div>
         <div className="social-media">
-          <img className={socialClasses()} src={InstagramLogo} alt="Instagram logo"></img>
-          <img className={socialClasses()} src={TwitterLogo} alt="Twitter logo"></img>
-          <img className={socialClasses()} src={FacebookLogo} alt="Facebook logo"></img>
+          <img className={invertClasses()} src={InstagramLogo} alt="Instagram logo"></img>
+          <img className={invertClasses()} src={TwitterLogo} alt="Twitter logo"></img>
+          <img className={invertClasses()} src={FacebookLogo} alt="Facebook logo"></img>
         </div>
       </div>
       <button className="dark-btn" onClick={toggleDarkMode}><div className={`icon ${isDark ? 'invert': 'noinvert'}`}></div></button>
