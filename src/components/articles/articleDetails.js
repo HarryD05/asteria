@@ -87,6 +87,8 @@ const ArticleDetails = ({ data }) => {
     window.localStorage.setItem('hash', ArticleSubject(ArticleDetails))
   }
 
+  const image = () => (typeof(ArticleImage(ArticleDetails)) === "string") ? ArticleImage(ArticleDetails) : ArticleImage(ArticleDetails).default;
+
   return (ArticleDetails ?
     <>
       <SEO seo={{
@@ -97,36 +99,24 @@ const ArticleDetails = ({ data }) => {
       }} />
       <main>
         <Navbar />
+        <div className="coverImage" style={{'backgroundImage': `url('${image()}')`}}></div>
         <div className="articleDetails">
-          <a className={`subject-hover bg${ArticleSubject(ArticleDetails)}-light`} href={`/categories`} onClick={changePage}>
-            <p>{`${subjects[ArticleSubject(ArticleDetails)]}`}</p>
-          </a>
-
           <div className="top">
-            <img 
-              src={(typeof(ArticleImage(ArticleDetails)) === "string") ? ArticleImage(ArticleDetails) : ArticleImage(ArticleDetails).default} 
-              alt={`Cover image of ${ArticleTitle(ArticleDetails)}`}>
-            </img>
+            <a className="authorImg" href={AuthorLinkTo(ArticleDetails)}>
+              <img 
+                src={(typeof(AuthorImage(ArticleDetails)) === "string") ? AuthorImage(ArticleDetails) : AuthorImage(ArticleDetails).default} 
+                alt={`Profile picture of ${AuthorName(ArticleDetails)}`}
+              ></img>
+            </a>
             <div className="details">
               <h1>{ArticleTitle(ArticleDetails)}</h1> 
               <p>{ArticleDescription(ArticleDetails)}</p>
+              <div className="authorDetails">
+                <a className="name" href={AuthorLinkTo(ArticleDetails)}>{AuthorName(ArticleDetails)}</a><br />
+                <a className="pronouns" href={AuthorLinkTo(ArticleDetails)}>{AuthorPronouns(ArticleDetails)}</a>
+              </div>
             </div>
           </div>
-
-          <a href={AuthorLinkTo(ArticleDetails)} className="author">
-            <div className="authorDetails">
-              <h3>{AuthorName(ArticleDetails)}</h3>
-              <i>{AuthorPronouns(ArticleDetails)}</i>
-              <p>{AuthorSchool(ArticleDetails)}</p>
-            </div>
-            <div className="authorImg">
-              <img 
-              src={(typeof(AuthorImage(ArticleDetails)) === "string") ? AuthorImage(ArticleDetails) : AuthorImage(ArticleDetails).default} 
-              alt={`Profile picture of ${AuthorName(ArticleDetails)}`}>
-            </img>
-            </div>
-          </a>
-
           <Markdown className="content">{ArticleMarkdown(ArticleDetails)}</Markdown>
         </div>
       </main>
@@ -162,3 +152,43 @@ export const pageQuery = graphql`
     }
   }
 `
+
+
+
+/*
+<main>
+        <Navbar />
+        <div className="articleDetails">
+          <a className={`subject-hover bg${ArticleSubject(ArticleDetails)}-light`} href={`/categories`} onClick={changePage}>
+            <p>{`${subjects[ArticleSubject(ArticleDetails)]}`}</p>
+          </a>
+
+          <div className="top">
+            <img 
+              src={(typeof(ArticleImage(ArticleDetails)) === "string") ? ArticleImage(ArticleDetails) : ArticleImage(ArticleDetails).default} 
+              alt={`Cover image of ${ArticleTitle(ArticleDetails)}`}>
+            </img>
+            <div className="details">
+              <h1>{ArticleTitle(ArticleDetails)}</h1> 
+              <p>{ArticleDescription(ArticleDetails)}</p>
+            </div>
+          </div>
+
+          <a href={AuthorLinkTo(ArticleDetails)} className="author">
+            <div className="authorDetails">
+              <h3>{AuthorName(ArticleDetails)}</h3>
+              <i>{AuthorPronouns(ArticleDetails)}</i>
+              <p>{AuthorSchool(ArticleDetails)}</p>
+            </div>
+            <div className="authorImg">
+              <img 
+              src={(typeof(AuthorImage(ArticleDetails)) === "string") ? AuthorImage(ArticleDetails) : AuthorImage(ArticleDetails).default} 
+              alt={`Profile picture of ${AuthorName(ArticleDetails)}`}>
+            </img>
+            </div>
+          </a>
+
+          <Markdown className="content">{ArticleMarkdown(ArticleDetails)}</Markdown>
+        </div>
+      </main>
+      */
