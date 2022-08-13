@@ -141,32 +141,40 @@ $border-height: 5px;
     box-shadow: 0 2px 4px 0 #00000012;
 
     .logo {
-      max-width: 50px;
-      max-height: 50px;
-      width: 100%;
-      height: 100%;
+      display: block;
+      width: 136px;
+      height: 50px;
 
-      background-image: var(--logo);
-      background-repeat: no-repeat;
-      background-size: contain;
+      a {
+        display: block;
+        width: 50px;
+        height: 50px;
 
-      margin-left: 8px;
-      transition: all 1s ease-in-out;
+        background-image: var(--logo);
+        background-repeat: no-repeat;
+        background-size: contain;
 
-      &:hover {
-        transform: rotate(360deg);
+        margin-left: 8px;
+        transition: all 1s ease-in-out;
+
+        &:hover {
+          transform: rotate(360deg);
+        }
       }
-      
+
       @media (max-width: 640px) {
         display: flex;
         align-items: center;
         justify-content: center;
         margin: 8px auto;
         transition: none;
+
+        a{
+          margin: auto;
+        }
       }
     }
     
-
     .pages {
       max-width: 70%;
       width: 480px;
@@ -207,15 +215,14 @@ $border-height: 5px;
     }
 
     .social-media {
-      width: 20%;
+      width: 128px;
       display: flex;
-      justify-content: right;
-      padding-right: 8px;
+      justify-content: space-between;
+      padding: 8px;
 
       img {
         width: 32px;
         height: 32px;
-        margin-left: 20px;
         border-radius: 50%;
 
         &:hover {

@@ -95,7 +95,7 @@ const Navbar = () => {
       <DrawerToggleButton isOpen={sideOpen} click={toggleSideOpen}></DrawerToggleButton>
       <SideDrawer isDark={isDark} isOpen={sideOpen}></SideDrawer>
       <div className="contents">
-        <a href="/" className="logo"></a>
+        <div className="logo"><a href="/" className="logo-img"></a></div>
         <div className="pages">
           <a href="/categories">Categories</a>
           <a href="/meet-the-team">Meet the Team</a>

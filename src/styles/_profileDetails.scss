@@ -6,7 +6,7 @@
   .article-list {
     margin-top: 1rem;
 
-    @media (max-width: 640px) {
+    @media (max-width: 850px) {
       text-align: center;
     }
 
@@ -24,7 +24,7 @@
           justify-content: left;
 
           @media (max-width: 640px) {
-            justify-content: space-around;
+            justify-content: space-evenly;
             padding: 0;
           }
 
@@ -78,7 +78,7 @@
       align-items: center;
       margin-bottom: 1rem;
 
-      @media (max-width: 640px) {
+      @media (max-width: 850px) {
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -90,7 +90,7 @@
           border-radius: 8px;
           margin-right: 8px;
 
-          @media (max-width: 640px) {
+          @media (max-width: 850px) {
             margin: 0;
           }
         }
@@ -102,7 +102,7 @@
           border-radius: 8px;
           margin-right: 8px;
 
-          @media (max-width: 640px) {
+          @media (max-width: 850px) {
             margin: 0;
           }
         }
@@ -125,7 +125,7 @@
             color: var(--author);
           }
 
-          @media (max-width: 640px) {
+          @media (max-width: 850px) {
             flex-direction: column;
 
             h1 {
