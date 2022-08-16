@@ -20,8 +20,8 @@ const Footer = () => {
           <img src={FacebookLogo} alt="Facebook logo"></img>
         </div>
         <div className="buttons">
-          <button>Contact us</button>
-          <button>Feedback</button>
+          <a onClick={() => alert('Not setup yet')}>Contact us</a>
+          <a href="https://forms.office.com/r/T07YM8j0Y0" target="_blank" rel="noreferrer">Feedback</a>
         </div>
         <div className="schools">
           <a href="https://www.kendrick.reading.sch.uk/" target="_blank" rel="noreferrer">

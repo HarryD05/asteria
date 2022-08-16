@@ -20,7 +20,7 @@ import { graphql } from 'gatsby';
 
 
 const subjects = [
-  [`2BB760`, `Biochem`],
+  [`2BB760`, `Biology & Chemistry`],
   [`9C2111`, `Physics & Technology`],
   [`BFAA34`, `Econ &  Business`],
   [`C8792C`, `Humanities`],

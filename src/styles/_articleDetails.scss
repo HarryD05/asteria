@@ -15,6 +15,29 @@
   margin-top: 2rem;
   margin-bottom: 1rem;
 
+  .subject-hover {
+    display: block;
+    position: absolute;
+    height: 24px;
+    top: calc(5rem + 248px);
+    right: calc(50vw - 100px);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px 0 var(--shadow-colour);
+    text-decoration: none;
+    padding: 0;
+
+    p {
+      padding: 0;
+      width: 100%;
+      text-align: center;
+      color: var(--text);
+    }
+
+    .circle {
+      width: 0;
+    }
+  }
+
   .top {
     width: 100%;
     display: flex;
@@ -74,6 +97,7 @@
 
       a {
         margin: 0;
+        margin-top: 8px;
       }
       
     }
@@ -158,27 +182,5 @@
   }
 }
 
-/*
-.subject-hover {
-  display: block;
-  position: absolute;
-  height: 24px;
-  top: 75px;
-  right: calc(50vw - 100px);
-  border-radius: 8px;
-  box-shadow: 0 2px 4px 0 var(--shadow-colour);
-  text-decoration: none;
-  padding: 0;
 
-  p {
-    padding: 0;
-    width: 100%;
-    text-align: center;
-    color: var(--text);
-  }
 
-  .circle {
-    width: 0;
-  }
-}
-*/

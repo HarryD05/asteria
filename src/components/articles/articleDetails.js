@@ -21,7 +21,7 @@ import { graphql } from "gatsby";
 import "./../../styles/index.scss";
 
 const subjects = {
-  '2BB760': `Biochem`,
+  '2BB760': `Biology & Chemistry`,
   '9C2111': `Physics & Technology`,
   'BFAA34': `Econ &  Business`,
   'C8792C': `Humanities`,
@@ -101,6 +101,10 @@ const ArticleDetails = ({ data }) => {
         <Navbar />
         <div className="coverImage" style={{'backgroundImage': `url('${image()}')`}}></div>
         <div className="articleDetails">
+          <a className={`subject-hover bg${ArticleSubject(ArticleDetails)}-light`} href={`/categories`} onClick={changePage}>
+            <p>{`${subjects[ArticleSubject(ArticleDetails)]}`}</p>
+          </a>
+
           <div className="top">
             <a className="authorImg" href={AuthorLinkTo(ArticleDetails)}>
               <img 
