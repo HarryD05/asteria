@@ -5,6 +5,8 @@ description: 'This article has been written to help you understand the "philosop
 subject: "3E5FCA"
 issue: 1
 preview_image: "MathsImg1.png"
+video_url: null
+video_title: null
 userID: "ba8c2047-d40a-4441-ba57-9a6fb94381f9"
 articleID: "ad64fcfb-1f51-4e3b-99a0-9b6ac4caf53e"
 slug: "/articles/ad64fcfb-1f51-4e3b-99a0-9b6ac4caf53e"

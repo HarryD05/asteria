@@ -53,7 +53,7 @@ const IndexPage = ({data}) => {
       } 
 
       issues[article.Issue].push(<ArticlePreview 
-        key={index} Image={article.Image} Title={article.Title} Author={article.Author} LinkTo={article.LinkTo} Subject={article.Subject}
+        key={index} Image={article.Image} Title={article.Title} Author={article.Author} LinkTo={article.LinkTo} Subject={article.Subject} IsVideo={article.IsVideo}
       />)
     })
 
@@ -97,6 +97,7 @@ query articleQuery3{
           subject
           issue
           preview_image
+          video_url
           slug
           first_name
           surname

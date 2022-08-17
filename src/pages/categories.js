@@ -71,7 +71,9 @@ const CategoriesPage = ({data}) => {
         <div className="previews">
           {articleList.map((article, index) => {
             if (article.Subject === info[0]) {
-              return <ArticlePreview key={index} Image={article.Image} Title={article.Title} Author={article.Author} LinkTo={article.LinkTo} Subject={article.Subject}/>
+              return <ArticlePreview 
+                key={index} Image={article.Image} Title={article.Title} Author={article.Author} LinkTo={article.LinkTo} Subject={article.Subject} IsVideo={article.IsVideo}
+              />
             }
           })}
         </div>
@@ -108,6 +110,7 @@ query articleQuery2{
           subject
           issue
           preview_image
+          video_url
           slug
           first_name
           surname

@@ -29,7 +29,7 @@ html {
   --footer-url: url('./../assets/images/waves/wave3.png');
   --toggle-icon: url('./../assets/images/moon.png');
   --logo: url('./../assets/images/logo-blue.png');
-  --footer-primary: #9A69A6;
+  --footer-primary: #8499C1;
   --shadow-colour: #0000004e;
   --nav-hover: #8499C1; //#9A69A6;
 }
@@ -113,6 +113,7 @@ body {
 .articlePreview {
   width: 200px;
   height: 236px;
+  position: relative;
   text-align: center;
   border-radius: 8px;
   padding: 8px;
@@ -132,8 +133,22 @@ body {
   justify-self: center;
 
   &:hover {
-    img {
+    .top {
       transform: scale(1.025);
+    }
+  }
+
+  .top {
+    transition: ease-in-out 0.2s all;
+
+    p {
+      position: absolute;
+      background-color: var(--footer-primary);
+      color: black;
+      padding: 4px;
+      border-radius: 4px;
+      z-index: 2;
+      left: calc(50% - 25px);
     }
   }
 

@@ -5,6 +5,8 @@ description: "Cycloid really has been the fame of the seventeenth century, but m
 subject: "3E5FCA"
 issue: 2
 preview_image: "Cardioid.jpg"
+video_url: null
+video_title: null
 userID: "aa40995c-750c-4a48-b1b0-e7bfb15e4cd4"
 articleID: "8d9520b0-94ba-44c6-97bd-2d5a8e7e45cc"
 slug: "/articles/8d9520b0-94ba-44c6-97bd-2d5a8e7e45cc"

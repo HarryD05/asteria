@@ -9,7 +9,8 @@ export const ArticlesMapper = Articles =>
     Subject: Article.subject,
     Author: Article.author,
     LinkTo: Article.slug,
-    Issue: Article.issue
+    Issue: Article.issue,
+    IsVideo: (Article.video_url ? true : false)
   }));
 
 export const ArticleDetailsMapper = (Article, includeMarkDown=true, includeAuthor=true) =>
@@ -27,6 +28,11 @@ export const ArticleDetailsMapper = (Article, includeMarkDown=true, includeAutho
       School: Article.articles[0].author.school,
       Image: require(`./../../assets/profiles/images/${Article.articles[0].author.profile_picture}`),
     } : null),
+    Video: {
+      URL: Article.articles[0].video_url,
+      Title: Article.articles[0].video_title,
+      IsVideo: (Article.articles[0].video_url ? true : false)
+    },
     Issue: Article.articles[0].issue,
     LinkTo: Article.articles[0].slug,
     MarkDownContent: (includeMarkDown ? new TurndownService().turndown(Article.articles[0].html) : null),
@@ -90,6 +96,22 @@ export const ArticleImage = details => {
     } else {
       return details.Image;
     }
+  }
+}
+
+export const VideoURL = details => {
+  if (details === null || details === undefined) {
+    return '';
+  } else {
+    return details.Video.URL;
+  }
+}
+
+export const VideoTitle = details => {
+  if (details === null || details === undefined) {
+    return '';
+  } else {
+    return details.Video.Title;
   }
 }
 

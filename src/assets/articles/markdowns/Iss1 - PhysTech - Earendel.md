@@ -5,6 +5,8 @@ description: "One of the first new discoveries due to the revolutionary James We
 subject: "9C2111"
 issue: 1
 preview_image: "Earendel.jpg"
+video_url: null
+video_title: null
 userID: "ba8c2047-d40a-4441-ba57-9a6fb94381f9"
 articleID: "b5405cb9-eef6-4001-a252-e2827847fc2e"
 slug: "/articles/b5405cb9-eef6-4001-a252-e2827847fc2e"

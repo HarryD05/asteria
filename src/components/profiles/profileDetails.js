@@ -84,7 +84,8 @@ const ProfileDetails = ({ data }) => {
       } 
 
       issues[article.Issue].push(<ArticlePreview 
-        key={index} Image={article.Image} Title={article.Title} Author={article.Author} LinkTo={article.LinkTo} Subject={article.Subject} includeAuthor={false}
+        key={index} Image={article.Image} Title={article.Title} Author={article.Author} LinkTo={article.LinkTo} Subject={article.Subject} 
+        includeAuthor={false} IsVideo={article.Video.IsVideo}
       />)
     })
 
@@ -169,6 +170,7 @@ export const pageQuery = graphql`
             userID
             articleID
             preview_image
+            video_url
             issue
           }
         }

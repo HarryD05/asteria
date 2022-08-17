@@ -5,6 +5,8 @@ description: 'This piece examines the ideologies and tactics used by fascist gov
 subject: "CDCEED"
 issue: 2
 preview_image: "Facism.jpg"
+video_url: null
+video_title: null
 userID: "aa40995c-750c-4a48-b1b0-e7bfb15e4cd4"
 articleID: "d98a9a05-fdf5-42b3-b913-1679084cece9"
 slug: "/articles/d98a9a05-fdf5-42b3-b913-1679084cece9"

@@ -3,7 +3,7 @@ type: "Profile"
 first_name: "Harry"
 surname: "Davis"
 school: "Reading School"
-role: ["Designer"]
+role: ["Designer", "Writer"]
 pronouns: "HE/HIM"
 userID: "573a2ab7-0d60-4548-85f2-d85271e10267" #UUID Generator: https://www.uuidgenerator.net/version4
 slug: "/profiles/573a2ab7-0d60-4548-85f2-d85271e10267"

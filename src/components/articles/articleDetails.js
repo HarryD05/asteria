@@ -12,8 +12,8 @@ import Footer from "./../footer";
 
 //Importing helpers
 import {
-  ArticleDescription, ArticleDetailsMapper, ArticleImage, ArticleMarkdown, ArticleSubject, ArticleTitle, 
-  AuthorName, AuthorLinkTo, AuthorImage, AuthorPronouns, AuthorSchool
+  ArticleDescription, ArticleDetailsMapper, ArticleImage, ArticleMarkdown, ArticleSubject, ArticleTitle, VideoURL, VideoTitle,
+  AuthorName, AuthorLinkTo, AuthorImage, AuthorPronouns
 } from './articleHelperFunctions';
 
 import { graphql } from "gatsby";
@@ -89,6 +89,26 @@ const ArticleDetails = ({ data }) => {
 
   const image = () => (typeof(ArticleImage(ArticleDetails)) === "string") ? ArticleImage(ArticleDetails) : ArticleImage(ArticleDetails).default;
 
+  const displayVideo = () => {
+    const Video = {URL: VideoURL(ArticleDetails), Title: VideoTitle(ArticleDetails)}
+
+    console.log(Video)
+
+    if (Video.URL !== null) {
+      return <div className="video_container">
+        <iframe
+          src={Video.URL}
+          title={Video.Title}
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          frameBorder="0"
+          webkitallowfullscreen="true"
+          mozallowfullscreen="true"
+          allowFullScreen
+        />
+      </div>
+    }
+  }
+
   return (ArticleDetails ?
     <>
       <SEO seo={{
@@ -122,6 +142,7 @@ const ArticleDetails = ({ data }) => {
             </div>
           </div>
           <Markdown className="content">{ArticleMarkdown(ArticleDetails)}</Markdown>
+          {displayVideo()}
         </div>
       </main>
       <Footer />
@@ -149,6 +170,8 @@ export const pageQuery = graphql`
             pronouns
             school
             profile_picture
+            video_url
+            video_title
             userID
           }
         }

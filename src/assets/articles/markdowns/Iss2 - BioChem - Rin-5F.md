@@ -5,6 +5,8 @@ description: "Islet amyloid polypeptide (IAPP) or amylin deposits can be found i
 subject: "2BB760"
 issue: 2
 preview_image: "BioChemImg1.png"
+video_url: null
+video_title: null
 userID: "ba8c2047-d40a-4441-ba57-9a6fb94381f9"
 articleID: "cb2cd7a4-41f7-4989-ae89-87aeb64803fc"
 slug: "/articles/cb2cd7a4-41f7-4989-ae89-87aeb64803fc"
