@@ -3,10 +3,18 @@ import React, {useState, useEffect} from 'react';
 
 //Importing components
 import Navbar from '../components/navbar';
-import Footer from "./../components/footer";
+import Footer from './../components/footer';
 import SEO from './../components/seo';
 import ArticlePreview from '../components/articles/articlePreview';
 import ArticleScroller from '../components/articleScroller';
+
+//Importing banners
+import BiochemBanner from './../assets/images/banners/Biochem.jpg';
+import PhysicsTechBanner from './../assets/images/banners/Physics and Technology.jpg';
+import EconBusinessBanner from './../assets/images/banners/Econ and Business.jpg';
+import LiteraturePhilosophyBanner from './../assets/images/banners/Literature and philosophy.jpg';
+import PoliticsPhilosophyBanner from './../assets/images/banners/Politics and Philosophy.jpg';
+import MathsBanner from './../assets/images/banners/Mathematics.jpg';
 
 //Importing constants
 import _ from './../constants/constants';
@@ -20,15 +28,15 @@ import { graphql } from 'gatsby';
 
 
 const subjects = [
-  [`2BB760`, `Biology & Chemistry`],
-  [`9C2111`, `Physics & Technology`],
-  [`BFAA34`, `Econ &  Business`],
+  [`2BB760`, `Biochem`, BiochemBanner],
+  [`9C2111`, `Physics & Technology`, PhysicsTechBanner],
+  [`BFAA34`, `Econ &  Business`, EconBusinessBanner],
   [`C8792C`, `Humanities`],
   [`622058`, `Music`],
   [`376B70`, `Art & Media`],
-  [`AF70BD`, `Literature & Philosophy`],
-  [`CDCEED`, `Politics & Philosophy`],
-  [`3E5FCA`, `Maths`],
+  [`AF70BD`, `Literature & Philosophy`, LiteraturePhilosophyBanner],
+  [`CDCEED`, `Politics & Philosophy`, PoliticsPhilosophyBanner],
+  [`3E5FCA`, `Maths`, MathsBanner],
 ]
 
 const CategoriesPage = ({data}) => {
@@ -65,9 +73,17 @@ const CategoriesPage = ({data}) => {
 
     if (articleList === 0) return <p>No articles</p>;
 
+    const banner = (info) => {
+      if (info.length === 3) {
+        return <div className="banner" style={{'backgroundImage': `url('${info[2]}')`}}></div>
+      } else {
+        return <h2>{info[1]}</h2>;
+      }
+    }
+
     return subjects.map((info, index) => {
       return <div className="subject" key={index} id={info[0]}>
-        <h2>{info[1]}</h2>
+        {banner(info)}
         <div className="previews">
           {articleList.map((article, index) => {
             if (article.Subject === info[0]) {
