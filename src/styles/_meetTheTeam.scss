@@ -11,9 +11,12 @@
 
   .selector {
     margin: 1rem auto;
-    width: 320px;
+    width: 100%;
+    max-width: 400px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
 
     .shown {
       text-decoration: underline;
@@ -25,7 +28,8 @@
 
     button {
       all: unset;
-      
+      margin: 4px;
+
       &:hover {
         cursor: pointer;
       }
@@ -36,11 +40,7 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
-
-    @media (max-width: 640px) {
-      justify-content: space-around;
-    }
+    justify-content: center;
     
     .profilePreview {
       width: 200px;

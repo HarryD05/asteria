@@ -41,6 +41,22 @@ const MeetTheTeamPage = ({data}) => {
         profileList.push(profile);
       } 
     })
+    profileList.sort((a, b) => {
+      if (a.first_name > b.first_name) {
+        return 1;
+      } else if (a.first_name === b.first_name) {
+        if (a.surname > b.surname) {
+          return 1;
+        } else if (a.surname === b.surname) {
+          return 0;
+        } else {
+          return -1;
+        }
+      } else {
+        return -1;
+      }
+    });
+
     setProfiles(profileList);
   }, [selected])
 
