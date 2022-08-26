@@ -7,7 +7,7 @@ pronouns: ""
 role: ["Writer", "Editor"]
 userID: "cd917bfa-a33b-48f6-8279-a276a2811800"
 slug: "/profiles/cd917bfa-a33b-48f6-8279-a276a2811800"
-profile_picture: "placeholder.png"
+profile_picture: "blank.png"
 ---
 
 ## A-Level Subjects

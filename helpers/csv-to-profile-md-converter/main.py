@@ -28,7 +28,7 @@ pronouns: "{data['Pronouns']}"
 role: {data['Roles']}
 userID: ""
 slug: "/profiles/"
-profile_picture: ""
+profile_picture: "blank.png"
 ---
 
 {data['About']}

@@ -12,6 +12,7 @@ import ArticleScroller from '../components/articleScroller';
 import BiochemBanner from './../assets/images/banners/Biochem.jpg';
 import PhysicsTechBanner from './../assets/images/banners/Physics and Technology.jpg';
 import EconBusinessBanner from './../assets/images/banners/Econ and Business.jpg';
+import MusicBanner from './../assets/images/banners/Music.jpg';
 import LiteraturePhilosophyBanner from './../assets/images/banners/Literature and philosophy.jpg';
 import PoliticsPhilosophyBanner from './../assets/images/banners/Politics and Philosophy.jpg';
 import MathsBanner from './../assets/images/banners/Mathematics.jpg';
@@ -32,7 +33,7 @@ const subjects = [
   [`9C2111`, `Physics & Technology`, PhysicsTechBanner],
   [`BFAA34`, `Econ &  Business`, EconBusinessBanner],
   [`C8792C`, `Humanities`],
-  [`622058`, `Music`],
+  [`622058`, `Music`, MusicBanner],
   [`376B70`, `Art & Media`],
   [`AF70BD`, `Literature & Philosophy`, LiteraturePhilosophyBanner],
   [`CDCEED`, `Politics & Philosophy`, PoliticsPhilosophyBanner],
