@@ -38,7 +38,7 @@ const subjects = [
   [`622058`, `Music`, MusicBanner],
   [`376B70`, `Art & Media`, ArtMediaBanner],
   [`AF70BD`, `Literature & Philosophy`, LiteraturePhilosophyBanner],
-  [`CDCEED`, `Politics & Philosophy`, PoliticsPhilosophyBanner],
+  [`ACADED`, `Politics & Philosophy`, PoliticsPhilosophyBanner],
   [`3E5FCA`, `Maths`, MathsBanner],
 ]
 

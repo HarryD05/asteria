@@ -12,14 +12,14 @@
   width: 800px;
   min-height: 100vh;
   margin: auto;
-  margin-top: 2rem;
+  margin-top: 3rem;
   margin-bottom: 1rem;
 
   .subject-hover {
     display: block;
     position: absolute;
     height: 24px;
-    top: calc(5rem + 248px);
+    top: calc(5rem + 256px);
     right: calc(50vw - 100px);
     border-radius: 8px;
     box-shadow: 0 2px 4px 0 var(--shadow-colour);

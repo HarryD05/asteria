@@ -2,7 +2,7 @@
 type: "Article"
 title: "The Fundamental Illegitimacy of Facism"
 description: 'This piece examines the ideologies and tactics used by fascist governments to validate and enforce their authority through Michael Mann''s work Fascists. By explicating Kant''s view of autonomy and progress, found in "An Answer to the Question: What is Enlightenment?" and Foundations of the Metaphysics of Morals, it is demonstrated that people are fundamentally progressive beings with innate capacities for freedom.'
-subject: "CDCEED"
+subject: "ACADED"
 issue: 2
 preview_image: "Facism.jpg"
 video_url: null

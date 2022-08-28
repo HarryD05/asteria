@@ -14,7 +14,7 @@ const subjects = [
   [`622058`, `Music`],
   [`376B70`, `Art & Media`],
   [`AF70BD`, `Literature & Philosophy`],
-  [`CDCEED`, `Politics & Philosophy`],
+  [`ACADED`, `Politics & Philosophy`],
   [`3E5FCA`, `Maths`],
 ]
 
