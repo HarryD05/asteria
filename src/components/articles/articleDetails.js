@@ -21,7 +21,7 @@ import { graphql } from "gatsby";
 import "./../../styles/index.scss";
 
 const subjects = {
-  '2BB760': `Biology & Chemistry`,
+  '2BB760': `Biochem`,
   '9C2111': `Physics & Technology`,
   'BFAA34': `Econ &  Business`,
   'C8792C': `Humanities`,
