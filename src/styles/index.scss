@@ -29,7 +29,7 @@ html {
   --footer-url: url('./../assets/images/waves/wave3.png');
   --toggle-icon: url('./../assets/images/moon.png');
   --logo: url('./../assets/images/logo-blue.png');
-  --footer-primary: #8499C1;
+  --footer-primary: hsl(219, 33%, 64%);
   --shadow-colour: #0000004e;
   --nav-hover: #8499C1; //#9A69A6;
 }
@@ -106,7 +106,7 @@ body {
     border-radius: 50%;
     transition: all ease 0.4s;
     transition-delay: -0.095s;
-    box-shadow: 0 2px 4px 0 var(--shadow-colour);
+    box-shadow: 0 2px 4px 0 #0000004e;
   }
 }
 
