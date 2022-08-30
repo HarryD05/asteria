@@ -35,14 +35,14 @@ html {
 }
 
 [data-theme="dark"] {
-  --navbar-bg: #222222;
-  --bg: #333333;
+  --navbar-bg: #333333;//#222222;
+  --bg: #5a5a5a; //#333333;
   --text: #f0f0f0;
   --author: #dedede;
   --toggle-icon: url('./../assets/images/sun.png');
   --logo: url('./../assets/images/logo-lilac.png');
   --footer-primary: #9A69A6;
-  --shadow-colour: #f2f2f232;
+  --shadow-colour: #0000004e; //#f2f2f232;
   --nav-hover: #9A69A6; //#8499C1;
 }
 
