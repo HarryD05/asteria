@@ -57,6 +57,10 @@
         text-decoration: none;
         color: var(--text);
 
+        h2 {
+          font-size: 1.15em !important;
+        }
+
         &:hover {
           img {
             transform: scale(1.025);
