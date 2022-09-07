@@ -6,9 +6,16 @@ const ArticleShowcase = () => {
   const articles = _.SliderArticles.Articles;
   const sliderRef = useRef();
 
+  const SliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    autoScroll: true
+  };
+
   return (
     <div className="articleShowcase">
-      <SliderComponent className="slider" ref={sliderRef} slides={articles} />
+      <SliderComponent {...SliderSettings} className="slider" ref={sliderRef} slides={articles} />
     </div>
   );
 };

@@ -9,7 +9,7 @@ import "./../styles/index.scss";
 const subjects = [
   [`2BB760`, `Biochem`],
   [`9C2111`, `Physics & Technology`],
-  [`BFAA34`, `Econ &  Business`],
+  [`BFAA34`, `Econ & Business`],
   [`C8792C`, `Humanities`],
   [`622058`, `Music`],
   [`376B70`, `Art & Media`],
