@@ -4,7 +4,7 @@ title: "An introduction to Behavioural economics"
 description: "A modern replacement to Neoclassical economics?"
 subject: "BFAA34"
 issue: 1
-preview_image: "economics1.jpg"
+preview_image: "economics2.jpg"
 video_url: null
 video_title: null
 userID: "fd40af17-976f-4af6-a8f3-b697dc205d23"
