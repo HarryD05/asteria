@@ -18,9 +18,11 @@ import "./../styles/index.scss";
 
 const IndexPage = ({data}) => {
   const [articles, setArticles] = useState([])
+  const [featuredArticles, setFeaturedArticles] = useState([])
 
   useEffect(() => {
     const articleList = [];
+    const featuredList = [];
     const authors = {};
 
     data.allMarkdownRemark.edges.forEach(info => {
@@ -35,11 +37,25 @@ const IndexPage = ({data}) => {
 
     articleList.forEach(article => {
       article.author = authors[article.userID]
+
+      const articleID = article.slug.slice(10);
+      if (_.SliderArticles.Articles.indexOf(articleID) !== -1) {
+        featuredList.push({
+          Title: article.title,
+          Description: article.description,
+          Author: `${article.author.first_name} ${article.author.surname}`,
+          Image: require(`./../assets/articles/images/${article.preview_image}`).default,
+          ArticleLink: article.slug,
+          ProfileLink: article.author.slug
+        })
+      }
     })
 
+
+    setFeaturedArticles(featuredList);
     setArticles(articleList);
   }, [data])
-    
+
   const createIssues = () => {
     const issues = {};
 
@@ -50,11 +66,17 @@ const IndexPage = ({data}) => {
     articleList.forEach((article, index) => {
       if (!issues.hasOwnProperty(article.Issue)) {
         issues[article.Issue] = [];
-      } 
+      }
 
-      issues[article.Issue].push(<ArticlePreview 
+      if (article.Subject === "") {
+        return;
+      }
+
+      issues[article.Issue].push(<ArticlePreview
         key={index} Image={article.Image} Title={article.Title} Author={article.Author} LinkTo={article.LinkTo} Subject={article.Subject} IsVideo={article.IsVideo}
       />)
+
+
     })
 
     const content = [];
@@ -74,7 +96,7 @@ const IndexPage = ({data}) => {
       <main className="home">
         <SEO seo={_.Home.SEO} />
 
-        <ArticleShowcase />
+        <ArticleShowcase articles={featuredArticles} />
 
         <h2>Archive</h2>
         <div className="issues">{createIssues()}</div>

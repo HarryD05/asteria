@@ -35,6 +35,11 @@
     padding: 1rem;
     border-radius: 32px;
 
+    @media (max-width: 640px) {
+      width: 300px;
+      max-width: 80%;
+    }
+
     //Moving the dots to select articles up
     .slick-dots {
       bottom: -10px !important;
@@ -49,14 +54,14 @@
 
     .slide {
       width: calc(100% - 2rem);
-      height: 256px;
+      height: 160px;
       display: flex !important;
       justify-content: space-between;
       flex-direction: row;
       padding: 1rem;
 
       @media (max-width: 640px) {
-        height: 400px;
+        height: 256px;
         flex-direction: column;
         margin-left: -16px;
       }

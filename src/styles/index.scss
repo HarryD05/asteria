@@ -190,8 +190,9 @@ body {
     align-self: center;
 
     img {
-      max-width: 192px;
-      max-height: 128px;
+      object-fit: cover;
+      width: 180px;
+      height: 120px;
       border-radius: 8px;
       transition: all ease-in-out 0.3s;
     }

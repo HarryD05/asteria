@@ -9,8 +9,6 @@ import "./../../styles/index.scss";
 const ArticlePreview = ({ Image, Subject, Title, Author, LinkTo, IsVideo, includeAuthor=true }) => { 
   const classes = () => `articlePreview bg${Subject}-light ${(includeAuthor ? '' : 'noAuthor')}`;
 
-  {console.log(IsVideo)}
-
   return (
     <a href={LinkTo} className={classes()}>
       <div className="top">

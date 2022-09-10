@@ -2,7 +2,7 @@
 type: "Article"
 title: "365 days data science project"
 description: "This is a video summarising the data science project I completed over summer analysing how I spent my time this year."
-subject: "9C2111"
+subject: ""
 issue: 1
 preview_image: "ComSci1.png"
 video_url: https://www.youtube.com/embed/hCLbs3u10Dc
