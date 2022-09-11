@@ -38,7 +38,10 @@ const SliderComponent = React.forwardRef(
             <div className="slide" key={key}>
                 <div className="info">
                   <a href={slide.ArticleLink}>{slide.Title}</a><br />
-                  <a href={slide.ProfileLink}>{slide.Author}</a>
+                  {slide.Authors.map((author, index) => {
+                    return <>{index > 0 ? ", " : ""}<a href={slide.ProfileLinks[index]} className="author">{author}</a></>
+                  })}
+                  
                   <p>{slide.Description}</p>
                 </div>
 

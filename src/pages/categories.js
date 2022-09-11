@@ -65,7 +65,11 @@ const CategoriesPage = ({data}) => {
     })
 
     articleList.forEach(article => {
-      article.author = authors[article.userID]
+      const authorList = [];
+      article.userIDs.forEach(ID => {
+        authorList.push(authors[ID])
+      })
+      article.authors = authorList
     })
 
     setArticles(articleList);
@@ -91,7 +95,7 @@ const CategoriesPage = ({data}) => {
           {articleList.map((article, index) => {
             if (article.Subject === info[0]) {
               return <ArticlePreview 
-                key={index} Image={article.Image} Title={article.Title} Author={article.Author} LinkTo={article.LinkTo} Subject={article.Subject} IsVideo={article.IsVideo}
+                key={index} Image={article.Image} Title={article.Title} Authors={article.Authors} LinkTo={article.LinkTo} Subject={article.Subject} IsVideo={article.IsVideo}
               />
             }
           })}
@@ -130,6 +134,7 @@ query articleQuery2{
           issue
           preview_image
           video_url
+          userIDs
           slug
           first_name
           surname

@@ -49,7 +49,7 @@ const ProfileDetails = ({ data }) => {
           if (info.node.frontmatter.type === "Profile") {
             profiles.push({...info.node.frontmatter, index})
           } else {
-            if (info.node.frontmatter.userID === profileId) {
+            if (info.node.frontmatter.userIDs.indexOf(profileId) !== -1) {
               articles.push({...info.node.frontmatter, index})
             }
           }
@@ -169,6 +169,7 @@ export const pageQuery = graphql`
             subject
             userID
             articleID
+            userIDs
             preview_image
             video_url
             issue

@@ -7,7 +7,7 @@ issue: 1
 preview_image: "ScienceArticles.png"
 video_url: null
 video_title: null
-userID: "e31840a6-04b6-4aca-8784-8d53a9da9418"
+userIDs: ["e31840a6-04b6-4aca-8784-8d53a9da9418"]
 articleID: "d2185462-b328-4362-9a3c-afbe33f27219"
 slug: "/articles/d2185462-b328-4362-9a3c-afbe33f27219"
 ---

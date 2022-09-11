@@ -7,7 +7,7 @@ issue: 1
 preview_image: "SpaceConoly.jpg"
 video_url: null
 video_title: null
-userID: "454e60d1-f934-489d-9abc-ca906a054caf"
+userIDs: ["454e60d1-f934-489d-9abc-ca906a054caf"]
 articleID: "aa9f7f12-99a4-4cd4-97fa-2edf1fc1f2d3"
 slug: "/articles/aa9f7f12-99a4-4cd4-97fa-2edf1fc1f2d3"
 ---

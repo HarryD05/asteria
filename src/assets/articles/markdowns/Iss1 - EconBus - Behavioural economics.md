@@ -7,7 +7,7 @@ issue: 1
 preview_image: "economics2.jpg"
 video_url: null
 video_title: null
-userID: "fd40af17-976f-4af6-a8f3-b697dc205d23"
+userIDs: ["fd40af17-976f-4af6-a8f3-b697dc205d23"]
 articleID: "3151db2f-cae5-4ab4-b61e-bd1ab25f1b3e"
 slug: "/articles/3151db2f-cae5-4ab4-b61e-bd1ab25f1b3e"
 ---

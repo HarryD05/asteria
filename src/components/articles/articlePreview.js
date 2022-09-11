@@ -6,7 +6,7 @@ import _ from "./../../constants/constants"
 
 import "./../../styles/index.scss";
 
-const ArticlePreview = ({ Image, Subject, Title, Author, LinkTo, IsVideo, includeAuthor=true }) => { 
+const ArticlePreview = ({ Image, Subject, Title, Authors, LinkTo, IsVideo, includeAuthor=true }) => { 
   const classes = () => `articlePreview bg${Subject}-light ${(includeAuthor ? '' : 'noAuthor')}`;
 
   return (
@@ -22,7 +22,9 @@ const ArticlePreview = ({ Image, Subject, Title, Author, LinkTo, IsVideo, includ
       </div>
       <div className="articleDetail">
         <h2>{Title}</h2> 
-        {includeAuthor ? <p>{`${Author.first_name} ${Author.surname}`}</p> : <p></p>}
+        {includeAuthor ? <div className="authors">{Authors.map(author => {
+          return <p>{`${author.first_name} ${author.surname}`}</p>;
+        })}</div> : <p></p>}
       </div>
     </a>
   )

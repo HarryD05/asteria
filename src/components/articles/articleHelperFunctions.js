@@ -7,7 +7,7 @@ export const ArticlesMapper = Articles =>
     Image: require(`./../../assets/articles/images/${Article.preview_image}`),
     Title: Article.title,
     Subject: Article.subject,
-    Author: Article.author,
+    Authors: Article.authors,
     LinkTo: Article.slug,
     Issue: Article.issue,
     IsVideo: (Article.video_url ? true : false)
@@ -21,13 +21,16 @@ export const ArticleDetailsMapper = (Article, includeMarkDown=true, includeAutho
     Image: require(`./../../assets/articles/images/${Article.articles[0].preview_image}`),
     Subject: Article.articles[0].subject,
     Description: Article.articles[0].description,
-    Author: (includeAuthor ? {
-      Name: `${Article.articles[0].author.first_name} ${Article.articles[0].author.surname}`,
-      LinkTo: Article.articles[0].author.slug,
-      Pronouns: Article.articles[0].author.pronouns,
-      School: Article.articles[0].author.school,
-      Image: require(`./../../assets/profiles/images/${Article.articles[0].author.profile_picture}`),
-    } : null),
+    Authors: (includeAuthor ? Article.articles[0].authors.map(author => {
+      return {
+        Name: `${author.first_name} ${author.surname}`,
+        LinkTo: author.slug,
+        Pronouns: author.pronouns,
+        School: author.school,
+        Image: require(`./../../assets/profiles/images/${author.profile_picture}`),
+      }
+    })  
+    : null),
     Video: {
       URL: Article.articles[0].video_url,
       Title: Article.articles[0].video_title,
@@ -115,11 +118,11 @@ export const VideoTitle = details => {
   }
 }
 
-export const AuthorName = details => {
+export const AuthorNames = details => {
   if (details === null || details === undefined) {
     return '';
   } else {
-    return details.Author.Name;
+    return details.Authors.map(author => author.Name);
   }
 }
 
@@ -127,34 +130,34 @@ export const AuthorPronouns = details => {
   if (details === null || details === undefined) {
     return '';
   } else {
-    return details.Author.Pronouns;
+    return details.Authors.map(author => author.Pronouns);
   }
 }
 
-export const AuthorSchool = details => {
+export const AuthorSchools = details => {
   if (details === null || details === undefined) {
     return '';
   } else {
-    return details.Author.School;
+    return details.Authors.map(author => author.School);
   }
 }
 
-export const AuthorLinkTo = details => {
+export const AuthorLinkTos = details => {
   if (details === null || details === undefined) {
     return '';
   } else {
-    return details.Author.LinkTo;
+    return details.Authors.map(author => author.LinkTo);
   }
 }
 
-export const AuthorImage = details => {
+export const AuthorImages = details => {
   if (details === null || details === undefined) {
     return null;
   } else {
     if (details.Image === null || details.Image === undefined || details.Image === "") {
       return null;
     } else {
-      return details.Author.Image;
+      return details.Authors.map(author => author.Image);
     }
   }
 }

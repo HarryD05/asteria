@@ -36,17 +36,21 @@ const IndexPage = ({data}) => {
     })
 
     articleList.forEach(article => {
-      article.author = authors[article.userID]
+      const authorList = [];
+      article.userIDs.forEach(ID => {
+        authorList.push(authors[ID])
+      })
+      article.authors = authorList
 
       const articleID = article.slug.slice(10);
       if (_.SliderArticles.Articles.indexOf(articleID) !== -1) {
         featuredList.push({
           Title: article.title,
           Description: article.description,
-          Author: `${article.author.first_name} ${article.author.surname}`,
+          Authors: article.authors.map(author => `${author.first_name} ${author.surname}`),
           Image: require(`./../assets/articles/images/${article.preview_image}`).default,
           ArticleLink: article.slug,
-          ProfileLink: article.author.slug
+          ProfileLinks: article.authors.map(author => author.slug)
         })
       }
     })
@@ -73,7 +77,7 @@ const IndexPage = ({data}) => {
       }
 
       issues[article.Issue].push(<ArticlePreview
-        key={index} Image={article.Image} Title={article.Title} Author={article.Author} LinkTo={article.LinkTo} Subject={article.Subject} IsVideo={article.IsVideo}
+        key={index} Image={article.Image} Title={article.Title} Authors={article.Authors} LinkTo={article.LinkTo} Subject={article.Subject} IsVideo={article.IsVideo}
       />)
 
 
@@ -120,6 +124,7 @@ query articleQuery3{
           issue
           preview_image
           video_url
+          userIDs
           slug
           first_name
           surname

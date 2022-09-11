@@ -44,16 +44,23 @@
     flex-direction: row;
     margin-bottom: 1rem;
 
-    a {
-      width: 160px;
-      height: 160px;
-      align-self: center;
-      margin-right: 1rem;
+    .authorImages {
+      display: flex;
+      flex-direction: column;
 
-      img {
-        min-width: 100%;
-        height: auto;
-        border-radius: 8px;
+      a {
+        width: 160px;
+        height: 160px;
+        align-self: center;
+        margin-right: 1rem;
+        margin-bottom: 8px;
+
+        img {
+          min-width: 100%;
+          height: auto;
+          border-radius: 8px;
+          
+        }
       }
     }
 

@@ -54,14 +54,14 @@
 
     .slide {
       width: calc(100% - 2rem);
-      height: 160px;
+      height: 200px;
       display: flex !important;
       justify-content: space-between;
       flex-direction: row;
       padding: 1rem;
 
       @media (max-width: 640px) {
-        height: 256px;
+        height: 300px;
         flex-direction: column;
         margin-left: -16px;
       }
@@ -93,7 +93,7 @@
           font-size: large;
         }
 
-        :nth-child(3) {
+        .author {
           color: var(--author);
           font-style: italic;
         }

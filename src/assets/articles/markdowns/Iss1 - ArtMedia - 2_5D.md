@@ -7,7 +7,7 @@ issue: 1
 preview_image: "drawing.png"
 video_url: null
 video_title: null
-userID: "7da338a3-5756-4ac9-a269-cd8cfef6f23a"
+userIDs: ["7da338a3-5756-4ac9-a269-cd8cfef6f23a"]
 articleID: "41ffd4a9-7d96-4931-9061-a42a69bb992a"
 slug: "/articles/41ffd4a9-7d96-4931-9061-a42a69bb992a"
 ---

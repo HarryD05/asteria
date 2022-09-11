@@ -7,7 +7,7 @@ issue: 1
 preview_image: "planets1.jpg"
 video_url: null
 video_title: null
-userID: "a9fa03e6-c461-49fe-88bc-74932497c001"
+userIDs: ["a9fa03e6-c461-49fe-88bc-74932497c001"]
 articleID: "63761c07-5c1b-42aa-96de-3c1f47931dcd"
 slug: "/articles/63761c07-5c1b-42aa-96de-3c1f47931dcd"
 ---

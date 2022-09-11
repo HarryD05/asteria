@@ -13,7 +13,7 @@ import Footer from "./../footer";
 //Importing helpers
 import {
   ArticleDescription, ArticleDetailsMapper, ArticleImage, ArticleMarkdown, ArticleSubject, ArticleTitle, VideoURL, VideoTitle,
-  AuthorName, AuthorLinkTo, AuthorImage, AuthorPronouns
+  AuthorNames, AuthorLinkTos, AuthorImages, AuthorPronouns
 } from './articleHelperFunctions';
 
 import { graphql } from "gatsby";
@@ -65,7 +65,11 @@ const ArticleDetails = ({ data }) => {
         })
 
         articles.forEach(article => {
-          article.author = authors[article.userID]
+          const authorList = [];
+          article.userIDs.forEach(ID => {
+            authorList.push(authors[ID])
+          })
+          article.authors = authorList;
         })
       }
 
@@ -89,10 +93,32 @@ const ArticleDetails = ({ data }) => {
 
   const image = () => (typeof(ArticleImage(ArticleDetails)) === "string") ? ArticleImage(ArticleDetails) : ArticleImage(ArticleDetails).default;
 
+  const authorImages = () => {
+    const result = [];
+    for (let i = 0; i < AuthorNames(ArticleDetails).length; i++) {
+      result.push(<a className="authorImg" href={AuthorLinkTos(ArticleDetails)[i]}>
+        <img
+          src={(typeof (AuthorImages(ArticleDetails)[i]) === "string") ? AuthorImages(ArticleDetails)[i] : AuthorImages(ArticleDetails)[i].default}
+          alt={`Profile picture of ${AuthorNames(ArticleDetails)[i]}`}
+        ></img>
+      </a>)
+    }
+    return result;
+  }
+
+  const authorLinks = () => {
+    const result = [];
+    for (let i = 0; i < AuthorNames(ArticleDetails).length; i++) {
+      result.push(<div className="authorDetails">
+        <a className="name" href={AuthorLinkTos(ArticleDetails)[i]}>{AuthorNames(ArticleDetails)[i]}</a><br />
+        <a className="pronouns" href={AuthorLinkTos(ArticleDetails)[i]}>{AuthorPronouns(ArticleDetails)[i]}</a>
+      </div>)
+    }
+    return result;
+  }
+
   const displayVideo = () => {
     const Video = {URL: VideoURL(ArticleDetails), Title: VideoTitle(ArticleDetails)}
-
-    console.log(Video)
 
     if (Video.URL !== null) {
       return <div className="video_container">
@@ -126,19 +152,12 @@ const ArticleDetails = ({ data }) => {
           </a>
 
           <div className="top">
-            <a className="authorImg" href={AuthorLinkTo(ArticleDetails)}>
-              <img 
-                src={(typeof(AuthorImage(ArticleDetails)) === "string") ? AuthorImage(ArticleDetails) : AuthorImage(ArticleDetails).default} 
-                alt={`Profile picture of ${AuthorName(ArticleDetails)}`}
-              ></img>
-            </a>
+            <div className="authorImages">{authorImages()}</div>
+           
             <div className="details">
               <h1>{ArticleTitle(ArticleDetails)}</h1> 
               <p>{ArticleDescription(ArticleDetails)}</p>
-              <div className="authorDetails">
-                <a className="name" href={AuthorLinkTo(ArticleDetails)}>{AuthorName(ArticleDetails)}</a><br />
-                <a className="pronouns" href={AuthorLinkTo(ArticleDetails)}>{AuthorPronouns(ArticleDetails)}</a>
-              </div>
+              {authorLinks()}
             </div>
           </div>
           <Markdown className="content">{ArticleMarkdown(ArticleDetails)}</Markdown>
@@ -165,6 +184,7 @@ export const pageQuery = graphql`
             issue
             slug
             preview_image
+            userIDs
             first_name
             surname
             pronouns

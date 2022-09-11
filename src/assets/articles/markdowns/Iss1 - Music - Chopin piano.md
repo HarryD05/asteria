@@ -7,7 +7,7 @@ issue: 1
 preview_image: "piano.jpg"
 video_url: null
 video_title: null
-userID: "ecade4e7-f379-4353-9ec3-d849f7879dfb"
+userIDs: ["ecade4e7-f379-4353-9ec3-d849f7879dfb"]
 articleID: "3366b58b-8279-4456-8e48-9f7968cb0269"
 slug: "/articles/3366b58b-8279-4456-8e48-9f7968cb0269"
 ---

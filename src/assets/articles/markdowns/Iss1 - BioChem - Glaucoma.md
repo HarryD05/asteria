@@ -7,7 +7,7 @@ issue: 1
 preview_image: "Optician.jpg"
 video_url: null
 video_title: null
-userID: "11360970-c0d2-42d8-baf0-802b9a031281"
+userIDs: ["11360970-c0d2-42d8-baf0-802b9a031281"]
 articleID: "dcdd8fe3-5e78-4253-ae0d-44f3e7c442d5"
 slug: "/articles/dcdd8fe3-5e78-4253-ae0d-44f3e7c442d5"
 ---

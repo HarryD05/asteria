@@ -7,7 +7,7 @@ issue: 1
 preview_image: "Novels.jpg"
 video_url: null
 video_title: null
-userID: "0f527625-6355-4c38-86d8-f1c58d8c80a3"
+userIDs: ["0f527625-6355-4c38-86d8-f1c58d8c80a3"]
 articleID: "91e3a1bc-6a1c-4db1-b0d0-8350d45fa067"
 slug: "/articles/91e3a1bc-6a1c-4db1-b0d0-8350d45fa067"
 ---

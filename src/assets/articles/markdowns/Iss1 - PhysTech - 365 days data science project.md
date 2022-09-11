@@ -7,7 +7,7 @@ issue: 1
 preview_image: "ComSci1.png"
 video_url: https://www.youtube.com/embed/hCLbs3u10Dc
 video_title: "365 Days - What have I done this year? (Data Science Project)"
-userID: "ae28fe8c-6fdc-44c1-8408-6bd4ef7f9d51"
+userIDs: ["ae28fe8c-6fdc-44c1-8408-6bd4ef7f9d51"]
 articleID: "0e2883a8-a0ab-4a4e-825d-6a9f096ef17d"
 slug: "/articles/0e2883a8-a0ab-4a4e-825d-6a9f096ef17d"
 ---
