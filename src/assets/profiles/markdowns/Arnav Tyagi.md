@@ -7,7 +7,7 @@ pronouns: "HE/HIM"
 role: ["Writer"]
 userID: "a9fa03e6-c461-49fe-88bc-74932497c001"
 slug: "/profiles/a9fa03e6-c461-49fe-88bc-74932497c001"
-profile_picture: "blank.png"
+profile_picture: "Arnav Tyagi.png"
 ---
 
 ## A-Level Subjects

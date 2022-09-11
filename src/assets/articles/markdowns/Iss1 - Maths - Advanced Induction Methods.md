@@ -12,4 +12,4 @@ articleID: "ba4dce5d-8508-44f2-ac86-b2509631d88f"
 slug: "/articles/ba4dce5d-8508-44f2-ac86-b2509631d88f"
 ---
 
-Not sure how, maybe link PDF
+![Article](./../images/issue1/maths/advancedinductionmethods.jpg)

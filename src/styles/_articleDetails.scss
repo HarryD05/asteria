@@ -59,7 +59,10 @@
           min-width: 100%;
           height: auto;
           border-radius: 8px;
-          
+        }
+
+        @media(max-width: 640px) {
+          margin-right: 0;
         }
       }
     }

@@ -32,11 +32,7 @@ Finally, I’ll drop a ball onto a peg-board. At every row, the ball may fall on
 ## The simplest chaotic system
 Now we know what chaos is, we can start exploring some chaotic systems. Chaos can originate from the simplest things, and we will now be looking at the simplest chaotic system: the logistic map.
 
-Let’s take a fixed variable r, a variable x (that is between 0 and 1) and another variable (1-x). Now, we can form a simple sequence with x_{n+1} = x_n * (1-x_n) * r. Let’s first take r = 2 and x_0 = 0.25, meaning 1-x_0 = 0.75.
-x_1 = (2)*(0.1)*(0.9) = 0.18
-x_2 = (2)*(0.18)*(1-0.18) = 0.2952
-
-Next, you’ll get values of x_3 = 0.41611392, x_4 = 0.4859262512 (10dp), x_5 = 0.4996038592 (10dp), x_6 = 0.4999996861 (10dp). As you can see, the sequence is getting ever closer to 0.5, which is called the attracting point of the system. The starting value of 0.1 has no relation to the attracting point, as with any starting number between 0 and 1 will yield the same attracting point.
+![Equations](./../images/issue1/maths/chaos1.png)
 
 What’s interesting however, is what happens when we change the value of r. If we change r to 3.1, keep the starting value as 0.1, and round of our results at 2dp, the sequence will go: 
 

@@ -1,7 +1,7 @@
 ---
 type: "Article"
-title: "Your music taste explained"
-description: "Why your music taste is “bad” and there is probably nothing you can do about it."
+title: "Why your “bad” music taste probably isn't your fault"
+description: "Music is a uniting force in a society where chasms grow ever deeper. It gives life rhythm. It’s what the world relies on to keep on turning. But with nearly 8 billion humans on Earth, our tastes are infinitely unique. Join me as I shred sound to get to the heart of why we are who we are."
 subject: "622058"
 issue: 1
 preview_image: "music1.jpg"
@@ -11,6 +11,7 @@ userIDs: ["21bf8680-1107-4bc6-b4d3-19534e357aed"]
 articleID: "9e8bc663-bbc9-4096-8c15-8f2d31d4929a"
 slug: "/articles/9e8bc663-bbc9-4096-8c15-8f2d31d4929a"
 ---
+
 
 ## Introduction
 To the minority of readers still with me after this statement, I assure you that you will be glad to have stayed. I wish not to insult, judge, marginalise or criticise the one uniqueness we all have in this current period of time. In fact, it is the total opposite. I aim to open your eyes to the psychology and sociology behind music. The way that tiny vibrations in air impact our lives can seem like a web too complex to unravel, with connections in all areas. Religion, culture, media, sport; the list is endless. But with so much variation in genres and experiences, nobody is safe from the criticism of The Masses. This article will explore our relationship with music, why we like what we do, why society says its wrong and how, no matter how hard we try, we cannot change our musical taste. 

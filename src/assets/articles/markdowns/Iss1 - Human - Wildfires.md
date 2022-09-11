@@ -1,7 +1,7 @@
 ---
 type: "Article"
 title: "Wildfires, and how they are affected by climate change"
-description: ""
+description: "Exploring some of the effects of climate change on wildfires, in response to the the fires across Europe during the recent summer heatwave."
 subject: "C8792C"
 issue: 1
 preview_image: "wildfires1.jpg"
