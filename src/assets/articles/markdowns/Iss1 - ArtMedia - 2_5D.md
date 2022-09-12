@@ -47,7 +47,6 @@ There is however, a key difference between 2.5D used in games and in films. In v
 
 In conclusion, 2.5D is a relatively generic term that describes a combination of animation styles used in making films and video games or an illusion of 2D and 3D. In fact, most of the entertainment that you usually consume is in fact in 2.5D - you just didn’t know it! Keep an eye out for it next time you watch a Netflix movie thinking it’s entirely either 2D or 3D, looks can be deceiving…
 
-
 ## Bibliography:
 - https://www.insider.com/how-wolfwalkers-used-3d-tech-to-transform-25d-animation-2021-2#:~:text=But%20many%20films%20actually%20fall,a%20unique%20hand%2Ddrawn%20style.
 - https://mangaplanet.com/what-is-25d/

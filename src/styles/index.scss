@@ -138,10 +138,27 @@ body {
     }
   }
 
+  .issue {
+    position: absolute;
+    //background-color: var(--nav-hover);
+    //color: var(--text);
+    padding: 4px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    z-index: 2;
+    left: -5px;
+    top: -5px;
+    
+    background-color: white;
+    color: black;
+    border: grey 1px solid;
+  }
+
   .top {
     transition: ease-in-out 0.2s all;
 
-    p {
+    .video {
       position: absolute;
       background-color: var(--footer-primary);
       color: black;
@@ -157,7 +174,7 @@ body {
     display: grid;
     width: 200px;
     min-width: 200px;
-    height: 100px;
+    height: 130px;
     margin-left: 0px;
     margin: 0;
 
@@ -166,7 +183,7 @@ body {
       "author";
     grid-template-rows: 
       80px
-      20px;
+      50px;
 
     h2 {
       grid-area: title;
@@ -178,10 +195,15 @@ body {
         font-size:medium;
       }
     }
-    p {
+    .authors {
       grid-area: author;
       color: var(--author);
       font-style: italic;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100%;
     }
   }
 

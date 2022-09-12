@@ -54,14 +54,14 @@
 
     .slide {
       width: calc(100% - 2rem);
-      height: 200px;
+      height: 216px;
       display: flex !important;
       justify-content: space-between;
       flex-direction: row;
       padding: 1rem;
 
       @media (max-width: 640px) {
-        height: 300px;
+        height: 320px;
         flex-direction: column;
         margin-left: -16px;
       }

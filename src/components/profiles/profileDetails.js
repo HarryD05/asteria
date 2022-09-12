@@ -84,7 +84,7 @@ const ProfileDetails = ({ data }) => {
       } 
 
       issues[article.Issue].push(<ArticlePreview 
-        key={index} Image={article.Image} Title={article.Title} Author={article.Author} LinkTo={article.LinkTo} Subject={article.Subject} 
+        key={index} Image={article.Image} Title={article.Title} Issue={article.Issue} Author={article.Author} LinkTo={article.LinkTo} Subject={article.Subject} 
         includeAuthor={false} IsVideo={article.Video.IsVideo}
       />)
     })
@@ -93,7 +93,7 @@ const ProfileDetails = ({ data }) => {
     const keys = Object.keys(issues).map(issue => Number(issue));
     for (let i = Math.min(...keys); i <= Math.max(...keys); i++) {
       if (issues.hasOwnProperty(i)) {
-        content.push(<div className="issueSection" key={i}><h3>Issue {i}</h3><div className="issueArticles">{issues[i].map(article => article)}</div></div>)
+        content.push(<div className="issueArticles">{issues[i].map(article => article)}</div>)
       }
     }
 

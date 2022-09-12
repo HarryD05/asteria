@@ -1,7 +1,7 @@
 ---
 type: "Article"
 title: "Electrical Signalling in the Body"
-description: "In this article, we will be discussing the fundamentals of electrical signalling in the body. Electricity is required for the nervous system to send signals throughout the body and to the brain, making it possible for us to move, think and feel. This is only possible through our nervous systems and the use of neurons and action potentials."
+description: "Whether neurons are sensory, motor, big or small, one thing they all have in common is that their activity is both electrical and chemical. The cooperation between neurons forms the basis of our central nervous system and understanding how cells conduct electricity is vital to grasping its complexity, as well as aiding us when problems arise."
 subject: "2BB760"
 issue: 1
 preview_image: "synapse.jpg"
@@ -11,6 +11,8 @@ userIDs: ["da0695a7-2ed7-4bc7-aa5b-b7e4595f80b5", "226bdcc6-15f2-463c-8e31-83c74
 articleID: "d9a6d0f1-ee32-4056-b100-16d7b2105611"
 slug: "/articles/d9a6d0f1-ee32-4056-b100-16d7b2105611"
 ---
+
+In this article, we will be discussing the fundamentals of electrical signalling in the body. Electricity is required for the nervous system to send signals throughout the body and to the brain, making it possible for us to move, think and feel. This is only possible through our nervous systems and the use of neurons and action potentials.
 
 In the early nineteenth century, the nature of electricity remained vague to scientists. The history of bioelectricity began in 18th century Bologna, Italy when scientist Luigi Galvani was dissecting a frog [1]. As his assistant touched a nerve in the frog's leg with a metal scalpel, he noticed that it picked up static charge causing the frog's leg to move. Later another scientist called Alessandro Volta repeated Galvani’s experiments [2], but doubted the existence of an electric fluid intrinsic to animals. Further research led to him developing the first battery, proving that electricity could be generated outside of a living creature. Today, galvanism is known as the electrical phenomena in living beings.
 
