@@ -46,6 +46,16 @@ html {
   --nav-hover: #9A69A6; //#8499C1;
 }
 
+@font-face {
+  font-family: 'Techna Sans';
+  src: url(./../assets/fonts/TechnaSans-Regular.otf);
+}
+
+@font-face {
+  font-family: 'Gontserrat';
+  src: url(./../assets/fonts/Gontserrat-Regular.ttf);
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
@@ -62,6 +72,15 @@ body {
   @import "meetTheTeam";
   @import "articleDetails";
   @import "colours"; 
+}
+
+h1 {
+  font-family: 'Gontserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2, h3 {
+  font-family: 'Techna Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: normal;
 }
 
 .subject-hover {

@@ -1,7 +1,7 @@
 ---
 type: "Article"
 title: "Applications of Advanced Induction Methods"
-description: ""
+description: "Induction is a common proof method in A-level further maths. I aim to explain some important advanced methods not covered in the curriculum and their applications in proving significant mathematical theorems, including forward-backward induction, two-dimensional-dimensional induction, and more."
 subject: "3E5FCA"
 issue: 1
 preview_image: "Domino-Effect.jpg"

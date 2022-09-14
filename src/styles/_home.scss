@@ -35,7 +35,7 @@
     padding: 1rem;
     border-radius: 32px;
 
-    @media (max-width: 640px) {
+    @media (max-width: 800px) {
       width: 300px;
       max-width: 80%;
     }
@@ -60,7 +60,7 @@
       flex-direction: row;
       padding: 1rem;
 
-      @media (max-width: 640px) {
+      @media (max-width: 800px) {
         height: 320px;
         flex-direction: column;
         margin-left: -16px;
@@ -73,7 +73,7 @@
       .info {
         width: 50%;
 
-        @media (max-width: 640px) {
+        @media (max-width: 800px) {
           width: 100%;
           font-size: small;
           margin-bottom: 8px;
@@ -104,7 +104,7 @@
         max-width: 280px;
         margin: auto;
 
-        @media (max-width: 640px) {
+        @media (max-width: 800px) {
           width: 100%;
         }
 
@@ -117,7 +117,7 @@
             transform: scale(1.05);
           }
 
-          @media (max-width: 640px) {
+          @media (max-width: 800px) {
             margin: auto;
             max-height: 96px;
             width: auto;

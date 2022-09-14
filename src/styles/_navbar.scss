@@ -17,6 +17,9 @@ $border-height: 5px;
   color: var(--text);
   transition: all ease-in-out 0.3s;
 
+  font-family: 'Gontserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
   .toggle-btn {
     visibility: hidden;
     z-index: 4;
@@ -149,7 +152,7 @@ $border-height: 5px;
         display: block;
         width: 50px;
         height: 50px;
-
+        
         background-image: var(--logo);
         background-repeat: no-repeat;
         background-size: contain;
@@ -187,10 +190,10 @@ $border-height: 5px;
       justify-content: space-around;
 
       a {
-        min-width: 120px;
+        min-width: 128px;
         text-align: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 24px;
+        padding-bottom: 16px;
         text-decoration: none;
         color: var(--text);
         height: calc(100% - 40px);
