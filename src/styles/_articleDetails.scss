@@ -8,91 +8,101 @@
 }
 
 .a2BB760 {
-  a,
-  h1,
-  h2,
-  h3 {
+  a {
     color: var(--biochem);
+  }
+
+  h2 {
+    padding-left: 6px;
+    border-left: solid var(--biochem) 4px;
   }
 }
 
 .a9C2111 {
-
-  a,
-  h1,
-  h2,
-  h3 {
+  a {
     color: var(--phystech);
+  }
+
+  h2 {
+    padding-left: 6px;
+    border-left: solid var(--phystech) 4px;
   }
 }
 
 .aBFAA34 {
-
-  a,
-  h1,
-  h2,
-  h3 {
+  a {
     color: var(--econ);
+  }
+
+  h2 {
+    padding-left: 6px;
+    border-left: solid var(--econ) 4px;
   }
 }
 
 .aC8792C {
-
-  a,
-  h1,
-  h2,
-  h3 {
+  a {
     color: var(--human);
+  }
+
+  h2 {
+    padding-left: 6px;
+    border-left: solid var(--human) 4px;
   }
 }
 
 .a622058 {
-
-  a,
-  h1,
-  h2,
-  h3 {
+  a {
     color: var(--music);
+  }
+
+  h2 {
+    padding-left: 6px;
+    border-left: solid var(--music) 4px;
   }
 }
 
 .a376B70 {
-
-  a,
-  h1,
-  h2,
-  h3 {
+  a {
     color: var(--art);
+  }
+
+  h2 {
+    padding-left: 6px;
+    border-left: solid var(--art) 4px;
   }
 }
 
 .aAF70BD {
-
-  a,
-  h1,
-  h2,
-  h3 {
+  a {
     color: var(--lit);
+  }
+
+  h2 {
+    padding-left: 6px;
+    border-left: solid var(--lit) 4px;
   }
 }
 
 .aACADED {
-
-  a,
-  h1,
-  h2,
-  h3 {
+  a {
     color: var(--pol);
+  }
+
+  h2 {
+    padding-left: 6px;
+    border-left: solid var(--pol) 4px;
   }
 }
 
 .a3E5FCA {
-
-  a,
-  h1,
-  h2,
-  h3 {
+  a {
     color: var(--maths);
+  }
+
+  h2 {
+    padding-left: 6px;
+    border-left: solid var(--maths) 4px;
   }
 }
 
@@ -249,7 +259,6 @@
       height: 100%;
     }
   }
-  
 
   .content {
     .gatsby-resp-image-wrapper {
