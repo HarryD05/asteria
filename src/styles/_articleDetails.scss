@@ -7,6 +7,95 @@
   box-shadow: #00000066 0px 2px 4px, #0000004d 0px 7px 13px -3px, #00000033 0px -3px 0px inset;
 }
 
+.a2BB760 {
+  a,
+  h1,
+  h2,
+  h3 {
+    color: var(--biochem);
+  }
+}
+
+.a9C2111 {
+
+  a,
+  h1,
+  h2,
+  h3 {
+    color: var(--phystech);
+  }
+}
+
+.aBFAA34 {
+
+  a,
+  h1,
+  h2,
+  h3 {
+    color: var(--econ);
+  }
+}
+
+.aC8792C {
+
+  a,
+  h1,
+  h2,
+  h3 {
+    color: var(--human);
+  }
+}
+
+.a622058 {
+
+  a,
+  h1,
+  h2,
+  h3 {
+    color: var(--music);
+  }
+}
+
+.a376B70 {
+
+  a,
+  h1,
+  h2,
+  h3 {
+    color: var(--art);
+  }
+}
+
+.aAF70BD {
+
+  a,
+  h1,
+  h2,
+  h3 {
+    color: var(--lit);
+  }
+}
+
+.aACADED {
+
+  a,
+  h1,
+  h2,
+  h3 {
+    color: var(--pol);
+  }
+}
+
+.a3E5FCA {
+
+  a,
+  h1,
+  h2,
+  h3 {
+    color: var(--maths);
+  }
+}
+
 .articleDetails {
   max-width: 80%;
   width: 800px;
@@ -160,60 +249,6 @@
       height: 100%;
     }
   }
-
-  .a2BB760 {
-    a { 
-      color: #2bb760;
-    }
-  }
-
-  .a9C2111 {
-    a {
-      color: #9C2111;
-    }
-  }
-
-  .aBFAA34 {
-    a {
-      color: #BFAA34;
-    }
-  }
-
-  .aC8792C {
-    a {
-      color: #C8792C;
-    }
-  }
-
-  .a622058 {
-    a {
-      color: #622058;
-    }
-  }
-
-  .a376B70 {
-    a {
-      color: #376B70;
-    }
-  }
-
-  .aAF70BD {
-    a {
-      color: #AF70BD;
-    }
-  }
-
-  .aACADED {
-    a {
-      color: #ACADED;
-    }
-  }
-
-  .a3E5FCA {
-    a {
-      color: #3E5FCA;
-    }
-  }
   
 
   .content {
@@ -305,6 +340,10 @@
     }
 
     @media (max-width: 800px) {
+      .katex {
+        font: normal 0.8em KaTeX_Main, Times New Roman, serif;
+      }
+
       .image-card-left, .image-card-right {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;

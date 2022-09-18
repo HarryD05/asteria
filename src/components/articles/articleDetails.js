@@ -163,7 +163,7 @@ const ArticleDetails = ({ data }) => {
           <div className="top">      
             <div className="authors">{authorImages()}</div>   
             <div className="details">
-              <h1>{ArticleTitle(ArticleDetails)}</h1> 
+              <div className={`a${ArticleSubject(ArticleDetails)}`}><h1>{ArticleTitle(ArticleDetails)}</h1></div>
               <p>{ArticleDescription(ArticleDetails)}</p>
             </div>
           </div>

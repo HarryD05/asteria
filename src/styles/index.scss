@@ -32,6 +32,16 @@ html {
   --footer-primary: #859ac1;
   --shadow-colour: #0000004e;
   --nav-hover: #8499C1; //#9A69A6;
+
+  --biochem: #2bb760;
+  --phystech: #9C2111;
+  --econ: #9f8e29;
+  --human: #C8792C;
+  --music: #712967;
+  --art: #2c565a;
+  --lit: #AF70BD;
+  --pol: #6e70ce;
+  --maths: #3E5FCA;
 }
 
 [data-theme="dark"] {
@@ -44,6 +54,13 @@ html {
   --footer-primary: #9A69A6;
   --shadow-colour: #0000004e; //#f2f2f232;
   --nav-hover: #9A69A6; //#8499C1;
+
+  --phystech: #c53a27;
+  --econ: #b49e25;
+  --music: #b466a8;
+  --art: #5dadb4;
+  --pol: #ACADED;
+  --maths: #6e8cf0;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&display=swap');

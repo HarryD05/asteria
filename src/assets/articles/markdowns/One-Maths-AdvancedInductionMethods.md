@@ -98,7 +98,7 @@ Now in the strong inductive step, we show that for any $n$, $P(n - 1)$ and $P(n)
 
 $$
 \begin{aligned}
-F_{n + 1} &= F{n} + F_{n - 1} \\\
+F_{n + 1} &= F_{n} + F_{n - 1} \\\
 &= \frac{\phi^{n} - \psi^{n}}{\phi - \psi} + \frac{\phi^{n - 1} - \psi^{n - 1}}{\phi - \psi} \\\
 &= \frac{(\phi^{n} + \phi^{n - 1}) - (\psi^{n} + \psi^{n - 1})}{\phi - \psi} \\\
 &= \frac{\phi^{n + 1} - \psi^{n + 1}}{\phi - \psi}
@@ -225,7 +225,7 @@ f(m+1,n) &= f(m,n) +2(m+n)  \\\
 f(m,n+1) &= f(m,n) +2(m+n-1)
 \end{aligned}
 $$
-_Show that $f(m,n) = (m+n)^{2} – (m+n) – 2n +2$._
+_Show that $f(m,n) = (m + n)^{2} – (m + n) – 2n +2$._
 
 ## Advanced Methods
 
@@ -235,7 +235,7 @@ As a rigorous explanation of these methods would be well beyond the scope of thi
 
 Structural induction is a technique common in graph theory and computer science concerning recursively defined structures such as formulas or tree graphs. Essentially, for some structure $x$, a proof of a property $P(x)$ constitutes showing that $P$ holds on some minimal substructure such as a single node of a graph. Then, it is shown that if $P$ holds for the immediate substructures of some $S$, then it must also hold for $S$.  
 
-The most important theorem that uses structural induction in its proof is Lo´s’s theorem, also known as the fundamental theorem of ultraproducts (which are defined as a quotient of a direct product of a family of structures). 
+The most important theorem that uses structural induction in its proof is Łoś's theorem, also known as the fundamental theorem of ultraproducts (which are defined as a quotient of a direct product of a family of structures). 
 
 ### Transfinite Induction
 
