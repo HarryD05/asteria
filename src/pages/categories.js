@@ -54,12 +54,12 @@ const CategoriesPage = ({data}) => {
     const articleList = [];
     const authors = {};
 
-    data.allMarkdownRemark.edges.forEach(info => {
-      info = info.node.frontmatter;
+    data.allMarkdownRemark.nodes.forEach(info => {
+      info = info.frontmatter;
 
       if (info.type === "Article") {
         articleList.push(info);
-      } else {
+      } else if (info.type === "Profile") {
         authors[info.userID] = info;
       }
     })
@@ -124,22 +124,21 @@ export default CategoriesPage;
 export const pageQuery = graphql`
 query articleQuery2{
   allMarkdownRemark{
-    edges{
-      node{
-        frontmatter {
-          type
-          title
-          description
-          subject
-          issue
-          preview_image
-          video_url
-          userIDs
-          slug
-          first_name
-          surname
-          userID
-        }
+    nodes{
+      frontmatter {
+        type
+        title
+        description
+        subject
+        issue
+        preview_image
+        video_url
+        userIDs
+        slug
+        first_name
+        surname
+        userID
+      
       }
     }
   }

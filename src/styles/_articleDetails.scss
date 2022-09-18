@@ -31,6 +31,7 @@
       width: 100%;
       text-align: center;
       color: var(--text);
+      margin-top: 4px;
     }
 
     .circle {
@@ -42,33 +43,9 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    margin-bottom: 1rem;
-
-    .authorImages {
-      display: flex;
-      flex-direction: column;
-
-      a {
-        width: 160px;
-        height: 160px;
-        align-self: center;
-        margin-right: 1rem;
-        margin-bottom: 8px;
-
-        img {
-          min-width: 100%;
-          height: auto;
-          border-radius: 8px;
-        }
-
-        @media(max-width: 640px) {
-          margin-right: 0;
-        }
-      }
-    }
 
     .details {
-      width: calc(100% - 160px - 1rem);
+      width: 100%;
 
       h1 {
         margin-bottom: 8px;
@@ -76,20 +53,6 @@
 
       p {
         margin-bottom: 8px;
-      }
-
-      .authorDetails {
-        .name {
-          margin-top: 8px;
-          text-decoration: none;
-          color: var(--text);
-          font-weight: bold;
-        }
-      
-        .pronouns{
-          color: var(--author);
-          text-decoration: none;
-        }
       }
     }
 
@@ -113,36 +76,57 @@
     }
   }
 
-  .author {
+  .authors {
     display: flex;
     flex-direction: row;
-    width: 300px;
-    max-width: 80%;
+    //width: 300px;
+    //max-width: 80%;
     margin: auto;
-    margin-bottom: 1rem;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 4px 0 var(--shadow-colour);
-    padding: 1rem;
+    //box-shadow: 0 2px 4px 0 var(--shadow-colour);
     border-radius: 32px;
     text-decoration: none;
     color: var(--text);
-    background-color: var(--navbar-bg);
+    //background-color: var(--navbar-bg);
 
-    &:hover {
-      img {
-        transform: scale(1.025);
-      }
-    }
+    .author {
+      width: 128px;
+      padding-right: 1rem;
+      align-self: center;
 
-    .authorImg {
-      width: 96px;
-    
-      img {
-        border-radius: 8px;
-        transition: all ease-in-out 0.3s;
+      &:hover {
+        img {
+          transform: scale(1.025);
+        }
       }
-    }
+
+      .authorImg {
+        img {
+          width: 96px;
+          margin-left: 16px;
+          border-radius: 8px;
+          transition: all ease-in-out 0.3s;
+        }
+      }
+
+      .authorDetails {
+        width: 100%;
+        height: 56px;
+        text-align: center;
+        .name {
+          margin-top: 8px;
+          text-decoration: none;
+          color: var(--text);
+          font-weight: bold;
+        }
+
+        .pronouns {
+          color: var(--author);
+          text-decoration: none;
+        }
+      }
+  }
 
     @media (max-width: 640px) {
       width: 200px;
@@ -152,6 +136,10 @@
 
       .authorImg {
         margin-top: 8px;
+
+        img {
+          margin: 0 !important;
+        }
       }
     }
   }
@@ -173,11 +161,77 @@
     }
   }
 
+  .a2BB760 {
+    a { 
+      color: #2bb760;
+    }
+  }
+
+  .a9C2111 {
+    a {
+      color: #9C2111;
+    }
+  }
+
+  .aBFAA34 {
+    a {
+      color: #BFAA34;
+    }
+  }
+
+  .aC8792C {
+    a {
+      color: #C8792C;
+    }
+  }
+
+  .a622058 {
+    a {
+      color: #622058;
+    }
+  }
+
+  .a376B70 {
+    a {
+      color: #376B70;
+    }
+  }
+
+  .aAF70BD {
+    a {
+      color: #AF70BD;
+    }
+  }
+
+  .aACADED {
+    a {
+      color: #ACADED;
+    }
+  }
+
+  .a3E5FCA {
+    a {
+      color: #3E5FCA;
+    }
+  }
+  
+
   .content {
+    .gatsby-resp-image-wrapper {
+      max-width: 80%;
+      .gatsby-resp-image-link {
+        
+        .gatsby-resp-image-background-image {
+          background-image: none !important;
+          width: 0 !important;
+          height: 0 !important;
+        }
+      }
+    }
+
     img {
       border-radius: 8px;
       padding: 0px;
-      max-width: 80%;
       margin: auto;
       background-color: white;
       display: flex;
@@ -185,7 +239,7 @@
     }
 
     h2 {
-      margin: 0 0 10px;
+      margin: 10px 0;
       font-size: 1.6em;
       font-weight: 500;
       letter-spacing: -0.2px;
@@ -194,7 +248,8 @@
 
     ul,
     ol,
-    p {
+    p,
+    em {
       margin: 0 auto 15px;
       font-size: 1em;
       letter-spacing: 0.4px;
@@ -202,21 +257,136 @@
       word-wrap: break-word;
     }
 
+    .centre {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
     ul,
     ol {
-      margin: auto 15px;
+      margin: auto 25px;
       margin-bottom: 8px;
     }
 
     a {
-      text-decoration: none;
-      color: var(--nav-hover);
+      text-decoration: none;      
     }
-  }
 
-  img {
-    max-width: 80%;
-    margin: auto;
+    .image-card-left {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      margin-bottom: 1rem;
+
+      p, em {
+        margin: 0;
+      }
+
+      .image {
+        margin-right: 1rem;
+        align-self: center;
+      }
+    }
+
+    .image-card-right {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      margin-bottom: 1rem;
+
+      p, em {
+        margin: 0;
+      }
+
+      .image {
+        margin-left: 1rem;
+        align-self: center;
+      }
+    }
+
+    @media (max-width: 800px) {
+      .image-card-left, .image-card-right {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        .image {
+          margin: 0;
+          margin-bottom: 1rem;
+          text-align: center;
+        }
+      }
+    }
+
+    .image {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .img {
+      width: 100%;
+
+      .gatsby-resp-image-link {
+        margin: auto !important;
+      }
+    }
+
+    .multi-image-row {
+      &-2 {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 1rem;
+    
+        .image {
+          width: 50%;
+          text-align: center;
+    
+          .img {
+            width: 50%;
+            margin: auto;
+          }
+
+          p {
+            height: 30px;
+          }
+        }
+    
+        @media (max-width: 800px) {
+          flex-direction: column;
+    
+          .image {
+            width: 100%;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+
+      &-4 {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 1rem;
+
+        .image {
+          width: 25%;
+          text-align: center;
+
+          p {
+            height: 30px;
+          }
+        }
+
+        @media (max-width: 800px) {
+          flex-direction: column;
+          
+          .image {
+            width: 100%;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+
+    
   }
 }
 

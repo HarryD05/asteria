@@ -19,27 +19,29 @@ import './../styles/index.scss';
 
 const MeetTheTeamPage = ({data}) => {
   const [selected, setSelected] = useState({
-    editor: true, designer: true, writer: true, 'co-ordinator': true
+    editor: true, designer: true, writer: true, 'chief editor': true, 'co-ordinator': true
   });
   const [profiles, setProfiles] = useState([])
 
   useEffect(() => {
     const profileList = [];
-    data.allMarkdownRemark.edges.forEach(profile => {
-      profile = profile.node.frontmatter;
+    data.allMarkdownRemark.nodes.forEach(profile => {
+      if (profile.frontmatter.type === "Profile") {
+        profile = profile.frontmatter;
 
-      let display = false;
-      Object.keys(selected).forEach(key => {
-        profile.role.forEach(role => {
-          if (selected[key] && role.toLowerCase() === key) {
-            display = true;
-          }
+        let display = false;
+        Object.keys(selected).forEach(key => {
+          profile.role.forEach(role => {
+            if (selected[key] && role.toLowerCase() === key) {
+              display = true;
+            }
+          })
         })
-      })
 
-      if (display) {
-        profileList.push(profile);
-      } 
+        if (display) {
+          profileList.push(profile);
+        } 
+      }
     })
     profileList.sort((a, b) => {
       if (a.first_name > b.first_name) {
@@ -101,7 +103,8 @@ const MeetTheTeamPage = ({data}) => {
           <button className={getClass("writer")} onClick={changeSelector} value="writer">Writers</button>
           <button className={getClass("editor")} onClick={changeSelector} value="editor">Editors</button>
           <button className={getClass("designer")} onClick={changeSelector} value="designer">Designers</button>
-          <button className={getClass("co-ordinator")} onClick={changeSelector} value="co-ordinator">Co-ordinator</button>
+          <button className={getClass("co-ordinator")} onClick={changeSelector} value="co-ordinator">Co-ordinators</button>
+          <button className={getClass("chief editor")} onClick={changeSelector} value="chief editor">Chief editor</button>
         </div>
 
         <div className="profiles">
@@ -116,18 +119,15 @@ const MeetTheTeamPage = ({data}) => {
 export default MeetTheTeamPage;
 export const pageQuery = graphql`
 query profileQuery2{
-  allMarkdownRemark(
-    filter: { frontmatter: { type: { eq: "Profile" } } }
-  ){
-    edges{
-      node{
-        frontmatter {
-          first_name
-          surname
-          role
-          profile_picture
-          slug
-        }
+  allMarkdownRemark{
+    nodes{
+      frontmatter {
+        type
+        first_name
+        surname
+        role
+        profile_picture
+        slug
       }
     }
   }

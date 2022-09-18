@@ -1,5 +1,3 @@
-import TurndownService from "turndown";
-
 export const ProfilesMapper = Profiles =>
   Profiles &&
   Profiles.length &&
@@ -20,7 +18,7 @@ export const ProfileDetailsMapper = Profile =>
     School: Profile.profiles[0].school,
     Pronouns: Profile.profiles[0].pronouns,
     SchoolImage: require(`./../../assets/profiles/images/${Profile.profiles[0].school}.png`),
-    MarkDownContent: new TurndownService().turndown(Profile.profiles[0].html)
+    MarkDownContent: Profile.profiles[0].html
   };
 
 export const ProfileName = details => {

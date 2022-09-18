@@ -1,14 +1,15 @@
 //Import React dependencies
 import React, { useEffect, useState } from "react";
-import Markdown from "markdown-to-jsx";
+import { Helmet } from "react-helmet";
+import { MDXRenderer } from 'gatsby-plugin-mdx'
 
 //Importing constants
-import _ from "./../../constants/constants";
+import _ from "../../constants/constants";
 
 //Importing components
-import SEO from "./../seo";
-import Navbar from "./../navbar";
-import Footer from "./../footer";
+import SEO from "../seo";
+import Navbar from "../navbar";
+import Footer from "../footer";
 
 //Importing helpers
 import {
@@ -19,6 +20,7 @@ import {
 import { graphql } from "gatsby";
 
 import "./../../styles/index.scss";
+import "katex/dist/katex.min.css";
 
 const subjects = {
   '2BB760': `Biochem`,
@@ -54,12 +56,12 @@ const ArticleDetails = ({ data }) => {
   useEffect(() => {
     (async () => {
       {
-        data.allMarkdownRemark.edges.forEach((info, index) => {
-          info = info.node.frontmatter;
+        data.allMarkdownRemark.nodes.forEach((info, index) => {
+          info = info.frontmatter;
 
           if (info.type === "Article") {
             articles.push({...info, index});
-          } else {
+          } else if (info.type === "Profile") {
             authors[info.userID] = info;
           }
         })
@@ -76,7 +78,7 @@ const ArticleDetails = ({ data }) => {
       const Article = {};
       for (let i = 0; i < articles.length; i++) {
         if (articles[i].slug.slice(10) === articleId) {
-          articles[i]["html"] = data.allMarkdownRemark.edges[articles[i].index].node.html;
+          articles[i]["html"] = data.allMarkdownRemark.nodes[articles[i].index].html;
 
           Article["articles"] = [articles[i]];
           break;
@@ -96,12 +98,19 @@ const ArticleDetails = ({ data }) => {
   const authorImages = () => {
     const result = [];
     for (let i = 0; i < AuthorNames(ArticleDetails).length; i++) {
-      result.push(<a className="authorImg" href={AuthorLinkTos(ArticleDetails)[i]}>
-        <img
-          src={(typeof (AuthorImages(ArticleDetails)[i]) === "string") ? AuthorImages(ArticleDetails)[i] : AuthorImages(ArticleDetails)[i].default}
-          alt={`Profile picture of ${AuthorNames(ArticleDetails)[i]}`}
-        ></img>
-      </a>)
+      result.push(<div className="author">
+        <a className="authorImg" href={AuthorLinkTos(ArticleDetails)[i]}>
+          <img
+            src={(typeof (AuthorImages(ArticleDetails)[i]) === "string") ? AuthorImages(ArticleDetails)[i] : AuthorImages(ArticleDetails)[i].default}
+            alt={`Profile picture of ${AuthorNames(ArticleDetails)[i]}`}
+          ></img>
+        </a>
+        <div className="authorDetails">
+          <a className="name" href={AuthorLinkTos(ArticleDetails)[i]}>{AuthorNames(ArticleDetails)[i]}</a><br />
+          <a className="pronouns" href={AuthorLinkTos(ArticleDetails)[i]}>{AuthorPronouns(ArticleDetails)[i]}</a>
+        </div>
+      </div>)
+
     }
     return result;
   }
@@ -151,16 +160,16 @@ const ArticleDetails = ({ data }) => {
             <p>{`${subjects[ArticleSubject(ArticleDetails)]}`}</p>
           </a>
 
-          <div className="top">
-            <div className="authorImages">{authorImages()}</div>
-           
+          <div className="top">      
+            <div className="authors">{authorImages()}</div>   
             <div className="details">
               <h1>{ArticleTitle(ArticleDetails)}</h1> 
               <p>{ArticleDescription(ArticleDetails)}</p>
-              {authorLinks()}
             </div>
           </div>
-          <Markdown className="content">{ArticleMarkdown(ArticleDetails)}</Markdown>
+
+          <div className={`content a${ArticleSubject(ArticleDetails)}`} dangerouslySetInnerHTML={{__html: ArticleMarkdown(ArticleDetails) }}></div>
+          
           {displayVideo()}
         </div>
       </main>
@@ -169,32 +178,33 @@ const ArticleDetails = ({ data }) => {
   );
 };
 
+//<Markdown className={`content a${ArticleSubject(ArticleDetails)}`}>{ArticleMarkdown(ArticleDetails)}</Markdown>
+
 export default ArticleDetails;
 export const pageQuery = graphql`
   query articleQuery1 {
     allMarkdownRemark{
-      edges{
-        node{
-          html
-          frontmatter {
-            type
-            title
-            description
-            subject
-            issue
-            slug
-            preview_image
-            userIDs
-            first_name
-            surname
-            pronouns
-            school
-            profile_picture
-            video_url
-            video_title
-            userID
-          }
+      nodes{
+        html
+        frontmatter {
+          type
+          title
+          description
+          subject
+          issue
+          slug
+          preview_image
+          userIDs
+          first_name
+          surname
+          pronouns
+          school
+          profile_picture
+          video_url
+          video_title
+          userID
         }
+        
       }
     }
   }

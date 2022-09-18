@@ -1,3 +1,5 @@
+const path = require("path");
+
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
 
@@ -6,15 +8,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     {
       allMarkdownRemark(
         limit: 1000
-        filter: { frontmatter: { type: { eq: "Profile" } } }
       ) {
-        edges {
-          node {
-            frontmatter {
-              slug
-            }
+        nodes {
+          frontmatter {
+            type
+            slug
           }
         }
+        
       }
     }
   `)
@@ -22,14 +23,16 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
     return
   }
-  profileData.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    createPage({
-      path: node.frontmatter.slug,
-      component: ProfileTemplate,
-      context: {
-        slug: node.frontmatter.slug,
-      },
-    })
+  profileData.data.allMarkdownRemark.nodes.forEach((node) => {
+    if (node.frontmatter.type === "Profile") {
+      createPage({
+        path: node.frontmatter.slug,
+        component: ProfileTemplate,
+        context: {
+          slug: node.frontmatter.slug,
+        },
+      })
+    }
   })
 
   const ArticleTemplate = require.resolve(`./src/components/articles/articleDetails.js`)
@@ -37,15 +40,15 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     {
       allMarkdownRemark(
         limit: 1000
-        filter: { frontmatter: { type: { eq: "Article" } } }
       ) {
-        edges {
-          node {
-            frontmatter {
-              slug
-            }
+        nodes {
+          id
+          frontmatter {
+            slug
+            type
           }
         }
+        
       }
     }
   `)
@@ -53,13 +56,15 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
     return
   }
-  articleData.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    createPage({
-      path: node.frontmatter.slug,
-      component: ArticleTemplate,
-      context: {
-        slug: node.frontmatter.slug,
-      },
-    })
+  articleData.data.allMarkdownRemark.nodes.forEach((node) => {
+    if (node.frontmatter.type === "Article") {
+      createPage({
+        path: node.frontmatter.slug,
+        component: ArticleTemplate,
+        context: {
+          slug: node.frontmatter.slug,
+        },
+      })
+    }
   })
 }

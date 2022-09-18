@@ -38,7 +38,7 @@ export const ArticleDetailsMapper = (Article, includeMarkDown=true, includeAutho
     },
     Issue: Article.articles[0].issue,
     LinkTo: Article.articles[0].slug,
-    MarkDownContent: (includeMarkDown ? new TurndownService().turndown(Article.articles[0].html) : null),
+    MarkDownContent: (includeMarkDown ? Article.articles[0].html : null),
     ArticleID: (includeMarkDown ? null : Article.articles[0].articleID) 
   };
 

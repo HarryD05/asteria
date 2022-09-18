@@ -25,18 +25,19 @@ const IndexPage = ({data}) => {
     const featuredList = [];
     const authors = {};
 
-    data.allMarkdownRemark.edges.forEach(info => {
-      info = info.node.frontmatter;
+    data.allMarkdownRemark.nodes.forEach(info => {
+      info = info.frontmatter;
 
       if (info.type === "Article") {
         articleList.push(info);
-      } else {
+      } else if (info.type === "Profile") {
         authors[info.userID] = info;
       }
     })
 
     articleList.forEach(article => {
       const authorList = [];
+      console.log(article)
       article.userIDs.forEach(ID => {
         authorList.push(authors[ID])
       })
@@ -114,22 +115,21 @@ export default IndexPage
 export const pageQuery = graphql`
 query articleQuery3{
   allMarkdownRemark{
-    edges{
-      node{
-        frontmatter {
-          type
-          title
-          description
-          subject
-          issue
-          preview_image
-          video_url
-          userIDs
-          slug
-          first_name
-          surname
-          userID
-        }
+    nodes{
+      frontmatter {
+        type
+        articleID
+        title
+        description
+        subject
+        issue
+        preview_image
+        video_url
+        userIDs
+        slug
+        first_name
+        surname
+        userID
       }
     }
   }

@@ -1,6 +1,6 @@
 //Import React dependencies
 import React, { useEffect, useState, useRef } from "react";
-import Markdown from "markdown-to-jsx";
+import { MDXRenderer } from 'gatsby-plugin-mdx'
 
 //Importing constants
 import _ from "./../../constants/constants";
@@ -45,21 +45,22 @@ const ProfileDetails = ({ data }) => {
   useEffect(() => {
     (async () => {
       {
-        data.allMarkdownRemark.edges.map((info, index) => {
-          if (info.node.frontmatter.type === "Profile") {
-            profiles.push({...info.node.frontmatter, index})
-          } else {
-            if (info.node.frontmatter.userIDs.indexOf(profileId) !== -1) {
-              articles.push({...info.node.frontmatter, index})
+        data.allMarkdownRemark.nodes.map((info, index) => {
+          if (info.frontmatter.type === "Profile") {
+            profiles.push({...info.frontmatter, index})
+          } else if (info.frontmatter.type === "Article") {
+            if (info.frontmatter.userIDs.indexOf(profileId) !== -1) {
+              articles.push({...info.frontmatter, index})
             }
           }
         })
       }
 
+      
       let Profile = {};
       for (let i = 0; i < profiles.length; i++) {
         if (profiles[i].slug.slice(10) === profileId) {
-          profiles[i]["html"] = data.allMarkdownRemark.edges[profiles[i].index].node.html;
+          profiles[i]["html"] = data.allMarkdownRemark.nodes[profiles[i].index].html;
 
           Profile["profiles"] = [profiles[i]];
           break;
@@ -135,7 +136,7 @@ const ProfileDetails = ({ data }) => {
               </a>
             </div>
           </div>
-          <Markdown className="content">{ProfileMarkdown(ProfileDetails)}</Markdown>
+          <div className="content" dangerouslySetInnerHTML={{__html: ProfileMarkdown(ProfileDetails)}}></div>
         </div>
         <div className="article-list">
           <h2>Articles</h2>
@@ -153,28 +154,27 @@ export default ProfileDetails;
 export const pageQuery = graphql`
   query profileQuery1 {
     allMarkdownRemark{
-      edges{
-        node{
-          html
-          frontmatter {
-            type
-            first_name
-            surname
-            school
-            pronouns
-            role
-            slug
-            profile_picture
-            title
-            subject
-            userID
-            articleID
-            userIDs
-            preview_image
-            video_url
-            issue
-          }
+      nodes{
+        html
+        frontmatter {
+          type
+          first_name
+          surname
+          school
+          pronouns
+          role
+          slug
+          profile_picture
+          title
+          subject
+          userID
+          articleID
+          userIDs
+          preview_image
+          video_url
+          issue
         }
+      
       }
     }
   }
