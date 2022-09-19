@@ -52,7 +52,7 @@ const CategoriesPage = ({data}) => {
     } else {
       window.scrollTo(0, 0);
     }
-  });
+  }, []);
 
   useEffect(() => {
     const articleList = [];

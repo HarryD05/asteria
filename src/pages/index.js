@@ -22,7 +22,7 @@ const IndexPage = ({data}) => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  });
+  }, []);
 
   useEffect(() => {
     const articleList = [];
