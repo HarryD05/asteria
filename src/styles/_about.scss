@@ -4,10 +4,14 @@
   padding: 1rem;
 
   
-  p, em {
+  p {
     width: 600px;
     max-width: 80%;
     margin: auto;
     text-align: center;
+  }
+
+  .author {
+    font-style: italic;
   }
 }

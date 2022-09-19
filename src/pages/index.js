@@ -21,6 +21,10 @@ const IndexPage = ({data}) => {
   const [featuredArticles, setFeaturedArticles] = useState([])
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
+  useEffect(() => {
     const articleList = [];
     const featuredList = [];
     const authors = {};

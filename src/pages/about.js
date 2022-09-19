@@ -1,5 +1,5 @@
 //Importing React Dependencies
-import React from "react";
+import React, {useEffect} from "react";
 
 //Importing components
 import Navbar from "../components/navbar";
@@ -12,6 +12,10 @@ import _ from './../constants/constants';
 import './../styles/index.scss';
 
 const AboutPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <>
       <Navbar />
@@ -27,7 +31,7 @@ const AboutPage = () => {
         <p>This project would be impossible without the contributions of Mudit, Arya, Harry, and our editors, who have dedicated their time and energy to present you with the breadth of knowledge on offer from our excellent writers.</p><br />
         <p>A big thank you to Reading and Kendrick School for their ongoing cooperation in this student-led initiative.</p><br />
         <p>If you would like to contribute or join us, feel free to contact myself or my peers.</p><br />
-        <i>- Ram Gautham Kurakula</i>
+        <p class="author">- Ram Gautham Kurakula</p>
       </main>
       <Footer />
     </>

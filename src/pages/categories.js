@@ -49,8 +49,12 @@ const CategoriesPage = ({data}) => {
     if (window.localStorage.getItem('hash') != null) {
       window.location.hash = window.localStorage.getItem('hash');
       window.localStorage.clear()
+    } else {
+      window.scrollTo(0, 0);
     }
+  });
 
+  useEffect(() => {
     const articleList = [];
     const authors = {};
 

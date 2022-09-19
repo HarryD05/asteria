@@ -24,6 +24,10 @@ const MeetTheTeamPage = ({data}) => {
   const [profiles, setProfiles] = useState([])
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
+  useEffect(() => {
     const profileList = [];
     data.allMarkdownRemark.nodes.forEach(profile => {
       if (profile.frontmatter.type === "Profile") {
