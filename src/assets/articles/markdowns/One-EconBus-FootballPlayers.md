@@ -26,8 +26,12 @@ Another reason that accelerated increases in the value of transfers is due to a 
 
 In general, it has been much more common to see higher than ever price tags being slapped onto even the most mediocre of talents, but this is not surprising in a highly competitive industry with highly profit maximising clubs that will take every opportunity to squeeze money out of their rivals and fans. With more clubs seeing the potential of franchise players to help their finances and the fall of an old generation of players, there is even more demand for new football superstars for young fans to idolise, support and financially contribute towards as they grow up.
 
-## Bibliography
+<div id="bibliography">
+<h2>Bibliography</h2>
+
 1.	https://football-observatory.com/IMG/sites/mr/mr47/en/
 2.	https://www.sportspromedia.com/news/liverpool-standard-chartered-shirt-sponsorship-extension-premier-league/
 3.	https://www.cnbc.com/2018/07/18/juventus-sold-over-60-million-of-ronaldo-jerseys-in-just-one-day.html
 4.	https://www.bbc.co.uk/sport/football/22760770
+
+</div>

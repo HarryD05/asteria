@@ -36,9 +36,13 @@ And what can be done about this? In serious cases, diuretics, a class of drugs t
 
 If you’re feeling ever so slightly uneasy having read to this point, please do not be concerned. Healthy human kidneys can process around 1L of water (Approx. 4 average-sized glasses) per hour, and in many cases the condition is relatively mild where no significant symptoms are noticed. Considering that the commonly said “8 glasses of water per day” only amounts to around 2-3L, there should be zero concern for overhydration as long as you’re not guzzling more than half of your daily water intake in a single sitting.
 
-## Bibliography
+<div id="bibliography">
+<h2>Bibliography</h2>
+
 1. Anon, 2007. Woman dies after water-drinking contest. NBCNews.com. Available at: https://www.nbcnews.com/id/wbna16614865 [Accessed August 31, 2022]. 
 2. Hider, P., 2008. T2 FLAIR axial MRI sequence showing right occipital lesion with surrounding vasogenic oedema causing mass effect on the occipital horn of the right lateral ventricle . Available at: https://www.researchgate.net/figure/T2-FLAIR-axial-MRI-sequence-showing-right-occipital-lesion-with-surrounding-vasogenic_fig2_5370447 [Accessed August 31, 2022]. 
 3. Ballantyne, C., 2007. Strange but true: Drinking too much water can kill. Scientific American. Available at: https://www.scientificamerican.com/article/strange-but-true-drinking-too-much-water-can-kill/ [Accessed August 31, 2022]. 
 4. Almond, C.S.D. et al., 2005. Hyponatremia among runners in the Boston Marathon: Nejm. New England Journal of Medicine. Available at: https://www.nejm.org/doi/full/10.1056/nejmoa043901 [Accessed August 31, 2022]. 
 5. John W. Gardner, MC FS USA, Death by Water Intoxication, Military Medicine, Volume 167, Issue 5, May 2002, Pages 432–434. Available at: https://doi.org/10.1093/milmed/167.5.432 [Accessed August 31, 2022]. 
+
+</div>

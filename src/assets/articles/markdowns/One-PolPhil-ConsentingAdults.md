@@ -61,7 +61,9 @@ Ultimately, if the purpose of consent is to represent one’s fundamental intere
 ## V. Conclusion
 In general then, while it has been shown there is a valid defence of consent as providing moral immunity via the positive, libertarian basis of the Sovereignty Principle, we must also recognise there is an extent to which this libertarian ideal restricts consent; it introduces a rational threshold through which we must pass to gain it. On the basis of the Sovereignty Principle then, we can conclude that the acts of consenting adults are never morally wrong, so long as we are aware that consent is held only on the condition that we do not abuse it in degrading our own dignity.
 
-## References
+<div id="bibliography">
+<h2>References</h2>
+
 1. King, L. A.. "consent." Encyclopedia Britannica, March 13, 2013. https://www.britannica.com/topic/consent-political-philosophy-and-ethics.
 2. Mill, J.S, 2004. On Liberty. Kitchener: Batoche Books, p.13-14.
 3. NHS, 2019. Consent to treatment. [online] NHS website. Available at: <https://www.nhs.uk/conditions/consent-to-treatment/> [Accessed 18 June 2022].
@@ -81,8 +83,8 @@ In general then, while it has been shown there is a valid defence of consent as 
 17. Ripstein, A., Beyond the Harm Principle. p.236.
 18. Baker, D., 2009. The Moral Limits of Consent as a Defense in the Criminal Law. p.111.
 
+<h2>Bibliography</h2>
 
-## Bibliography
 Baker, D., 2009. The Moral Limits of Consent as a Defense in the Criminal Law. New Criminal Law Review: An International and Interdisciplinary Journal, 12(1).
 
 Berlin, I., 1969. Four Essays on Liberty. Oxford: Oxford University Press.
@@ -106,3 +108,5 @@ Mill, J.S, 2004. On Liberty. Kitchener: Batoche Books.
 NHS. (2019, March 29). Consent to treatment. Retrieved 6 18, 2022, from NHS website: https://www.nhs.uk/conditions/consent-to-treatment/
 
 Ripstein, A., 2006. Beyond the Harm Principle. Philosophy & Public Affairs, 34(3).
+
+</div>

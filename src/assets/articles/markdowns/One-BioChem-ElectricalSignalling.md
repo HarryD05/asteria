@@ -71,9 +71,13 @@ A particularly well known adaptation of neurons is myelination- axons are wrappe
 
 An additional note is that small-diameter myelinated nerve fibres conduct action potentials slower than unmyelinated fibres. This is because the axon of the myelinated fibre is too narrow causing the longitudinal resistance to be too great to conduct action potentials effectively. Hence small nerve fibres e.g. pain fibres are unmyelinated.
 
-## Bibliography
+<div id="bibliography">
+<h2>Bibliography</h2>
+
 1. Anon, Luigi Galvani. Encyclopædia Britannica. Available at: https://www.britannica.com/biography/Luigi-Galvani [Accessed August 31, 2022]. 
 2. Anon, Experiment: the beginning of modern neuroscience - the Galvani/Volta debate. Available at: https://backyardbrains.com/experiments/Galvani_Volta [Accessed August 31, 2022]. 
 3. Anon, 2021. Resting membrane potential - nernst - generation. TeachMePhysiology. Available at: https://teachmephysiology.com/nervous-system/synapses/resting-membrane-potential/ [Accessed August 31, 2022]. 
 4. MD, J.V., 2022. Action potential. Kenhub. Available at: https://www.kenhub.com/en/library/anatomy/action-potential [Accessed August 31, 2022]. 
 5. Fullick, A., Bircher, P. & Locke, J., 2015. A level biology for OCR a year 2, Oxford: Oxford University Press
+
+</div>

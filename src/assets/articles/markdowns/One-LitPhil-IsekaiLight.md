@@ -31,14 +31,13 @@ Similar to the grand nonnarrative proposed by Azuma, narrative consumption, as p
 
 The isekai genre is expansive and limitless in the stories it can tell. The worlds that are introduced can create such a feeling of wonder and desire to know more that it can suck you in, much like the protagonists of the stories themselves. It’s easy to get lost in the sea of isekais, in the characters and in the plot - something that the authors themselves seem to be victim to. After all, how many isekais have completed stories? It doesn’t seem like a lot of them do: 383 of the over 2100 web, light and published novels on novel updates are listed as completed and that’s just the translations of the original texts. Whilst isekai is mostly lighthearted genre consumed for mere pleasure, a bit of light reading to do when you’re bored, it is also a lesson in the dangers of burn out and capitalism. The isekai series “Overlord” (“Ōbārōdo”) has been discontinued due to the author, Kugane Maruyama, feeling burnt out after having written the series since 2012: a series that has seen 16 light novel volumes, 17 manga volumes and 4 anime seasons. Many a web novel isekai once given a manga series or anime or official publication as a light novel seems to be less interested in the overall story, the grand narrative, and more on making money. My beloved “Kumo Desu Ga, Nani Ka?” is a victim of this - the ending of the web novel was suspended whilst the author wrote the light novel (the official publication of the story) and whilst the anime was in production. When the ending was finally delivered, it was lacklustre to say the least. So whilst Dr Paul Price’s comment that these stories “have no higher meaning other than they are created with the elements and characteristics that come from the grand nonnarrative” can be held as true for the plot, perhaps they hold meaning as cautionary tales against burning out doing something you find passionate or forgoing good storytelling to make more money. 
 
-## Bibliography
+<div id="bibliography">
+<h2>Bibliography</h2>
+
 1. https://en.wikipedia.org/wiki/Isekai  Accessed 19/08/2022
 2. Price, Paul. “A Survey of the Story Elements of Isekai Manga”. Journal of Anime and Manga studies volume 2 (2021): 60-61.
 3. https://trends.google.com/trends/explore?date=all&q=isekai  Google trends data. Accessed 19/08/2022
 4. Price, Paul. “A Survey of the Story Elements of Isekai Manga”. Journal of Anime and Manga studies volume 2 (2021): 71.
 5. ibid
 
-
- 
-
-
+</div>

@@ -71,7 +71,11 @@ Since we know what the focus image behind the lens looks like ‘normally’, we
 
 In conclusion, I think the idea of human beings leaving our solar system is currently absurd and will be for many hundreds of years mostly because, evident to this article, we wouldn’t know where to go. There are many theoretical models for space travel but all of them focus on the journey rather than the end point, if we cannot find perfectly habitable planets close to us then I think it is a waste of resources to experiment ways to get there. It is much more prudent for Mars and Venus to be our top priority. On the other hand, we as a species are very adept at accelerating scientific progress at the cost of our planet, so who is to say we won’t breakthrough again to find Earth 2.0.
 
-## Bibliography
+<div id="bibliography">
+<h2>Bibliography</h2>
+
 - All graphs and equations come from the exoplanets course; [Course | Astrophysics: Exploring Exoplanets | edX](https://learning.edx.org/course/course-v1:ANUx+ANU-ASTRO2x+2T2020/home)
 - Diagram 1; [gravitational microlensing | astronomy | Britannica](https://www.britannica.com/science/gravitational-microlensing)
 - Image 1; [A Horseshoe Einstein Ring from Hubble - Gravitational microlensing - Wikipedia](https://en.wikipedia.org/wiki/Gravitational_microlensing#/media/File:A_Horseshoe_Einstein_Ring_from_Hubble.JPG)
+
+</div>

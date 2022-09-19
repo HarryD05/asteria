@@ -42,10 +42,14 @@ The reason behind this obtuseness is simply the passage of time. As time goes on
 
 Then to summarise, whilst your musical taste will never be identical to anyone else’s, sparking criticism, and it is almost entirely set in stone, we all still relish and savour music. So, ignore the criticism, broaden your taste whilst you still somewhat can and reengage with your musical humanity. Don’t lie about your taste too, but if you do, make good out of it. In attempting to understand and engage with what others find so dear, we better our musical and in fact our entire selves. In essence “All I’m asking, is for a little respect.”
 
-## Bibliography
+<div id="bibliography">
+<h2>Bibliography</h2>
+
 - COO, C., 2022. Inside the audience of Taylor Swift: A deep dive into the success of 'Red (Taylor’s Version)'. [online] Resources.audiense.com. Available at: <https://resources.audiense.com/blog/taylor-swift-red-album-success-what-you-can-learn#:~:text=A%20quick%20report%20from%20Audiense,40.19%25%20between%20ages%2018%2D24> [Accessed 31 August 2022].
 - Deezer, 2019. Almost half of us tell ‘musical mistruths,’ global study reveals - Deezer Press. [online] Deezer Press. Available at: <https://www.deezer-blog.com/press/almost-half-of-us-tell-musical-mistruths-global-study-reveals/> [Accessed 31 August 2022].
 - Dodgson, L., 2018. We stop discovering new music at age 30, a new survey suggests — here are the scientific reasons why this could be. [online] Business Insider. Available at: <https://www.businessinsider.com/why-we-stop-discovering-new-music-around-age-30-2018-6?r=US&IR=T> [Accessed 31 August 2022].
 - Manning-Schaffel, V., 2019. A musicologist explains the science behind your taste in music. [online] NBC News. Available at: <https://www.nbcnews.com/better/lifestyle/musicologist-explains-science-behind-your-taste-music-ncna1018336> [Accessed 31 August 2022].
 - Rentfrow, P. and Gosling, S., 2003. The do re mi's of everyday life: The structure and personality correlates of music preferences. Journal of Personality and Social Psychology, 84(6), pp.1236-1256.
 - Stephens-Davidowitz, S., 2018. Opinion | The Songs That Bind (Published 2018). [online] Nytimes.com. Available at: <https://www.nytimes.com/2018/02/10/opinion/sunday/favorite-songs.html> [Accessed 31 August 2022].
+
+</div>

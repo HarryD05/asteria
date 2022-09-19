@@ -81,8 +81,10 @@ But how viable is this theory? Approaching the physical properties of the ring, 
 Another group of scientists in 2011 [8] proposed a new theory where the core and the ring were formed separately. Starting with the core, the idea behind its formation is that it is a remnant from a cluster of galaxies that have merged together to form a spherical structure. Subsequently, the ring could be formed from the slow accretion of intergalactic medium [4] i.e., the gas remaining from the galaxies before the merge. This gas would theoretically circle around the core, and eventually start forming stars. An issue with this theory is that there is no explanation for why the gas would accrete into a ring instead of a disc, leaving a hole in this hypothesis. 
 
 Since its discovery in 1950, the Hoag’s Object has puzzled astronomers. Theories of its formation have consistently appeared, causing controversial debates over this phenomenon. But over 70 years later, the “peculiar galaxy in Serpens” still remains a mystery.
- 
-## Bibliography
+
+<div id="bibliography">
+<h2>Bibliography</h2>
+
 [1] Reynolds, M, Introduction to Astronomy, Available at: https://fscj.pressbooks.pub/introductionastronomy/ (Accessed 12/08/2022)
 
 [2] NASA Hubble Site, Galaxies: The Building Blocks of the Universe, Available at: https://hubblesite.org/science/galaxies (Accessed: 09/08/2022)
@@ -101,3 +103,4 @@ Since its discovery in 1950, the Hoag’s Object has puzzled astronomers. Theori
 
 [9] Doskoch, G (2018), How did Hoag’s Object form?, Available at: https://medium.com/look-upwards/how-did-hoags-object-form-731c9afac4d4 (Accessed: 17/08/2022)
 
+</div>

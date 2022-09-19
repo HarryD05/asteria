@@ -81,9 +81,12 @@ A commonly used definition, made by Robert L. Devaney, says that to be classifie
 
 For any interested, I highly recommend you go fuel your interest further online as I have only briefly covered the main aspects of chaos theory in this article. Thank you all for reading, I hope you enjoyed this article and can now tell people the difference between normal chaos and mathematical chaos.
 
-## Bibliography
+<div id="bibliography">
+<h2>Bibliography</h2>
+
 - Elwes, R 2011, 2012, How to solve the da vinci code and 34 other really interesting uses of mathematics, Quercus, London.
 - Fractal Foundation (no date) What is chaos theory?. Available at: https://fractalfoundation.org/resources/what-is-chaos-theory/ (Accessed: 12/08/22)
 - Wikipedia (2022) Butterfly effect. Available at: https://en.wikipedia.org/wiki/Butterfly_effect (Accessed: 12/08/22)
 - Wikipedia (2022) Chaos Theory. Available at: https://en.wikipedia.org/wiki/Chaos_theory (Accessed: 12/08/22)
 
+</div>

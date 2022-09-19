@@ -268,12 +268,15 @@ $$
 \forall A (0 \in A \land \forall k (k \in A \rightarrow (k+1) \in A) \rightarrow \mathbb{N} \subseteq A)
 $$
 
-## Bibliography
+<div id="bibliography">
+<h2>Bibliography</h2>
+
 - https://en.wikipedia.org/wiki/Mathematical_induction
 - https://r-knott.surrey.ac.uk/Fibonacci/fibformproof.html
-- https://brilliant.org/wiki/forward-backwards-inductio
+- https://brilliant.org/wiki/forward-backwards-induction
 - https://www.mathblog.dk/proof-method-multidimensional-induction/
 - https://mathworld.wolfram.com/TransfiniteInduction.html
 - https://en.wikipedia.org/wiki/Wiles%27s_proof_of_Fermat%27s_Last_Theorem
 - https://simonsingh.net/books/fermats-last-theorem/who-is-andrew-wiles/
 
+</div>

@@ -44,10 +44,14 @@ Looking at Behavioural economics on a surface level, it may seem like the soluti
 
 Finally, Behavioural economics is still a relatively new concept, and while 2008 may seem like a long time ago, there is still further to go until Behavioural economics will be able to make as much of an impact as neoclassical economics. Additionally, schools of thought such as Keynesian and neuro-economics have helped to make our understanding and practice of economics more informed. Our world is extremely complex, with there being so much that we don’t understand. Behavioural economics models should be used as a tool, alongside Neoclassical and Keynesian models, to help us make some sense of how our economy works, and what we should do to improve it.
 
-## Bibliography
+<div id="bibliography">
+<h2>Bibliography</h2>
+
 - Beggs, Jodi., ThoughtCo. 2022. The Assumptions of Economic Rationality. [online] Available at: <https://www.thoughtco.com/the-assumptions-of-economic-rationality-1147014#:~:text=The%20Rationality%20Assumption%20in%20Neoclassical%20Economics,-PeopleImages%2FGetty%20Images&text=At%20a%20high%20level%2C%20we,rationality%20assumption%20than%20initially%20appears.> [Accessed 1 September 2022].
 - Kenton, Will., Investopedia. 2022. Define Neoclassical Economics. [online] Available at: <https://www.investopedia.com/terms/n/neoclassical.asp#:~:text=Neoclassical%20economics%20is%20a%20broad,earlier%20theories%20of%20classical%20economics.> [Accessed 1 September 2022].
 - Soman, D., 2013. Behavioural Economics in Action.
 - Thaler, R., Sunstein, C. and Pratt, S., 2009. Nudge. [United States]: Gildan Audio.
 - Witynski, Max., News.uchicago.edu. 2022. Behavioral economics, explained. [online] Available at: <https://news.uchicago.edu/explainer/what-is-behavioral-economics#:~:text=Behavioral%20economics%20combines%20elements%20of,decisions%20based%20on%20those%20preferences.> [Accessed 1 September 2022].
 - En.wikipedia.org. 2022. Economics - Wikipedia. [online] Available at: <https://en.wikipedia.org/wiki/Economics#Uncertainty_and_game_theory> [Accessed 1 September 2022].
+
+</div>

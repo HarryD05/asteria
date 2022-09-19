@@ -70,7 +70,9 @@ Having said that, it is important to remember that these non-invasive treatments
 
 Don’t forget: Prevention is better than cure. 
 
-## 7. Bibliography
+<div id="bibliography">
+<h2>7. Bibliography</h2>
+
 (1)	Glaucoma Information. (2018). Drainage system of the eye. [online] Available at: https://www.glaucomapatients.org/basic/drainage-system/ [Accessed 1 Aug. 2022].
 
 (2)	Healthline. (n.d.). Optic Nerve Function, Anatomy & Definition | Body Maps. [online] Available at: https://www.healthline.com/human-body-maps/optic-nerve [Accessed 4 Aug. 2022].
@@ -86,3 +88,4 @@ Don’t forget: Prevention is better than cure. 
 (7)	Primera Eye Care (2021). Recent Study Finds Glaucoma Linked to a Gene Mutation. [online] Primera Eye Care | Lake Mary Optometrist. Available at: https://primeraeyecare.com/glaucoma-gene-mutation/ [Accessed 11 Aug. 2022].
 
 (8)	Medirex Opticians. (n.d.). Medirex Opticians. [online] Available at: https://www.medirex.co.uk/glaucoma/ [Accessed 12 Aug. 2022].
+</div>

@@ -79,8 +79,8 @@ For now, wormholes exist only on paper, and in our dreams. But the future is a m
 
 The future of space travel knows no bounds, and an exciting world awaits us. From the ongoing projects of ion-engines to the dream of creating wormholes, who knows what we can do. Perhaps ion engines will make travelling to Mars as easy as catching a train, or skyhooks will let us travel to the Kuiper belt, where we can mine alluring new minerals, and even find exotic matter needed to open wormholes. The sky truly is the limit… or is it?
 
-
-## Bibliography
+<div id="bibliography">
+<h2>Bibliography</h2>
 
 [1] https://www.spacex.com/vehicles/falcon-heavy/
 
@@ -95,3 +95,5 @@ The future of space travel knows no bounds, and an exciting world awaits us. Fro
 [6] https://www.space.com/20881-wormholes.html#:~:text=The%20wormhole%20theory%20postulates%20that,the%20theory%20of%20general%20relativity.
 
 [7] https://www.youtube.com/watch?v=lzoYmLTrQ_8
+
+</div>

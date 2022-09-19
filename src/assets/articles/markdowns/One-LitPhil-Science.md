@@ -62,7 +62,8 @@ This is why I think that our answer should be a spectrum rather than a clear yes
 
 After all, to quote The Cincinnati Enquirer, 'The saying 'Life is just one damn thing after another,' is a gross understatement. The damn things overlap.'. Unfortunately, the more damn things you have, the less that science can help.
 
-## Bibliography
+<div id="bibliography">
+<h2>Bibliography</h2>
 
 1. Dictionary.cambridge.org. 2022. science. [online] Available at: <https://dictionary.cambridge.org/dictionary/english/science> [Accessed 11 August 2022].
 2. Fuhrman, J., 2018. The Hidden Dangers of Fast and Processed Food. [online] PubMed Central. Available at: <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6146358> [Accessed 11 August 2022]
@@ -72,5 +73,4 @@ After all, to quote The Cincinnati Enquirer, 'The saying 'Life is just one damn 
 6. Martinovich, M., 2022. Studying more strategically equals improved exam scores | Stanford News. [online] Stanford News. Available at: <https://news.stanford.edu/2017/05/08/studying-strategically-equals-improved-exam-scores> [Accessed 12 August 2022]
 7. Vergano, D., 2022. Who Was Carl Sagan?. [online] Science. Available at: <https://www.nationalgeographic.com/science/article/140316-carl-sagan-science-galaxies-space> [Accessed 12 August 2022]
 
-
-
+</div>

@@ -51,6 +51,12 @@ const ArticleDetails = ({ data }) => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+
+    if (window.location.hash.indexOf("#bibliography") !== -1) {
+      setTimeout(() => {
+        document.getElementById(window.location.hash.slice(1,13)).scrollIntoView({ behavior: 'smooth' })
+      }, 500)
+    }
   }, [articleId]);
 
   useEffect(() => {
@@ -175,6 +181,7 @@ const ArticleDetails = ({ data }) => {
       </main>
       <Footer />
     </> : null
+    
   );
 };
 
