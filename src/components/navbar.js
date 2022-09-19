@@ -3,7 +3,7 @@ import React, {useEffect, useState} from "react";
 
 //Importing assets
 import InstagramLogo from "./../assets/images/social-media-logos/Instagram.png";
-import TwitterLogo from "./../assets/images/social-media-logos/Twitter.png";
+import LinkedInLogo from "./../assets/images/social-media-logos/LinkedIn.png";
 import FacebookLogo from "./../assets/images/social-media-logos/Facebook.png";
 
 const DrawerToggleButton = ({click, isOpen}) => {
@@ -35,7 +35,7 @@ const SideDrawer = ({isOpen, isDark}) => {
         </div>
         <div className="social-media">
           <img className={socialClasses()} src={InstagramLogo} alt="Instagram logo"></img>
-          <img className={socialClasses()} src={TwitterLogo} alt="Twitter logo"></img>
+          <a href="https://www.linkedin.com/company/theasteriamagazine/" target="_blank" rel="noreferrer"><img className={socialClasses()} src={LinkedInLogo} alt="LinkedIn logo"></img></a>
           <img className={socialClasses()} src={FacebookLogo} alt="Facebook logo"></img>
         </div>
       </div>
@@ -103,7 +103,7 @@ const Navbar = () => {
         </div>
         <div className="social-media">
           <img className={invertClasses()} src={InstagramLogo} alt="Instagram logo"></img>
-          <img className={invertClasses()} src={TwitterLogo} alt="Twitter logo"></img>
+          <a href="https://www.linkedin.com/company/theasteriamagazine/" target="_blank" rel="noreferrer"><img className={invertClasses()} src={LinkedInLogo} alt="LinkedIn logo"></img></a>
           <img className={invertClasses()} src={FacebookLogo} alt="Facebook logo"></img>
         </div>
       </div>

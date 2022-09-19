@@ -3,7 +3,7 @@ import React from "react";
 
 //Importing assets
 import InstagramLogo from "./../assets/images/social-media-logos/Instagram.png";
-import TwitterLogo from "./../assets/images/social-media-logos/Twitter.png";
+import LinkedInLogo from "./../assets/images/social-media-logos/LinkedIn.png";
 import FacebookLogo from "./../assets/images/social-media-logos/Facebook.png";
 import ReadingSchoolLogo from "./../assets/images/schools/ReadingSchool.png";
 import KendrickSchoolLogo from "./../assets/images/schools/Kendrick.png";
@@ -16,7 +16,7 @@ const Footer = () => {
       <div className="footerContent">
         <div className="socialMedia">
           <img src={InstagramLogo} alt="Instagram logo"></img>
-          <img src={TwitterLogo} alt="Twitter logo"></img>
+          <a href="https://www.linkedin.com/company/theasteriamagazine/" target="_blank" rel="noreferrer"><img src={LinkedInLogo} alt="LinkedIn logo"></img></a>
           <img src={FacebookLogo} alt="Facebook logo"></img>
         </div>
         <div className="buttons">
