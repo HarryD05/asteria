@@ -56,20 +56,18 @@
         min-height: 250px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: left;
   
+        @media (max-width: 840px) {
+          justify-content: center;
+        }
       }
     }
   }
 
   .articleScroller {
-    //position: -webkit-sticky;
-    //position: sticky;
-
     min-height: 100%;
     bottom: calc(100% - 400px);
-
-    //padding: 8px;
 
     a {
       text-decoration: none;

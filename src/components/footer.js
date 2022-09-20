@@ -15,12 +15,14 @@ const Footer = () => {
     <div className="footer">
       <div className="footerContent">
         <div className="socialMedia">
-          <img src={InstagramLogo} alt="Instagram logo"></img>
+          <a href="https://www.instagram.com/the_asteria_magazine/" target="_blank" rel="noreferrer"><img src={InstagramLogo} alt="Instagram logo"></img></a>
           <a href="https://www.linkedin.com/company/theasteriamagazine/" target="_blank" rel="noreferrer"><img src={LinkedInLogo} alt="LinkedIn logo"></img></a>
         </div>
         <div className="buttons">
-          <a onClick={() => alert('Not setup yet')}>Contact us</a>
           <a href="https://forms.office.com/r/T07YM8j0Y0" target="_blank" rel="noreferrer">Feedback</a>
+        </div>
+        <div className="contact">
+          <p>Contact us:<br />theasteriamagazine@gmail.com</p>
         </div>
         <div className="schools">
           <a href="https://www.kendrick.reading.sch.uk/" target="_blank" rel="noreferrer">
@@ -31,7 +33,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <p>&#169; 2022 Asteria | All Rights Reserved</p>
+      <p className="base">&#169; 2022 Asteria | All Rights Reserved</p>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 ---
-type: "Profile"
+type: ""
 first_name: "Vivek"
 surname: "Mudita"
 school: "Reading School"

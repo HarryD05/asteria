@@ -33,7 +33,7 @@ const SideDrawer = ({isOpen, isDark}) => {
           <a href="/about">About</a>
         </div>
         <div className="social-media">
-          <img className={socialClasses()} src={InstagramLogo} alt="Instagram logo"></img>
+          <a href="https://www.instagram.com/the_asteria_magazine/" target="_blank" rel="noreferrer"><img className={socialClasses()} src={InstagramLogo} alt="Instagram logo"></img></a>
           <a href="https://www.linkedin.com/company/theasteriamagazine/" target="_blank" rel="noreferrer"><img className={socialClasses()} src={LinkedInLogo} alt="LinkedIn logo"></img></a>
         </div>
       </div>
@@ -102,7 +102,7 @@ const Navbar = () => {
           <a href="/about">About</a>
         </div>
         <div className="social-media">
-          <img className={invertClasses()} src={InstagramLogo} alt="Instagram logo"></img>
+          <a href="https://www.instagram.com/the_asteria_magazine/" target="_blank" rel="noreferrer"><img className={invertClasses()} src={InstagramLogo} alt="Instagram logo"></img></a>
           <a href="https://www.linkedin.com/company/theasteriamagazine/" target="_blank" rel="noreferrer"><img className={invertClasses()} src={LinkedInLogo} alt="LinkedIn logo"></img></a>
         </div>
       </div>
