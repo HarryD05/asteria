@@ -7,9 +7,9 @@ issue: 1
 preview_image: "economics2.jpg"
 video_url: null
 video_title: null
-userIDs: ["fd40af17-976f-4af6-a8f3-b697dc205d23"]
-articleID: "3151db2f-cae5-4ab4-b61e-bd1ab25f1b3e"
-slug: "/articles/3151db2f-cae5-4ab4-b61e-bd1ab25f1b3e"
+userIDs: ["v"]
+articleID: "5"
+slug: "/articles/5"
 ---
 
 Microeconomics is the study of decision making, and the interaction of producers, consumers and the government in markets. Bits and pieces of economic theory have been mentioned by the Ancient Greeks but in the late 1700s, modern economics came into existence as its own subject, gaining lots of traction until it became one of the most important social sciences in use today.

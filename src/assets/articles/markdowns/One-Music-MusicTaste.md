@@ -7,9 +7,9 @@ issue: 1
 preview_image: "music1.jpg"
 video_url: null
 video_title: null
-userIDs: ["21bf8680-1107-4bc6-b4d3-19534e357aed"]
-articleID: "9e8bc663-bbc9-4096-8c15-8f2d31d4929a"
-slug: "/articles/9e8bc663-bbc9-4096-8c15-8f2d31d4929a"
+userIDs: ["g"]
+articleID: "12"
+slug: "/articles/12"
 ---
 
 

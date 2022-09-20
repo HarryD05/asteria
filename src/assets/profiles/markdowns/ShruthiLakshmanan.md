@@ -5,8 +5,8 @@ surname: "Lakshmanan"
 school: "Kendrick School"
 pronouns: "SHE/HER"
 role: ["Writer"]
-userID: "7da338a3-5756-4ac9-a269-cd8cfef6f23a"
-slug: "/profiles/7da338a3-5756-4ac9-a269-cd8cfef6f23a"
+userID: "x"
+slug: "/profiles/x"
 profile_picture: "Shruthi Lakshmanan.jpg"
 ---
 

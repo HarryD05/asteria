@@ -5,8 +5,8 @@ surname: "Ahmad"
 school: "Reading School"
 role: ["Writer"]
 pronouns: "HE/HIM"
-userID: "454e60d1-f934-489d-9abc-ca906a054caf"
-slug: "/profiles/454e60d1-f934-489d-9abc-ca906a054caf"
+userID: "e"
+slug: "/profiles/e"
 profile_picture: "Asad Ahmad.jpg"
 ---
 

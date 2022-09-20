@@ -7,9 +7,9 @@ issue: 1
 preview_image: "butterfly.jpeg"
 video_url: null
 video_title: null
-userIDs: ["ac3de21f-1972-4e38-8eee-7d7dbff351d4"]
-articleID: "cbf25a5f-2120-4829-ae8f-15b2eef2f5cf"
-slug: "/articles/cbf25a5f-2120-4829-ae8f-15b2eef2f5cf"
+userIDs: ["q"]
+articleID: "10"
+slug: "/articles/10"
 ---
 
 ## What is chaos?

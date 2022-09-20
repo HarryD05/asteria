@@ -5,8 +5,8 @@ surname: "Morgan"
 school: "Kendrick School"
 pronouns: "SHE/HER"
 role: ["Editor"]
-userID: "a822ef86-9ad0-48bd-9eef-094fe2f8af61"
-slug: "/profiles/a822ef86-9ad0-48bd-9eef-094fe2f8af61"
+userID: "h"
+slug: "/profiles/h"
 profile_picture: "Daisy Morgan.jpg"
 ---
 

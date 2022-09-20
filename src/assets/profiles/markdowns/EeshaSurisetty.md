@@ -5,8 +5,8 @@ surname: "Surisetty"
 school: "Kendrick School"
 pronouns: "SHE/HER"
 role: ["Writer"]
-userID: "36c086a8-6510-4011-8f73-c65fdb899006"
-slug: "/profiles/36c086a8-6510-4011-8f73-c65fdb899006"
+userID: "i"
+slug: "/profiles/i"
 profile_picture: "Eesha Surisetty.png"
 ---
 

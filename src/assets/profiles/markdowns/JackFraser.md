@@ -5,8 +5,8 @@ surname: "Fraser"
 school: "Reading School"
 pronouns: "HE/HIM"
 role: ["Writer", "Editor"]
-userID: "3f943d5f-27d9-4cba-a273-fea8d548722c"
-slug: "/profiles/3f943d5f-27d9-4cba-a273-fea8d548722c"
+userID: "o"
+slug: "/profiles/o"
 profile_picture: "Jack Fraser.png"
 ---
 

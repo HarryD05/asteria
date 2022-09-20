@@ -7,9 +7,9 @@ issue: 1
 preview_image: "economics1.jpg"
 video_url: null
 video_title: null
-userIDs: ["157ed3ad-a5b3-41cd-88d3-7dd3c9b4e15b"]
-articleID: "c9110dba-0ed1-4a05-b21d-1aec152bb5b9"
-slug: "/articles/c9110dba-0ed1-4a05-b21d-1aec152bb5b9"
+userIDs: ["A"]
+articleID: "5"
+slug: "/articles/5"
 ---
 
 Since 2014, with all factors being equal, the annual inflation growth rate on the transfer market for the top 5 league footballers has been 26%. Reports also show that with respect to 2011, the same player costs almost three times more1, but why?

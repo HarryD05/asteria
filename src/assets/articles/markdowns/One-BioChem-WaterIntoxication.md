@@ -7,9 +7,9 @@ issue: 1
 preview_image: "water1.jpg"
 video_url: null
 video_title: null
-userIDs: ["403fdadd-c76a-4b87-ac9f-fe7f2a36148f"]
-articleID: "616c1bab-806b-465e-9ed5-7960e134c544"
-slug: "/articles/616c1bab-806b-465e-9ed5-7960e134c544"
+userIDs: ["s"]
+articleID: "4"
+slug: "/articles/4"
 ---
 
 12 January 2007. California. On a morning radio show, an excruciating contest was going on. Named 'Hold your wee for a Wii' [1][3] by the now-defunct KDND radio station, 18 contestants were downing bottles of water one after the other, on the condition that whoever could drink the most while not urinating would win a Nintendo Wii gaming console as a prize. Contestants agonizingly crammed down mouthfuls of liquid down their throats, while the hosts egged them on with gleeful laughter. As time ticked by, some could no longer endure such an ordeal, dropping out in the middle and probably wondering why they had signed up to such a torturous session. “She looks like she’s pregnant,” sniggered one of the DJs, pointing to a female participant with an overwhelmingly bloated stomach. Little did they know, she would be dead in a few hours.

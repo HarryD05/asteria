@@ -5,8 +5,8 @@ surname: "Gautham Kurakula"
 school: "Reading School"
 pronouns: "HE/HIM"
 role: ["Co-ordinator", "Chief editor"]
-userID: "6954ab11-ee04-4a0e-af7d-b1726371ffdb"
-slug: "/profiles/6954ab11-ee04-4a0e-af7d-b1726371ffdb"
+userID: "w"
+slug: "/profiles/w"
 profile_picture: "Ram Kurakula.jpg"
 ---
 

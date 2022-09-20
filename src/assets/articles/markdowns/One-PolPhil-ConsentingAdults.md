@@ -7,9 +7,9 @@ issue: 1
 preview_image: "consent.jpg"
 video_url: null
 video_title: null
-userIDs: ["2917a5cd-6616-492e-8e07-6c3fdecc0390"]
-articleID: "e0f2b756-482a-4d78-990d-2ce0fb8aa00c"
-slug: "/articles/e0f2b756-482a-4d78-990d-2ce0fb8aa00c"
+userIDs: ["j"]
+articleID: "17"
+slug: "/articles/17"
 ---
 
 ## I. Authentic Consent & The Problem of Consent to Harm

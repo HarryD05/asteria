@@ -7,9 +7,9 @@ issue: 1
 preview_image: "synapse.jpg"
 video_url: null
 video_title: null
-userIDs: ["da0695a7-2ed7-4bc7-aa5b-b7e4595f80b5", "226bdcc6-15f2-463c-8e31-83c74201b6e0"]
-articleID: "d9a6d0f1-ee32-4056-b100-16d7b2105611"
-slug: "/articles/d9a6d0f1-ee32-4056-b100-16d7b2105611"
+userIDs: ["a", "n"]
+articleID: "2"
+slug: "/articles/2"
 ---
 
 In this article, we will be discussing the fundamentals of electrical signalling in the body. Electricity is required for the nervous system to send signals throughout the body and to the brain, making it possible for us to move, think and feel. This is only possible through our nervous systems and the use of neurons and action potentials.

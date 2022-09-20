@@ -5,8 +5,8 @@ surname: "Thakur"
 school: "Reading School"
 pronouns: "HE/HIM"
 role: ["Writer", "Editor"]
-userID: "e31840a6-04b6-4aca-8784-8d53a9da9418"
-slug: "/profiles/e31840a6-04b6-4aca-8784-8d53a9da9418"
+userID: "f"
+slug: "/profiles/f"
 profile_picture: "Audric Thakur.png"
 ---
 

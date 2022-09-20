@@ -5,8 +5,8 @@ surname: "Hasan"
 school: "Kendrick School"
 pronouns: "SHE/HER"
 role: ["Writer"]
-userID: "11360970-c0d2-42d8-baf0-802b9a031281"
-slug: "/profiles/11360970-c0d2-42d8-baf0-802b9a031281"
+userID: "u"
+slug: "/profiles/u"
 profile_picture: "Naziyah.jpg"
 ---
 

@@ -7,9 +7,9 @@ issue: 1
 preview_image: "drawing.png"
 video_url: null
 video_title: null
-userIDs: ["7da338a3-5756-4ac9-a269-cd8cfef6f23a"]
-articleID: "41ffd4a9-7d96-4931-9061-a42a69bb992a"
-slug: "/articles/41ffd4a9-7d96-4931-9061-a42a69bb992a"
+userIDs: ["x"]
+articleID: "1"
+slug: "/articles/1"
 ---
 
 Animating in 2.5D (2.5 dimensional) is a fairly common technique in the industry - with it being used in entertainment ranging from our beloved Disney classics to video games. We know that 2D is a visual technique in which the images, characters and sprites are flat, whereas 3D computer graphics (aka CGI - computer generated images) make the digital object seem as though it is moving in three-dimensional space. So what is 2.5D? 

@@ -7,9 +7,9 @@ issue: 1
 preview_image: "hoags.png"
 video_url: null
 video_title: null
-userIDs: ["d86da243-f352-4b87-a235-9df7dbf2d089"]
-articleID: "e09f83e4-3c76-4070-a9f5-be7d1808ecb7"
-slug: "/articles/e09f83e4-3c76-4070-a9f5-be7d1808ecb7"
+userIDs: ["m"]
+articleID: "13"
+slug: "/articles/13"
 ---
 
 ## Introduction

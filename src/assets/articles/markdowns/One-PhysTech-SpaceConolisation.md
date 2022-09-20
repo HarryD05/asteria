@@ -7,9 +7,9 @@ issue: 1
 preview_image: "SpaceConoly.jpg"
 video_url: null
 video_title: null
-userIDs: ["454e60d1-f934-489d-9abc-ca906a054caf"]
-articleID: "aa9f7f12-99a4-4cd4-97fa-2edf1fc1f2d3"
-slug: "/articles/aa9f7f12-99a4-4cd4-97fa-2edf1fc1f2d3"
+userIDs: ["e"]
+articleID: "14"
+slug: "/articles/14"
 ---
 
 No matter who you are, it is a universal dream to explore and experience new planets, exotic atmospheres, and alien scenes but is that really something we can do? The rapid pace at which technology is evolving is bringing forth the possibility of daily space travel, which earlier seemed to be a distant fantasy. This rate of development, with the aid of continuous innovation from private firms within the industry, raises the question of how long will we have to wait before star systems become within our grasp?

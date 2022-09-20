@@ -5,8 +5,8 @@ surname: "Philpott"
 school: "Reading School"
 pronouns: "HE/HIM"
 role: ["Writer"]
-userID: "21bf8680-1107-4bc6-b4d3-19534e357aed"
-slug: "/profiles/21bf8680-1107-4bc6-b4d3-19534e357aed"
+userID: "g"
+slug: "/profiles/g"
 profile_picture: "Charles Philpott.jpeg"
 ---
 

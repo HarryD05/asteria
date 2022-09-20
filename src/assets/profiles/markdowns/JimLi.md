@@ -5,8 +5,8 @@ surname: "Li (Jim)"
 school: "Reading School"
 pronouns: "HE/HIM"
 role: ["Writer"]
-userID: "0f527625-6355-4c38-86d8-f1c58d8c80a3"
-slug: "/profiles/0f527625-6355-4c38-86d8-f1c58d8c80a3"
+userID: "p"
+slug: "/profiles/p"
 profile_picture: "Rujing Li 2.png"
 ---
 

@@ -5,8 +5,8 @@ surname: "Narendran"
 school: "Kendrick School"
 pronouns: "SHE/HER"
 role: ["Editor"]
-userID: "41c8a83d-7b35-4885-8f4e-a19073def571"
-slug: "/profiles/41c8a83d-7b35-4885-8f4e-a19073def571"
+userID: "k"
+slug: "/profiles/k"
 profile_picture: "Gauri Narendran.jpg"
 ---
 

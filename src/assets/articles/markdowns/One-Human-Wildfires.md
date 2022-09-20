@@ -7,9 +7,9 @@ issue: 1
 preview_image: "wildfires1.jpg"
 video_url: null
 video_title: null
-userIDs: ["3f943d5f-27d9-4cba-a273-fea8d548722c"]
-articleID: "ec5cde54-b3ad-4c50-9bf4-1d36314bd4ca"
-slug: "/articles/ec5cde54-b3ad-4c50-9bf4-1d36314bd4ca"
+userIDs: ["o"]
+articleID: "6"
+slug: "/articles/6"
 ---
 
 <div class="image-card-right">

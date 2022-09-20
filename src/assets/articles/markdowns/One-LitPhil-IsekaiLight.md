@@ -7,9 +7,9 @@ issue: 1
 preview_image: "Novels.jpg"
 video_url: null
 video_title: null
-userIDs: ["0f527625-6355-4c38-86d8-f1c58d8c80a3"]
-articleID: "91e3a1bc-6a1c-4db1-b0d0-8350d45fa067"
-slug: "/articles/91e3a1bc-6a1c-4db1-b0d0-8350d45fa067"
+userIDs: ["p"]
+articleID: "7"
+slug: "/articles/7"
 ---
 
 The isekai genre remains one of the most popular genres in web novels, light novels, manga and anime. As of August 2022, Anime Planet lists over 205 anime as having the isekai tag; over 1877 manga as having the isekai tag; and novel updates lists over 2100 light, web or published novels as having at least one of the following tags: transported to another world; transported into a game world; reincarnated in another world; and reincarnated in a game world.  The origin of the isekai can be traced to the Japanese folk tale of Urashima Tarō, who saves a turtle and is brought into a magical undersea kingdom. After spending what he thinks is 4-5 days there, he returns to his home, only to find that 300 years have passed1. That is what an isekai is: it is speculative fiction (fiction that incorporates elements not grounded in reality, recorded history or our universe) in which one or more protagonists are transported (usually through being summoned or dying and then reincarnating) into another world. From there anything can happen as the very nature of the setting allows the author to do whatever they want.  The term isekai itself (meaning “other world” or “different world” in Japanese) was used sporadically until 20132, after which a substantial increase in searches can be observed (see fig 1). 

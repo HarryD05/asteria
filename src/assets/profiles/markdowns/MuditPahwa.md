@@ -5,8 +5,8 @@ surname: "Pahwa"
 school: "Reading School"
 role: ["Designer", "Co-ordinator"]
 pronouns: ""
-userID: "f70dad54-9821-4b17-b5d8-1f5d6734f158" 
-slug: "/profiles/f70dad54-9821-4b17-b5d8-1f5d6734f158"
+userID: "t" 
+slug: "/profiles/t"
 profile_picture: "Mudit Pahwa.jpg"
 ---
 

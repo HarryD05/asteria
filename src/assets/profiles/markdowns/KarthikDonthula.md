@@ -5,8 +5,8 @@ surname: "Donthula"
 school: "Reading School"
 pronouns: "HE/HIM"
 role: ["Writer"]
-userID: "ac3de21f-1972-4e38-8eee-7d7dbff351d4"
-slug: "/profiles/ac3de21f-1972-4e38-8eee-7d7dbff351d4"
+userID: "q"
+slug: "/profiles/q"
 profile_picture: "Karthik Donthula.jpg"
 ---
 
