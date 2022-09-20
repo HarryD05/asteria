@@ -64,9 +64,10 @@
     .buttons {
       grid-area: form;
       width: 60%;
+      height: 100%;
       display: flex;
       justify-content: center;
-      align-items: center;   
+      align-items: flex-end;   
 
       a {
         width: 96px;

@@ -20,16 +20,15 @@
     }
 
     .issue-articles {
-      width: calc(100% - 110px);
-      margin-bottom: 1rem;
-      margin-left: 110px;
+      width: calc(100% - 200px);
+      margin: 0 100px 1rem 100px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
 
       @media (max-width: 640px) {
-        justify-content: space-around;
-        padding: 0;
+        width: 100%;
+        margin: 0;
       }
     }
   }
@@ -43,6 +42,7 @@
     background-color: var(--navbar-bg);
     padding: 1rem;
     border-radius: 32px;
+    text-align: center;
 
     @media (max-width: 800px) {
       width: 300px;
