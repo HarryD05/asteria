@@ -18,81 +18,80 @@ import { graphql } from "gatsby";
 import './../styles/index.scss';
 
 const MeetTheTeamPage = ({data}) => {
-  const [selected, setSelected] = useState({
-    editor: true, designer: true, writer: true, 'chief editor': true, 'co-ordinator': true
-  });
   const [profiles, setProfiles] = useState([])
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
 
-  useEffect(() => {
     const profileList = [];
     data.allMarkdownRemark.nodes.forEach(profile => {
       if (profile.frontmatter.type === "Profile") {
-        profile = profile.frontmatter;
-
-        let display = false;
-        Object.keys(selected).forEach(key => {
-          profile.role.forEach(role => {
-            if (selected[key] && role.toLowerCase() === key) {
-              display = true;
-            }
-          })
-        })
-
-        if (display) {
-          profileList.push(profile);
-        } 
+        profileList.push(profile.frontmatter); //Update query to just get profiles
       }
     })
-    profileList.sort((a, b) => {
-      if (a.first_name > b.first_name) {
-        return 1;
-      } else if (a.first_name === b.first_name) {
-        if (a.surname > b.surname) {
-          return 1;
-        } else if (a.surname === b.surname) {
-          return 0;
-        } else {
-          return -1;
-        }
-      } else {
-        return -1;
-      }
-    });
 
     setProfiles(profileList);
-  }, [selected])
+  }, [data])
 
-  const displayProfiles = () => {
-    if (profiles.length > 0) {
-      return ProfilesMapper(profiles).map((profile, index) => {
-        return <ProfilePreview 
-          key={index} 
-          Name={profile.Name}
-          Role={profile.Role}
-          Image={profile.Image}
-          LinkTo={profile.LinkTo}
-          Subject={profile.Subject}
-        />
-      });
-    } else {
-      return <p>No profiles...</p>
+  const displayRoles = () => {
+    const profileList = ProfilesMapper(profiles);
+
+    if (profileList === 0) {
+      return <p>Loading...</p>
     }
-  }
 
-  const changeSelector = e => {
-    const role = e.target.value;
-    setSelected({
-      ...selected,
-      [role]: !selected[role]
+    const roles = {
+      "Co-ordinator": [],
+      "Designer": [],
+      "Editor": [],
+      "Writer": []
+    }
+
+    profileList.forEach(profile => {
+      if (profile.Role.includes("Co-ordinator")) {
+        roles["Co-ordinator"].push(profile);
+      } else if (profile.Role.includes("Designer")) {
+        roles["Designer"].push(profile);
+      } else if (profile.Role.includes("Editor")) {
+        roles["Editor"].push(profile);
+      } else if (profile.Role.includes("Writer")) {
+        roles["Writer"].push(profile);
+      }
     })
-  }
 
-  const getClass = role => {
-    return (selected[role] ? 'shown' : 'hidden')
+    const output = []
+
+    for (const key of ["Co-ordinator", "Designer", "Editor", "Writer"]) {
+      const roleOutput = []
+      let roleList = roles[key];
+      roleList = roleList.sort((a, b) => {
+        if (a.Name > b.Name) {
+          return 1;
+        } 
+        
+        return -1;
+        
+      });
+
+      if (roleList.length > 0) {
+        roleOutput.push(roleList.map((profile, index) => {
+          return <ProfilePreview
+            key={index}
+            Name={profile.Name}
+            Role={profile.Role}
+            Image={profile.Image}
+            LinkTo={profile.LinkTo}
+            Subject={profile.Subject}
+          />
+        }));
+      } else {
+        roleOutput.push(<p>No profiles...</p>)
+      }
+
+      output.push(<div class="role"><h1>{key}s</h1><div class="profiles">{roleOutput}</div></div>)
+    }
+
+    return output;
   }
 
   return (
@@ -100,19 +99,9 @@ const MeetTheTeamPage = ({data}) => {
       <Navbar />
       <main className="MTT">
         <SEO seo={_.MeetTheTeam.SEO} />
-
-        <h1>Meet the Team</h1>
-        
-        <div className="selector">
-          <button className={getClass("writer")} onClick={changeSelector} value="writer">Writers</button>
-          <button className={getClass("editor")} onClick={changeSelector} value="editor">Editors</button>
-          <button className={getClass("designer")} onClick={changeSelector} value="designer">Designers</button>
-          <button className={getClass("co-ordinator")} onClick={changeSelector} value="co-ordinator">Co-ordinators</button>
-          <button className={getClass("chief editor")} onClick={changeSelector} value="chief editor">Chief editor</button>
-        </div>
-
+      
         <div className="profiles">
-          {displayProfiles()}
+          {displayRoles()}
         </div>
       </main>
       <Footer />

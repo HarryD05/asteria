@@ -17,7 +17,6 @@ const Footer = () => {
         <div className="socialMedia">
           <img src={InstagramLogo} alt="Instagram logo"></img>
           <a href="https://www.linkedin.com/company/theasteriamagazine/" target="_blank" rel="noreferrer"><img src={LinkedInLogo} alt="LinkedIn logo"></img></a>
-          <img src={FacebookLogo} alt="Facebook logo"></img>
         </div>
         <div className="buttons">
           <a onClick={() => alert('Not setup yet')}>Contact us</a>

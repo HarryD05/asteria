@@ -1,7 +1,7 @@
 ---
 type: "Article"
-title: "Future of humanity"
-description: "Is there hope for humanity to expand its authority onto other star systems?"
+title: "Is there hope for humanity to expand its authority onto other star systems?"
+description: ""
 subject: "9C2111"
 issue: 1
 preview_image: "SpaceConoly.jpg"
@@ -25,11 +25,11 @@ This method is most easily used on millisecond pulsars which are a special type 
 This ‘offbeat’ pulse is regularly repeated thus giving astronomers the value of the period of the orbit the planet has around the pulsar. Using this and formula 1, you can calculate the radius of the orbit of the planet.
 
 <div class="image-card-right">
-    <p>‘r’ is the radius of orbit, ‘G’ is Newton’s gravitational constant<br />‘M_*’ is the mass of the host star, ‘P’ is the time period of orbit</p>
+    <p>‘r’ is the radius of orbit, ‘G’ is Newton’s gravitational constant<br />‘M<sub>*</sub>’ is the mass of the host star, ‘P’ is the time period of orbit</p>
     <div class="image"><div class="img"><img alt="Formula 1" src="./../images/issue1/phystech/Formula1.png"></img></div></div>
 </div>
 
-If the mass of the planet is also known, then we can calculate the velocity of the star, v_*, (Formula 2) in addition to the radius of orbit of the star, r_*, (Formula 3) around the shared centre of the mass of the system.
+<p>If the mass of the planet is also known, then we can calculate the velocity of the star, v<sub>*</sub>, (Formula 2) in addition to the radius of orbit of the star, r<sub>*</sub>, (Formula 3) around the shared centre of the mass of the system.</p>
 
 <div class="multi-image-row-2">
     <div class="image"><div class="img"><img alt="Formula 2" src="./../images/issue1/phystech/Formula2.png"></img></div></div>
@@ -39,7 +39,7 @@ If the mass of the planet is also known, then we can calculate the velocity of t
 However, there are some drawbacks to this method; most notably, it must be done on millisecond pulsars otherwise the observation time of the pulses will need to be over years rather than days or weeks. Secondly, if we are trying to find habitable planets then this is completely the wrong place to look as no life would survive under the harsh radioactive conditions. Thirdly, even if a planet is very close in, it produces a very small wobble so any planet further out, maybe in the goldilocks zone (a region of orbit around a star where it is possible for liquid water to exist), will not be detectable with this method as the wobble just would not be distinguishable. Fourthly, the planets found using this method are almost always hot Jupiters as they are both close in and are ‘massive’. A hot Jupiter is a Jupiter-sized planet, which could be rocky or gaseous that is very close to its host star hence it is hot. Finally, using this method we have no way to prove that what we are measuring the effects of is a planet or if it is a dwarf star in a binary system with the pulsar. To prove that it is in fact a planet we need to know both its mass and density, we have mass but to find density we must use the next method, transit.
 
 <div class="image-card-right">
-    <p>Transits are events that happen when an exoplanet passes in front of its host star relative to us. This leads to a slight dimming in the light that reaches us. Once per orbit, this dip can be measured to find the radius of the planet, r_p, where B is the normal brightness of the star, ∆B is the change in brightness and r_* is the radius of the star.</p>
+    <p>Transits are events that happen when an exoplanet passes in front of its host star relative to us. This leads to a slight dimming in the light that reaches us. Once per orbit, this dip can be measured to find the radius of the planet, r<sub>p</sub>, where B is the normal brightness of the star, ∆B is the change in brightness and r<sub>*</sub> is the radius of the star.</p>
     <div class="image"><div class="img"><img alt="Formula 4" src="./../images/issue1/phystech/Formula4.png"></img></div></div>
 </div>
 

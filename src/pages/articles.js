@@ -3,8 +3,8 @@ import React, {useState, useEffect} from 'react';
 
 //Importing components
 import Navbar from '../components/navbar';
-import Footer from './../components/footer';
-import SEO from './../components/seo';
+import Footer from '../components/footer';
+import SEO from '../components/seo';
 import ArticlePreview from '../components/articles/articlePreview';
 import ArticleScroller from '../components/articleScroller';
 
@@ -20,7 +20,7 @@ import PoliticsPhilosophyBanner from './../assets/images/banners/Politics and Ph
 import MathsBanner from './../assets/images/banners/Mathematics.jpg';
 
 //Importing constants
-import _ from './../constants/constants';
+import _ from '../constants/constants';
 
 //Importing helpers
 import { ArticlesMapper } from '../components/articles/articleHelperFunctions';
@@ -42,7 +42,7 @@ const subjects = [
   [`3E5FCA`, `Maths`, MathsBanner],
 ]
 
-const CategoriesPage = ({data}) => {
+const ArticlesPage = ({data}) => {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
@@ -82,19 +82,19 @@ const CategoriesPage = ({data}) => {
   const createSubjects = () => {
     const articleList = ArticlesMapper(articles);
 
-    if (articleList === 0) return <p>No articles</p>;
+    if (articleList === 0) return <p>Loading...</p>;
 
-    const banner = (info) => {
+    const banner = (info, index) => {
       if (info.length === 3) {
-        return <div className="banner" style={{'backgroundImage': `url('${info[2]}')`}}></div>
+        return <div className={`banner ${index === 0 ? 'top' : ''}`} style={{'backgroundImage': `url('${info[2]}')`}}></div>
       } else {
         return <h2>{info[1]}</h2>;
       }
     }
 
-    return subjects.map((info, index) => {
-      return <div className="subject" key={index} id={info[0]}>
-        {banner(info)}
+    return subjects.map((info, i) => {
+      return <div className="subject" key={i} id={info[0]}>
+        {banner(info, i)}
         <div className="previews">
           {articleList.map((article, index) => {
             if (article.Subject === info[0]) {
@@ -111,12 +111,9 @@ const CategoriesPage = ({data}) => {
   return (
     <>
       <Navbar />
-      <main className="categories">
-        <SEO seo={_.Categories.SEO} />
+      <main className="articles">
+        <SEO seo={_.Articles.SEO} />
         <ArticleScroller />
-
-        <h1>Categories</h1>
-
         <div className="subjects">{createSubjects()}</div>
       </main>
       <Footer />
@@ -124,7 +121,7 @@ const CategoriesPage = ({data}) => {
   )
 }
 
-export default CategoriesPage;
+export default ArticlesPage;
 export const pageQuery = graphql`
 query articleQuery2{
   allMarkdownRemark{

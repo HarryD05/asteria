@@ -1,4 +1,4 @@
-.categories {
+.articles {
   scroll-behavior:smooth;
   width: calc(100% - 2rem);
   padding: 1rem;
@@ -16,16 +16,20 @@
     box-shadow: #00000066 0px 2px 4px, #0000004d 0px 7px 13px -3px, #00000033 0px -3px 0px inset;
   }
 
-    @media (max-width: 840px) {
-      h1,
-      h2 {
-        text-align: center;
-      }
+  .top {
+    margin-top: 0;
+  }
 
-      .banner {
-        height: 75px;
-      }
+  @media (max-width: 840px) {
+    h1,
+    h2 {
+      text-align: center;
     }
+
+    .banner {
+      height: 75px;
+    }
+  }
 
   ::-webkit-scrollbar {
     height: 10px;
@@ -52,13 +56,8 @@
         min-height: 250px;
         display: flex;
         flex-wrap: wrap;
-        padding-left: 1rem;
-        justify-content: left;
-        
-        @media (max-width: 640px) {
-          justify-content: space-around;
-          padding-left: 0;
-        }
+        justify-content: center;
+  
       }
     }
   }
@@ -70,7 +69,7 @@
     min-height: 100%;
     bottom: calc(100% - 400px);
 
-    padding: 8px;
+    //padding: 8px;
 
     a {
       text-decoration: none;

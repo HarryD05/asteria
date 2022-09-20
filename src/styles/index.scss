@@ -86,7 +86,7 @@ body {
   @import "footer";
   @import "home";
   @import "about";
-  @import "categories";
+  @import "articles";
   @import "profileDetails";
   @import "meetTheTeam";
   @import "articleDetails";
@@ -177,6 +177,7 @@ h2, h3 {
   }
 
   .issue {
+    display: none; //Remove when have issue 2
     position: absolute;
     //background-color: var(--nav-hover);
     //color: var(--text);

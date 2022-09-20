@@ -2,13 +2,16 @@
   width: calc(100% - 2rem);
   min-height: 100vh;
   padding: 1rem;
+  text-align: center;
 
-  
+  h1 {
+    margin-bottom: 1rem;
+  }
+
   p {
     width: 600px;
     max-width: 80%;
     margin: auto;
-    text-align: center;
   }
 
   .author {

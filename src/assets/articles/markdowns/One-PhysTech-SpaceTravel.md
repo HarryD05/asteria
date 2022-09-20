@@ -1,6 +1,6 @@
 ---
 type: "Article"
-title: "Space Travel: The Rise of a New Age"
+title: "Space travel: the rise of a new age"
 description: ""
 subject: "9C2111"
 issue: 1

@@ -1,6 +1,6 @@
 ---
 type: "Article"
-title: "Water Intoxication: An Unlikely Poison"
+title: "Water intoxication: an unlikely poison"
 description: ""
 subject: "2BB760"
 issue: 1

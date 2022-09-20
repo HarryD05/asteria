@@ -1,6 +1,6 @@
 ---
 type: "Article"
-title: "Glaucoma: The Leading Cause of Blindness"
+title: "Glaucoma: the leading cause of blindness"
 description: ""
 subject: "2BB760"
 issue: 1

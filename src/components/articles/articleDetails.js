@@ -121,17 +121,6 @@ const ArticleDetails = ({ data }) => {
     return result;
   }
 
-  const authorLinks = () => {
-    const result = [];
-    for (let i = 0; i < AuthorNames(ArticleDetails).length; i++) {
-      result.push(<div className="authorDetails">
-        <a className="name" href={AuthorLinkTos(ArticleDetails)[i]}>{AuthorNames(ArticleDetails)[i]}</a><br />
-        <a className="pronouns" href={AuthorLinkTos(ArticleDetails)[i]}>{AuthorPronouns(ArticleDetails)[i]}</a>
-      </div>)
-    }
-    return result;
-  }
-
   const displayVideo = () => {
     const Video = {URL: VideoURL(ArticleDetails), Title: VideoTitle(ArticleDetails)}
 
@@ -162,7 +151,7 @@ const ArticleDetails = ({ data }) => {
         <Navbar />
         <div className="coverImage" style={{'backgroundImage': `url('${image()}')`}}></div>
         <div className="articleDetails">
-          <a className={`subject-hover bg${ArticleSubject(ArticleDetails)}-light`} href={`/categories`} onClick={changePage}>
+          <a className={`subject-hover bg${ArticleSubject(ArticleDetails)}-light`} href={`/articles`} onClick={changePage}>
             <p>{`${subjects[ArticleSubject(ArticleDetails)]}`}</p>
           </a>
 

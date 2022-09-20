@@ -22,9 +22,7 @@ const AboutPage = () => {
       <main className="about">
         <SEO seo={_.About.SEO} />
 
-        <h1>About</h1>
-
-        <p>Welcome to ASTERIA!</p><br />
+        <p>Welcome to Asteria!</p><br />
         <p>From a column on the inner workings of human physiology to critiques of Chopin’s renditions, this is a safe platform for students to come forward and share their passions in academia.</p><br />
         <p>Throughout the production of this initiative, the opportunity to work with so many amazing personalities is a truly rewarding experience. The best part? We’re just getting started.</p><br />
         <p>Our mission is to build collegial partnerships with the secondary schools we work with. In time, we hope to grow a community around this initiative.</p><br />

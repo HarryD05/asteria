@@ -41,7 +41,7 @@ const IndexPage = ({data}) => {
 
     articleList.forEach(article => {
       const authorList = [];
-      console.log(article)
+
       article.userIDs.forEach(ID => {
         authorList.push(authors[ID])
       })
@@ -92,7 +92,7 @@ const IndexPage = ({data}) => {
     const keys = Object.keys(issues).map(issue => Number(issue));
     for (let i = Math.max(...keys); i >= Math.min(...keys); i--) {
       if (issues.hasOwnProperty(i)) {
-        content.push(<><h3>Issue {i}</h3><div className="issue-articles">{issues[i].map(article => article)}</div></>)
+        content.push(<><h2>Issue {i}</h2><div className="issue-articles">{issues[i].map(article => article)}</div></>)
       }
     }
 
@@ -107,7 +107,7 @@ const IndexPage = ({data}) => {
 
         <ArticleShowcase articles={featuredArticles} />
 
-        <h2>Archive</h2>
+        <h1>Archive</h1>
         <div className="issues">{createIssues()}</div>
       </main>
       <Footer />

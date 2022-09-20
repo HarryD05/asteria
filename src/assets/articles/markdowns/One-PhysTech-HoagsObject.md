@@ -1,6 +1,6 @@
 ---
 type: "Article"
-title: "The Enigma of Hoag’s Object"
+title: "The enigma of Hoag’s Object"
 description: "“There are at least as many galaxies in our observable universe as there are stars in our galaxy.” - Martin Rees [1]"
 subject: "9C2111"
 issue: 1

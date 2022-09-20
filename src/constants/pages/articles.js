@@ -1,8 +1,8 @@
 export default {
   SEO: {
-    title: "Asteria | Categories",
+    title: "Asteria | Articles",
     description:
       "Reading School & Kendrick's new STEAM magazine, the hub of STEAM articles from our students.",
-    url: "categories",
+    url: "articles",
   },
 }

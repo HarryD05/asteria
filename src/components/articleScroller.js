@@ -22,7 +22,7 @@ const ArticleScroller = () => {
   return (
     <div className="articleScroller">
       {subjects.map((subject, index) => {
-        return <a className="subject-hover" key={index} href={ `#${subject[0]}`} style={{top: `${105 + 30 * index}px`}}>
+        return <a className="subject-hover" key={index} href={ `#${subject[0]}`} style={{top: `${140 + 30 * index}px`}}>
           <div className={`circle bg${subject[0]}`}></div>
           <p>{`${subject[1]}`}</p>
         </a>

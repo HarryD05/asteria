@@ -4,7 +4,6 @@ import React, {useEffect, useState} from "react";
 //Importing assets
 import InstagramLogo from "./../assets/images/social-media-logos/Instagram.png";
 import LinkedInLogo from "./../assets/images/social-media-logos/LinkedIn.png";
-import FacebookLogo from "./../assets/images/social-media-logos/Facebook.png";
 
 const DrawerToggleButton = ({click, isOpen}) => {
   const classes = () => `toggle-btn ${isOpen ? 'side': 'normal'}`;
@@ -29,14 +28,13 @@ const SideDrawer = ({isOpen, isDark}) => {
       <div className={sideClasses()}>
         
         <div className="pages">
-          <a href="/categories">Categories</a>
+          <a href="/articles">Articles</a>
           <a href="/meet-the-team">Meet the Team</a>
           <a href="/about">About</a>
         </div>
         <div className="social-media">
           <img className={socialClasses()} src={InstagramLogo} alt="Instagram logo"></img>
           <a href="https://www.linkedin.com/company/theasteriamagazine/" target="_blank" rel="noreferrer"><img className={socialClasses()} src={LinkedInLogo} alt="LinkedIn logo"></img></a>
-          <img className={socialClasses()} src={FacebookLogo} alt="Facebook logo"></img>
         </div>
       </div>
     </>
@@ -90,6 +88,8 @@ const Navbar = () => {
 
   const invertClasses = () => isDark ? 'invert' : 'noinvert' ;
 
+  const scrollUp = () => window.scrollTo(0, 0);
+
   return (
     <div className="navbar">
       <DrawerToggleButton isOpen={sideOpen} click={toggleSideOpen}></DrawerToggleButton>
@@ -97,17 +97,17 @@ const Navbar = () => {
       <div className="contents">
         <div className="logo"><a href="/" className="logo-img"></a></div>
         <div className="pages">
-          <a href="/categories">Categories</a>
+          <a href="/articles">Articles</a>
           <a href="/meet-the-team">Meet the Team</a>
           <a href="/about">About</a>
         </div>
         <div className="social-media">
           <img className={invertClasses()} src={InstagramLogo} alt="Instagram logo"></img>
           <a href="https://www.linkedin.com/company/theasteriamagazine/" target="_blank" rel="noreferrer"><img className={invertClasses()} src={LinkedInLogo} alt="LinkedIn logo"></img></a>
-          <img className={invertClasses()} src={FacebookLogo} alt="Facebook logo"></img>
         </div>
       </div>
       <button className="dark-btn" onClick={toggleDarkMode}><div className={`icon ${isDark ? 'invert': 'noinvert'}`}></div></button>
+      <button className="up-btn" onClick={scrollUp}>↑</button>
     </div>
   );
 }

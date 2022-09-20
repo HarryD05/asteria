@@ -57,6 +57,30 @@ $border-height: 5px;
     }
   }
 
+  .up-btn {
+    position: fixed;
+    top: 106px;
+    right: 5px;
+    width: 32px;
+    height: 32px;
+
+    @media (max-width: 640px) {
+      top: 55px;
+    }
+
+    background-color: var(--navbar-bg);
+    color: var(--text);
+    outline: none;
+    padding: 4px;
+    border: 1px solid var(--navbar-bg);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px 0 #00000012;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
   .backdrop {
     right: 100vw;
     z-index: 3;
@@ -123,14 +147,16 @@ $border-height: 5px;
     }
 
     .social-media {
+      width: 100%;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: space-evenly;
       padding-bottom: 4px;
 
       img {
         width: 40px;
+        height: 40px;
       }
     }
   }
@@ -224,13 +250,14 @@ $border-height: 5px;
     .social-media {
       width: 128px;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       padding: 8px;
 
       img {
         width: 32px;
         height: 32px;
         border-radius: 50%;
+        margin-left: 4px;
 
         &:hover {
           cursor: pointer;

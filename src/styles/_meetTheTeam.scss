@@ -2,88 +2,68 @@
   width: calc(100% - 2rem);
   min-height: 100vh;
   padding: 1rem;
-
-  @media (max-width: 640px) {
-    h1 {
-      text-align: center;
-    }
-  }
-
-  .selector {
-    margin: 1rem auto;
-    width: 100%;
-    max-width: 500px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    justify-content: center;
-
-    .shown {
-      text-decoration: underline;
-    }
-  
-    .hidden {
-      text-decoration: none;
-    }
-
-    button {
-      all: unset;
-      margin: 4px;
-
-      &:hover {
-        cursor: pointer;
-      }
-    }
-  }
+  text-align: center;
 
   .profiles {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-    .profilePreview {
-      width: 200px;
-      display: flex;
-      justify-content: center;
-      padding: 8px;
-
-      .details {
-        width: 100%;
-      }
-
-      a {
+    .role {
+      h1 {
         text-align: center;
-        text-decoration: none;
-        color: var(--text);
-
-        h2 {
-          font-size: 1.15em !important;
-        }
-
-        &:hover {
-          img {
-            transform: scale(1.025);
-          }
-        }
-
-        img {
-          width: 192px;
-          border-radius: 50%;
-          box-shadow: 0 3px 4px 0 var(--shadow-colour);
-          transition: all ease-in-out 0.3s;
-
-        }
+        margin-bottom: 1rem;
       }
 
-      @media (max-width: 640px) {
-        width: 150px;
-        h2 {
-          font-size: medium;
-        }
-        a {
-          img {
-            width: 128px;
+      .profiles {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 2rem;
+
+        .profilePreview {
+          width: 200px;
+          display: flex;
+          justify-content: center;
+          padding: 8px;
+      
+          .details {
+            width: 100%;
+          }
+      
+          a {
+            text-align: center;
+            text-decoration: none;
+            color: var(--text);
+      
+            h2 {
+              font-size: 1.15em !important;
+            }
+      
+            &:hover {
+              img {
+                transform: scale(1.025);
+              }
+            }
+      
+            img {
+              width: 192px;
+              border-radius: 50%;
+              box-shadow: 0 3px 4px 0 var(--shadow-colour);
+              transition: all ease-in-out 0.3s;
+      
+            }
+          }
+      
+          @media (max-width: 640px) {
+            width: 150px;
+      
+            h2 {
+              font-size: medium;
+            }
+      
+            a {
+              img {
+                width: 128px;
+              }
+            }
           }
         }
       }

@@ -1,6 +1,6 @@
 ---
 type: "Article"
-title: "Electrical Signalling in the Body"
+title: "Electrical signalling in the body"
 description: "Whether neurons are sensory, motor, big or small, one thing they all have in common is that their activity is both electrical and chemical. The cooperation between neurons forms the basis of our central nervous system and understanding how cells conduct electricity is vital to grasping its complexity, as well as aiding us when problems arise."
 subject: "2BB760"
 issue: 1
