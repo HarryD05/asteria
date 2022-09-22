@@ -8,6 +8,7 @@ import SEO from "./../components/seo";
 import ArticleShowcase from "./../components/articleShowcase";
 import ArticlePreview from "./../components/articles/articlePreview";
 import { ArticlesMapper } from "./../components/articles/articleHelperFunctions";
+import LoadingSpinner from "../components/loading";
 
 //Importing constants
 import _ from "./../constants/constants";
@@ -70,7 +71,7 @@ const IndexPage = ({data}) => {
 
     const articleList = ArticlesMapper(articles);
 
-    if (articleList === 0) return <p>No articles</p>;
+    if (articleList === 0) return <LoadingSpinner />;
 
     articleList.forEach((article, index) => {
       if (!issues.hasOwnProperty(article.Issue)) {

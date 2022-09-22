@@ -9,6 +9,7 @@ import Navbar from "./../components/navbar";
 import Footer from "./../components/footer";
 import SEO from './../components/seo';
 import ProfilePreview from "./../components/profiles/profilePreview";
+import LoadingSpinner from "../components/loading";
 
 //Importing helpers
 import {ProfilesMapper} from './../components/profiles/profileHelperFunctions';
@@ -37,7 +38,7 @@ const MeetTheTeamPage = ({data}) => {
     const profileList = ProfilesMapper(profiles);
 
     if (profileList === 0) {
-      return <p>Loading...</p>
+      return <LoadingSpinner />
     }
 
     const roles = {

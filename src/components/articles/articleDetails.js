@@ -1,7 +1,5 @@
 //Import React dependencies
 import React, { useEffect, useState } from "react";
-import { Helmet } from "react-helmet";
-import { MDXRenderer } from 'gatsby-plugin-mdx'
 
 //Importing constants
 import _ from "../../constants/constants";

@@ -7,6 +7,7 @@ import Footer from '../components/footer';
 import SEO from '../components/seo';
 import ArticlePreview from '../components/articles/articlePreview';
 import ArticleScroller from '../components/articleScroller';
+import LoadingSpinner from '../components/loading';
 
 //Importing banners
 import BiochemBanner from './../assets/images/banners/Biochem.jpg';
@@ -82,7 +83,7 @@ const ArticlesPage = ({data}) => {
   const createSubjects = () => {
     const articleList = ArticlesMapper(articles);
 
-    if (articleList === 0) return <p>Loading...</p>;
+    if (articleList === 0) return <LoadingSpinner />;
 
     const banner = (info, index) => {
       if (info.length === 3) {
