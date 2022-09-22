@@ -24,48 +24,62 @@ This method is most easily used on millisecond pulsars which are a special type 
 
 This ‘offbeat’ pulse is regularly repeated thus giving astronomers the value of the period of the orbit the planet has around the pulsar. Using this and formula 1, you can calculate the radius of the orbit of the planet.
 
-<div class="centre"><em>Formula 1</em></div>
-<div class="centre">‘r’ is the radius of orbit, ‘G’ is Newton’s gravitational constant<br />'M<sub>*</sub>' is the mass of the host star, ‘P’ is the time period of orbit</div>
-
 $$
 r = \sqrt[3]{\frac{G M_* P^2}{4 \pi^2}}
 $$
 
+<div class="centre"><em>Formula 1</em></div>
+
+<div class="centre">
+
+_‘r’ is the radius of orbit, ‘G’ is Newton’s gravitational constant<br />'$M_*$' is the mass of the host star, ‘P’ is the time period of orbit_
+
+</div>
 
 If the mass of the planet is also known, $M_p$ then we can calculate the velocity of the star, $v_*$, (Formula 2) in addition to the radius of orbit of the star, $r_*$, (Formula 3) around the shared centre of the mass of the system.
 
-<div class="centre"><em>Formula 2</em></div>
+<div class="multi-image-row-two">
+
+<div class="image">
 
 $$
 v_* = \frac{2 \pi r}{P} \frac{M_p}{M_*}
 $$
 
-<div class="centre"><em>Formula 3</em></div>
+<div class="centre"><em>Formula 2</em></div>
+
+</div>
+
+<div class="image">
 
 $$
 \frac{M_p}{M_*} = \frac{r_*}{r}
 $$
+
+<div class="centre"><em>Formula 3</em></div>
+
+</div>
+
+</div>
 
 However, there are some drawbacks to this method; most notably, it must be done on millisecond pulsars otherwise the observation time of the pulses will need to be over years rather than days or weeks. Secondly, if we are trying to find habitable planets then this is completely the wrong place to look as no life would survive under the harsh radioactive conditions. Thirdly, even if a planet is very close in, it produces a very small wobble so any planet further out, maybe in the goldilocks zone (a region of orbit around a star where it is possible for liquid water to exist), will not be detectable with this method as the wobble just would not be distinguishable. Fourthly, the planets found using this method are almost always hot Jupiters as they are both close in and are ‘massive’. A hot Jupiter is a Jupiter-sized planet, which could be rocky or gaseous that is very close to its host star hence it is hot. Finally, using this method we have no way to prove that what we are measuring the effects of is a planet or if it is a dwarf star in a binary system with the pulsar. To prove that it is in fact a planet we need to know both its mass and density, we have mass but to find density we must use the next method, transit.
 
 
 Transits are events that happen when an exoplanet passes in front of its host star relative to us. This leads to a slight dimming in the light that reaches us. Once per orbit, this dip can be measured to find the radius of the planet, $r_p$, where B is the normal brightness of the star, ∆B is the change in brightness and $r_*$ is the radius of the star.
 
-<div class="centre"><em>Formula 4</em></div>
-
 $$
 r_p = r_* \sqrt{\frac{\Delta B}{B}}
 $$
+<div class="centre"><em>Formula 4</em></div>
 
 Using formula 1 we can also calculate the radius of orbit of the planet. Most importantly, we can find the density of the planet using both its mass and radius and verify that it is an exoplanet and not a dwarf star. 
 
 We can take this technique further to work out what the planet is made of as well, firstly by calculating its temperature, T, using the following equation (‘L’ is luminosity, ‘D’ is the diameter of the planet and ‘σ’ is the Stephan-Boltzmann constant in Formula 5) and also performing a spectroscopy on the light reflected by the planet; you can match the emission patterns to known chemicals and materials to gain a deeper insight into perhaps what it would look like on the surface.</p>
 
-<div class="centre"><em>Formula 5</em></div>
-
 $$
 T = \sqrt[4]{\frac{L}{16 \pi \sigma D^2}}
 $$
+<div class="centre"><em>Formula 5</em></div>
 
 Due to the following reasons, the spectroscopy must be done at specific times during the planet’s orbit.  For every transit there exists a secondary transit, which happens when the planet is behind the star and a secondary dip in brightness is observed. This is due to the fact that a planet is reflective so at every point except when the planet is behind the star it is also contributing very slightly to the light that reaches us. A graph of flux (a measure of brightness) against time is shown below:
 
@@ -80,8 +94,8 @@ Gravity, although the weakest of the four fundamental forces, can bend light by 
 Diagram 1 shows a singular ray of light from the focus (the bulge at the centre of the galaxy) as it is bent around the lens star leading to an increase in brightness of the image. If we instead look at every ray rather than singular ones, we see something like image 1:
 
 <div class="multi-image-row-2">
-    <div class="image"><div class="img"><img alt="Diagram 1" src="./../images/issue1/phystech/Diagram1.png"></img></div></div>
-    <div class="image"><div class="img"><img alt="Image 1" src="./../images/issue1/phystech/Image1.png"></img></div></div>
+<div class="image"><div class="img"><img alt="Diagram 1" src="./../images/issue1/phystech/Diagram1.png"></img></div></div>
+<div class="image"><div class="img"><img alt="Image 1" src="./../images/issue1/phystech/Image1.png"></img></div></div>
 </div>
 
 Since we know what the focus image behind the lens looks like ‘normally’, we are able to reverse engineer a lens shape to fit the scenario. The lens is what we are interested in as there are distinct patterns that emerge if the lens is just a lone star versus if it has a planet in its orbit. This is a very powerful, although rare, tool because we now have a way to detect the previously elusive ‘non-Hot Jupiters’ also known as Super-Earths or Mini-Neptunes which lie further out from the star. What seems to be microlensing’s Achilles heel is the fact that it is a very rare event so while it may be our ace method, it is unreliable. 

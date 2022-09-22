@@ -261,6 +261,8 @@
   }
 
   .content {
+    margin-top: 1rem;
+
     .gatsby-resp-image-wrapper {
       max-width: 80%;
       .gatsby-resp-image-link {
@@ -271,6 +273,32 @@
           height: 0 !important;
         }
       }
+    }
+
+    ::-webkit-scrollbar {
+      height: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 8px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #888888;
+      border-radius: 8px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555555;
+    }
+
+    .math-display {
+      overflow-x: auto;
+      overflow-y: visible;
+      margin-bottom: 4px;
+
+      
     }
 
     img {
@@ -349,10 +377,6 @@
     }
 
     @media (max-width: 800px) {
-      .katex {
-        font: normal 0.8em KaTeX_Main, Times New Roman, serif;
-      }
-
       .image-card-left, .image-card-right {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
@@ -378,18 +402,19 @@
     }
 
     .multi-image-row {
-      &-2 {
+      &-2, &-two{
         display: flex;
         flex-direction: row;
         width: 100%;
         margin-bottom: 1rem;
+        height:max-content;
     
         .image {
           width: 50%;
           text-align: center;
     
           .img {
-            width: 50%;
+            width: 90%;
             margin: auto;
           }
 
@@ -417,6 +442,11 @@
         .image {
           width: 25%;
           text-align: center;
+
+          .img {
+            width: 90%;
+            margin: auto;
+          }
 
           p {
             height: 30px;

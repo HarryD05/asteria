@@ -52,7 +52,11 @@ This is just the statement of $P(n + 1)$. In other words, if this works for one 
 
 We have now completed a proof by induction. As a note, the base case does not have to be 1: you may choose $P(b)$ as your base case for some $b$, and then prove $P(n)$ for all $n ≥ b$. If you wish, try proving the following theorem by induction as an exercise:
 
+<div class="centre">
+
 _For all $n ≥ 3$, the sum of the angles of a polygon with $n$ vertices is $180(n - 2)$._
+
+</div>
 
 ## Strong Induction - The Fibonacci Sequence
 
@@ -195,7 +199,11 @@ This is the last form of induction which could be expected to appear until well 
 
 The first example will be a relatively well-known combinatorics result which is not normally proved by induction. The problem is as follows: 
 
+<div class="centre">
+
 _Show that for non-negative integer variables $x_{1}, x_{2}, ... x_{m}$ and integer $n$, the number of different combinations such that $x_{1} + x_{2} + ... + x_{m} = n$ is equal to ${n+m-1 \choose n}$._
+
+</div>
 
 Here ${n+m-1 \choose n}$ is the "choose" function, whose values appear in Pascal's triangle and binomial coefficients. To prove this statement, we choose method 3, and start with the base cases: If $n=1$, then there are clearly only $m$ combinations as one variable must be one and the rest must be zero. Accordingly, ${1+m-1 \choose 1} = {m \choose 1} = 1$. On the other hand, if $m=1$, then there is clearly only one solution to the equation $x_{1} = n$, and ${n+1-1 \choose n} = {n \choose n} = 1$. 
 
@@ -218,14 +226,24 @@ This completes the inductive step, and the proof.
 
 As an exercise, try this question, using method 1) outlined at the start of this section: 
 
+<div class="centre">
+
 _Let $f(m,n)$ be a function on natural numbers m and n such that $f(1,1) = 1$ and:_
+
+</div>
+
 $$
 \begin{aligned}
 f(m+1,n) &= f(m,n) +2(m+n)  \\\
 f(m,n+1) &= f(m,n) +2(m+n-1)
 \end{aligned}
 $$
+
+<div class="centre">
+
 _Show that $f(m,n) = (m + n)^{2} – (m + n) – 2n +2$._
+
+</div>
 
 ## Advanced Methods
 
@@ -249,7 +267,11 @@ The proof of Goodstein's theorem roughly entails showing that it is possible to 
 
 The details of Andrew Wiles' famous proof of Fermat's Last theorem are of course inaccessible to the common person, but I feel it would be remiss to not mention it briefly. Fermat's Last Theorem is named so because it was the last theorem left unproved by the great Pierre de Fermat for hundreds of years after his death. There is a well-known story that Fermat wrote the theorem in a margin of his textbook, along with the words "I have a marvellous proof of this theorem, which this margin is too small to contain." Nowadays, mathematicians doubt whether he did indeed find a valid proof with the mathematical tools available to him at the time. In any case, the theorem reads: 
 
+<div class="centre">
+
 _For any integer $n > 2$, there are no positive integers a, b, and c such that $a^{n} + b^{n} = c^{n}$._
+
+</div>
 
 Wiles' proof, very briefly, works by rearranging the above equation to that of an elliptic curve, which is a family of curves typically described by the equation $y^{2} = x^{3} + ax + b$. Then, he proved a special case of the Taniyama-Shimura conjecture, otherwise known as the modularity theorem, which establishes a link between those elliptic curves and certain types of analytic functions called modular forms. Using this link, he showed that the elliptic curve resulting from Fermat's Last theorem failed to satisfy certain properties when turned into a modular form, therefore showing that the original equation has no solutions. As it happens, induction is used multiple times in intermediate steps of the proof, giving it the status of perhaps the most important applications of induction in recent years. 
 

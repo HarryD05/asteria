@@ -3,15 +3,26 @@
   padding: 1rem;
   min-height: 100vh;
 
+  h2 {
+    margin: 0 0 10px;
+    font-size: 1.6em;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    line-height: 1.18;
+  }
+
   .article-list {
+    text-align: left;
+    max-width: 80%;
+    width: 640px;
+    margin: auto;
     margin-top: 1rem;
-    text-align: center;
-    
+
     .issues {
       width: 100%;
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: left;
 
       .articlePreview {
         height: 200px;
@@ -24,27 +35,18 @@
           width: 200px;
         }
       }
-        
-      
     }
   }
 
   .details {
     max-width: 80%;
     width: 640px;
+    height: auto;
     margin: auto;
 
     .content {
       img {
         border-radius: 20px;
-      }
-    
-      h2 {
-        margin: 0 0 10px;
-        font-size: 1.6em;
-        font-weight: 500;
-        letter-spacing: -0.2px;
-        line-height: 1.18;
       }
     
       ul, ol, p {
@@ -98,7 +100,7 @@
         }
       }
 
-      .details {
+      .authorDetails {
         width:100%;
         align-self: flex-start;
         margin: 0;

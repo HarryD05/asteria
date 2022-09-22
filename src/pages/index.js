@@ -108,8 +108,11 @@ const IndexPage = ({data}) => {
 
         <ArticleShowcase articles={featuredArticles} />
 
-        <h1>Archive</h1>
-        <div className="issues">{createIssues()}</div>
+        
+        <div className="issues">
+          <h1>Archive</h1>
+          {createIssues()}
+          </div>
       </main>
       <Footer />
     </>

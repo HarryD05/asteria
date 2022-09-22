@@ -20,14 +20,14 @@ As mentioned by Glaucoma UK [1], glaucoma is the leading cause of blindness affe
 ## 2. Development of Glaucoma
 The aqueous humour, as shown in Figure 1, provides nutrients to the eye and maintains the eye pressure. It is produced by the ciliary body and flows to the anterior chamber where it is drained at the drainage angle. The reference of ‘angle’ is the angle between the cornea and iris. Amongst the various structures of the drainage angle, the most essential structure in the drainage of aqueous humour is the trabecular meshwork which is a spongy tissue with a sieve-like structure.
  
-![Healthy eye](./../images/issue1/biochem/Healthyeye.png)
+![Healthy eye](./../images/issue1/biochem/Healthyeye.jpg)
 <div class="centre"><em>Figure 1 – Taken From Medirex Opticians [8]</em></div>
 
 Following fluid drainage from the eye via the trabecular meshwork, the fluid flows through a structure called the Schlemm’s canal, into collector channels, veins and then eventually, back into the body’s circulatory system [3].
 
 A blockage in the drainage system restricts the flow of aqueous humour into the anterior chamber, resulting in increased pressure in the eye and eventually damaging the optic nerve. The optic nerve (also known as second cranial nerve) found at the back of the eye transfers visual information from the retina to the brain via electrical impulses [2]. The high pressure caused by inefficient drainage compresses the second cranial nerve resulting in cell death – this is called Glaucomatous optic atrophy. If left untreated or undetected, this can lead to irreversible blindness.
 
-![Glaucoma eye](./../images/issue1/biochem/Glaucomaeye.png)
+![Glaucoma eye](./../images/issue1/biochem/Glaucomaeye.jpg)
 <div class="centre"><em>Figure 2 – Development Of Glaucoma Taken From Medirex Opticians [8]</em></div>
 
 Recent research in Singapore has led to the discovery of a gene mutation linked to exfoliation syndrome (XFS), which is known to be the basis of secondary glaucoma [7]. If an individual has XFS, fibre-like substances existing outside of cells are deposited on ocular structures and throughout the body. The exact reason for XFS is unknown and hence, the mystery surrounding it means that the ultimate cause of glaucoma is still to be concluded. 

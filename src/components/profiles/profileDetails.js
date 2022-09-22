@@ -119,7 +119,7 @@ const ProfileDetails = ({ data }) => {
                 alt={`profile picture of ${ProfileName(ProfileDetails)}`}>
               </img>
             </div>
-            <div className="details">
+            <div className="authorDetails">
               <div className="name">
                 <h1>{ProfileName(ProfileDetails)}</h1> 
                 <p>{ProfilePronouns(ProfileDetails)}</p>

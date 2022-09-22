@@ -18,26 +18,26 @@ It is, as the name would suggest, a combination of the two techniques - animator
 
 <div class="multi-image-row-4">
     <div class="image">          
-        <div class="img"><img alt="Peter Pan" src="./../images/issue1/artmedia/peterpan.jpg"></div>
+        <div class="img"><img alt="Peter Pan" src="./../images/issue1/artmedia/peterpan.png"></div>
         <p>2D Peter Pan</p>  
     </div>
     <div class="image">
-        <div class="img"><img alt="3D Raya and the last dragon" src="./../images/issue1/artmedia/Raya.jpg"></div>
-        <p>3D Raya and the last dragon</p>
-    </div>
-    <div class="image">
-        <div class="img"><img alt="2.5D Beauty and the Beast" src="./../images/issue1/artmedia/Beauty.jpg"></div>
+        <div class="img"><img alt="2.5D Beauty and the Beast" src="./../images/issue1/artmedia/Beauty.png"></div>
         <p>2.5D Beauty and the Beast</p>
     </div>
     <div class="image">
-        <div class="img"><img alt="2.5D Paper Mario" src="./../images/issue1/artmedia/Papermario.jpg"></div>
+        <div class="img"><img alt="2.5D Paper Mario" src="./../images/issue1/artmedia/Papermario.png"></div>
         <p>2.5D Paper Mario</p> 
+    </div>
+    <div class="image">
+        <div class="img"><img alt="3D Raya and the last dragon" src="./../images/issue1/artmedia/Raya.png"></div>
+        <p>3D Raya and the last dragon</p>
     </div>
 </div>
 
 <div class="image-card-right">
     <p>There has been a lot of controversial development in the animation industry over the years - the rise of 3D animation being seen as a replacement for nostalgic 2D films like Bambi (1942) - however 2.5D films pose a solution to the never-ending debate. This concoction seems to possess the fantastic details and lighting from CGI with the seal of a traditional hand-drawn feel. There are certain aspects that computers simply can’t replace such as the ‘comic strip’-like sensation depicted on the left.</p>
-    <div class="image"><div class="img"><img alt="Spiderman" src="./../images/issue1/artmedia/Spiderman.jpg"></img></div></div>
+    <div class="image"><div class="img"><img alt="Spiderman" src="./../images/issue1/artmedia/Spiderman.png"></img></div></div>
 </div>
 
 <div class="image-card-left">
