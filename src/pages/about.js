@@ -23,7 +23,7 @@ const AboutPage = () => {
         <SEO seo={_.About.SEO} />
 
         <p>Welcome to Asteria!</p><br />
-        <p>From a column on the inner workings of human physiology to critiques of the renditions of Chopin, this is a safe platform for students to come forward and share their passions in academia.</p><br />
+        <p>From a column on the inner workings of human physiology to critiques of renditions of Chopin, this is a safe platform for students to come forward and share their passions in academia.</p><br />
         <p>Throughout the production of this initiative, the opportunity to work with so many amazing personalities is a truly rewarding experience. The best part? We're just getting started.</p><br />
         <p>Our mission is to build collegial partnerships with the secondary schools we work with. In time, we hope to grow a community around this initiative.</p><br />
         <p>This project would be impossible without the contributions of Mudit, Arya, Harry, and our editors, who have dedicated their time and energy to present you with the breadth of knowledge on offer from our excellent writers.</p><br />
