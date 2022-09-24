@@ -37,7 +37,7 @@ Now that we have visited equilibrium potentials, it is time to consider action p
 Embedded in the membranes, channels change in response to their local environment, opening and closing at any given moment depending on their local membrane potential. Complex molecular machines are made from proteins. As voltage changes, the conformation of the protein shifts either opening and closing the pore of the channel, hence they are known as voltage-gated.
 
 ![Action potential stages](./../images/issue1/biochem/Actionpotential1.png)
-<div class="centre"><em>This figure [4] shows the stages of the action potential, explained below.</em></div>
+<div class="centre"><em>This figure [4] shows the stages of the action potential, explained below. Graph of membrane potential (mv) against time (ms)</em></div>
 
 The action potential can be broken down into a few stages. The first stage begins with the activation of the action potential, during which a few Na+ channels open causing depolarisation to reach threshold potential (the potential when the inward Na+ current balances the outward K+ current). When this threshold potential is exceeded, an action potential can be generated. The second stage is when depolarisation is sensed by voltage gated Na+ channels which activate and allow Na+ in, causing the cell to depolarise further. Therefore, a positive feedback loop is set up as depolarisation leads to more voltage gated Na+ channels opening, leading to more depolarisation.
 
