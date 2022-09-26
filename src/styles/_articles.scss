@@ -5,6 +5,32 @@
   padding-top: 0;
   overflow-x: hidden;
 
+  .credits { 
+    width: 100%;
+    text-align: center;
+    margin: 1rem auto;
+
+    .bannerCredits {
+      margin: auto;
+      text-decoration: none;
+      color: var(--text);
+
+      &:hover {
+        cursor: pointer;
+        img {
+          transform: scale(1.025);
+        }
+      }
+
+      img {
+        width: 96px;
+        border-radius: 50%;
+        box-shadow: 0 3px 4px 0 var(--shadow-colour);
+        transition: all ease-in-out 0.3s;
+      }
+    }
+  }
+
   .banner {
     width: calc(100vw);
     height: 150px;
@@ -44,7 +70,7 @@
     background: #555555;
   }
 
-  .subjects {
+  #subjects {
     width: 100%;
 
     .subject {

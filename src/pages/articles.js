@@ -20,6 +20,8 @@ import LiteraturePhilosophyBanner from './../assets/images/banners/Literature an
 import PoliticsPhilosophyBanner from './../assets/images/banners/Politics and Philosophy.jpg';
 import MathsBanner from './../assets/images/banners/Mathematics.jpg';
 
+import SiddhiImage from './../assets/profiles/images/Siddhi Badole.jpeg';
+
 //Importing constants
 import _ from '../constants/constants';
 
@@ -51,7 +53,7 @@ const ArticlesPage = ({data}) => {
       window.location.hash = window.localStorage.getItem('hash');
       window.localStorage.clear()
     } else {
-      window.scrollTo(0, 0);
+      window.location.hash = 'subjects';
     }
   }, []);
 
@@ -115,7 +117,13 @@ const ArticlesPage = ({data}) => {
       <main className="articles">
         <SEO seo={_.Articles.SEO} />
         <ArticleScroller />
-        <div className="subjects">{createSubjects()}</div>
+        <div className="credits">
+          <a className="bannerCredits" href="/profiles/y">
+            <img src={SiddhiImage} alt="Siddhi Badole"></img>
+            <p>A huge thanks to banner artist<br />Siddhi Badole</p>
+          </a>
+        </div>
+        <div id="subjects">{createSubjects()}</div>
       </main>
       <Footer />
     </>
