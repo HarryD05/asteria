@@ -6,6 +6,7 @@ import meetTheTeam from './pages/meet-the-team';
 import profileDetails from './pages/profileDetails';
 import articleDetails from './pages/articleDetails';
 import sliderArticles from './pages/sliderArticles';
+import settings from './pages/settings'
 
 export default {
   Home: home,
@@ -14,5 +15,6 @@ export default {
   MeetTheTeam: meetTheTeam,
   ProfileDetails: profileDetails,
   ArticleDetails: articleDetails,
-  SliderArticles: sliderArticles
+  SliderArticles: sliderArticles,
+  Settings: settings
 }

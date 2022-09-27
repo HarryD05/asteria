@@ -48,12 +48,13 @@ const ArticleDetails = ({ data }) => {
   const authors = {};
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-
     if (window.location.hash.indexOf("#bibliography") !== -1) {
       setTimeout(() => {
         document.getElementById(window.location.hash.slice(1,13)).scrollIntoView({ behavior: 'smooth' })
       }, 500)
+    } else {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
   }, [articleId]);
 
@@ -161,7 +162,7 @@ const ArticleDetails = ({ data }) => {
             </div>
           </div>
 
-          <div className={`content a${ArticleSubject(ArticleDetails)}`} dangerouslySetInnerHTML={{__html: ArticleMarkdown(ArticleDetails) }}></div>
+          <div className={`articleContent a${ArticleSubject(ArticleDetails)}`} dangerouslySetInnerHTML={{__html: ArticleMarkdown(ArticleDetails) }}></div>
           
           {displayVideo()}
         </div>
@@ -171,8 +172,6 @@ const ArticleDetails = ({ data }) => {
     
   );
 };
-
-//<Markdown className={`content a${ArticleSubject(ArticleDetails)}`}>{ArticleMarkdown(ArticleDetails)}</Markdown>
 
 export default ArticleDetails;
 export const pageQuery = graphql`
@@ -203,43 +202,3 @@ export const pageQuery = graphql`
     }
   }
 `
-
-
-
-/*
-<main>
-        <Navbar />
-        <div className="articleDetails">
-          <a className={`subject-hover bg${ArticleSubject(ArticleDetails)}-light`} href={`/categories`} onClick={changePage}>
-            <p>{`${subjects[ArticleSubject(ArticleDetails)]}`}</p>
-          </a>
-
-          <div className="top">
-            <img 
-              src={(typeof(ArticleImage(ArticleDetails)) === "string") ? ArticleImage(ArticleDetails) : ArticleImage(ArticleDetails).default} 
-              alt={`Cover image of ${ArticleTitle(ArticleDetails)}`}>
-            </img>
-            <div className="details">
-              <h1>{ArticleTitle(ArticleDetails)}</h1> 
-              <p>{ArticleDescription(ArticleDetails)}</p>
-            </div>
-          </div>
-
-          <a href={AuthorLinkTo(ArticleDetails)} className="author">
-            <div className="authorDetails">
-              <h3>{AuthorName(ArticleDetails)}</h3>
-              <i>{AuthorPronouns(ArticleDetails)}</i>
-              <p>{AuthorSchool(ArticleDetails)}</p>
-            </div>
-            <div className="authorImg">
-              <img 
-              src={(typeof(AuthorImage(ArticleDetails)) === "string") ? AuthorImage(ArticleDetails) : AuthorImage(ArticleDetails).default} 
-              alt={`Profile picture of ${AuthorName(ArticleDetails)}`}>
-            </img>
-            </div>
-          </a>
-
-          <Markdown className="content">{ArticleMarkdown(ArticleDetails)}</Markdown>
-        </div>
-      </main>
-      */

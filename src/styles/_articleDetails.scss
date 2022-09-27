@@ -148,10 +148,13 @@
 
       h1 {
         margin-bottom: 8px;
+        font-size: calc(var(--article-size) * 1.8);
       }
 
       p {
         margin-bottom: 8px;
+        font-size: var(--article-size);
+        font-family: var(--article-font);
       }
     }
 
@@ -265,7 +268,7 @@
     }
   }
 
-  .content {
+  .articleContent {
     margin-top: 1rem;
 
     .gatsby-resp-image-wrapper {
@@ -302,8 +305,7 @@
       overflow-x: auto;
       overflow-y: visible;
       margin-bottom: 4px;
-
-      
+      font-size: var(--article-size);
     }
 
     img {
@@ -317,8 +319,16 @@
 
     h2 {
       margin: 10px 0;
-      font-size: 1.6em;
+      font-size: calc(var(--article-size) * 1.6);
       font-weight: 500;
+      letter-spacing: -0.2px;
+      line-height: 1.18;
+    }
+
+    h3 {
+      margin: 10px 0;
+      font-size: calc(var(--article-size) * 1.4);
+      font-weight: 400;
       letter-spacing: -0.2px;
       line-height: 1.18;
     }
@@ -328,7 +338,8 @@
     p,
     em {
       margin: 0 auto 15px;
-      font-size: 1em;
+      font-size: var(--article-size);
+      font-family: var(--article-font);
       letter-spacing: 0.4px;
       line-height: 1.2;
       word-wrap: break-word;

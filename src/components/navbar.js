@@ -4,8 +4,11 @@ import React, {useEffect, useState} from "react";
 //Importing assets
 import InstagramLogo from "./../assets/images/social-media-logos/Instagram.png";
 import LinkedInLogo from "./../assets/images/social-media-logos/LinkedIn.png";
+import SettingsLogo from "./../assets/images/settings.png";
+import BackArrow from "./../assets/images/go-back-arrow.png"
 
 const DrawerToggleButton = ({click, isOpen}) => {
+
   const classes = () => `toggle-btn ${isOpen ? 'side': 'normal'}`;
 
   return (
@@ -22,6 +25,16 @@ const SideDrawer = ({isOpen, isDark}) => {
   const sideClasses = () => `sideDrawer ${isOpen ? 'show': 'hide'}`;
   const bdClasses = () => `backdrop ${isOpen ? 'show': 'hide'}`;
 
+  const displaySettingsSidebar = () => {
+    if (typeof document !== "undefined") {
+      if (document.location.pathname.includes("settings")) {
+        return <a onClick={() => window.history.back()} className="settingsBinder"><img className={`${socialClasses()} settings`} src={BackArrow} alt="Back arrow"></img></a>
+      } else {
+        return <a href="/settings"><img className={`${socialClasses()} settings`} src={SettingsLogo} alt="Settings"></img></a>
+      }
+    }
+  }
+
   return (
     <>
       <div className={bdClasses()}></div>
@@ -34,6 +47,7 @@ const SideDrawer = ({isOpen, isDark}) => {
         </div>
         <div className="social-media">
           <a href="https://www.instagram.com/the_asteria_magazine/" target="_blank" rel="noreferrer"><img className={socialClasses()} src={InstagramLogo} alt="Instagram logo"></img></a>
+          {displaySettingsSidebar()}
           <a href="https://www.linkedin.com/company/theasteriamagazine/" target="_blank" rel="noreferrer"><img className={socialClasses()} src={LinkedInLogo} alt="LinkedIn logo"></img></a>
         </div>
       </div>
@@ -63,11 +77,27 @@ const Navbar = () => {
     }
   }
 
+  const checkFont = () => {
+    if (localStorage.getItem('font-size') === null) {
+      document.body.setAttribute('font-size', 16);
+      localStorage.setItem('font-size', 16);
+    } else {
+      document.body.setAttribute('font-size', localStorage.getItem('font-size'))
+    }
+    if (localStorage.getItem('dyslexia') === null) {
+      document.body.setAttribute('dyslexia', 0);
+      localStorage.setItem('dyslexia', 0);
+    } else {
+      document.body.setAttribute('dyslexia', localStorage.getItem('dyslexia'))
+    }
+  }
+
   const [sideOpen, setSideOpen] = useState(false);
   const [isDark, setIsDark] = useState(true);
 
   useEffect(() => {
     checkDark();
+    checkFont();
   }, [])
 
   const toggleSideOpen = e => {
@@ -88,7 +118,20 @@ const Navbar = () => {
 
   const invertClasses = () => isDark ? 'invert' : 'noinvert' ;
 
-  const scrollUp = () => window.scrollTo(0, 0);
+  const scrollUp = () => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  };
+
+  const displaySettingsNavbar = () => {
+    if (typeof document !== "undefined") {
+      if (document.location.pathname.includes("settings")) {
+        return <a onClick={() => window.history.back()} className="settingsBinder"><img className={`${invertClasses()} settings`} src={BackArrow} alt="Back arrow"></img></a>
+      } else{
+        return <a href="/settings" className="settingsBinder"><img className={`${invertClasses()} settings`} src={SettingsLogo} alt="Settings gear"></img></a>
+      } 
+    }
+  }
 
   return (
     <div className="navbar">
@@ -104,6 +147,7 @@ const Navbar = () => {
         <div className="social-media">
           <a href="https://www.instagram.com/the_asteria_magazine/" target="_blank" rel="noreferrer"><img className={invertClasses()} src={InstagramLogo} alt="Instagram logo"></img></a>
           <a href="https://www.linkedin.com/company/theasteriamagazine/" target="_blank" rel="noreferrer"><img className={invertClasses()} src={LinkedInLogo} alt="LinkedIn logo"></img></a>
+          {displaySettingsNavbar()}
         </div>
       </div>
       <button className="dark-btn" onClick={toggleDarkMode}><div className={`icon ${isDark ? 'invert': 'noinvert'}`}></div></button>
