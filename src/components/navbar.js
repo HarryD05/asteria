@@ -37,7 +37,7 @@ const SideDrawer = ({isOpen, isDark, click}) => {
 
   return (
     <>
-      <div className={bdClasses()} onclick={click}></div>
+      <div className={bdClasses()} onClick={click}></div>
       <div className={sideClasses()}>
         
         <div className="pages">
@@ -102,6 +102,13 @@ const Navbar = () => {
 
   const toggleSideOpen = e => {
     setSideOpen(!sideOpen);
+
+    if (sideOpen) {
+      document.body.classList.remove("stop-scrolling");
+    } else {
+      document.body.classList.add("stop-scrolling");
+    }
+
   }
 
   const toggleDarkMode = () => {

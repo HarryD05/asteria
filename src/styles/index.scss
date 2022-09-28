@@ -133,6 +133,11 @@ h2, h3 {
   font-weight: normal;
 }
 
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
 .subject-hover {
   position: fixed;
   width: 200px;
