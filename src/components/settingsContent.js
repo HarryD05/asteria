@@ -59,7 +59,13 @@ const SettingsContent = () => {
 
     return (
         <>
+            <button type="button" onClick={() => {
+                setFontSize(16);
+                setDyslexia(0);
+            }}>Reset to default</button>
+
             <p>Dyslexia friendly mode</p>
+
             <label class="switch">
                 <input type="checkbox" checked={dyslexia} onChange={e => setDyslexia(e.target.checked)}></input>
                 <span class="switchSlider round"></span>
@@ -70,6 +76,8 @@ const SettingsContent = () => {
             <input type="range" min={12} max={28} step={4} value={fontSize} onChange={e => setFontSize(e.target.value)}></input>
 
             <div className="example"><p>Example text</p></div>
+
+            
         </>
     )
 }

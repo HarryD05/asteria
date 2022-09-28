@@ -23,6 +23,19 @@ const AboutPage = () => {
       <main className="about">
         <SEO seo={_.About.SEO} />
 
+        <div class="scrolling-words-container">
+          <div class="scrolling-words-box">
+            <ul>
+              <li style={{ "color": "#ea4335" }}>Designed</li>
+              <li style={{ "color": "#4285f4" }}>Written</li>
+              <li style={{ "color": "#34a853" }}>Edited</li>
+              <li style={{ "color": "#fbbc04" }}>Made</li>
+              <li style={{ "color": "#ea4335" }}>Designed</li>
+            </ul>
+          </div>
+          <span>for everyone</span>
+        </div>
+
         <p>Welcome to Asteria!</p><br />
         <p>From a column on the inner workings of human physiology to critiques of renditions of Chopin, this is a safe platform for students to come forward and share their passions in academia.</p><br />
         <p>Throughout the production of this initiative, the opportunity to work with so many amazing personalities is a truly rewarding experience. The best part? We're just getting started.</p><br />

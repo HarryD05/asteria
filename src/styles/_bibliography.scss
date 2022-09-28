@@ -1,0 +1,33 @@
+.BibliographyPage {
+    width: calc(100% - 2rem);
+    padding: 1rem;
+    min-height: 100vh;
+
+    ul,ol {
+        margin: auto 25px;
+        
+        li {
+            margin-bottom: 4px;
+        }
+    }
+
+    .issueArticles {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .subjectArticles {
+            width: 200px;
+            height: 180px;
+            text-align: center;
+            padding: 8px;
+            border-radius: 8px;
+            margin: 4px;
+
+            a {
+                text-decoration: none;
+                color: var(--text);
+            }
+        }
+    }
+}

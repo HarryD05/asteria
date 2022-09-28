@@ -21,6 +21,8 @@ const SettingsPage = () => {
 
         <h1>Settings</h1>
 
+        <p>These settings only affect the article text</p>
+
         <SettingsContent />
       </main>
       <Footer />
