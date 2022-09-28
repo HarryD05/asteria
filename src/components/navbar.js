@@ -20,7 +20,7 @@ const DrawerToggleButton = ({click, isOpen}) => {
   )
 }
 
-const SideDrawer = ({isOpen, isDark}) => {
+const SideDrawer = ({isOpen, isDark, click}) => {
   const socialClasses = () => isDark ? 'invert' : 'noinvert' ;
   const sideClasses = () => `sideDrawer ${isOpen ? 'show': 'hide'}`;
   const bdClasses = () => `backdrop ${isOpen ? 'show': 'hide'}`;
@@ -37,7 +37,7 @@ const SideDrawer = ({isOpen, isDark}) => {
 
   return (
     <>
-      <div className={bdClasses()}></div>
+      <div className={bdClasses()} onclick={click}></div>
       <div className={sideClasses()}>
         
         <div className="pages">
@@ -136,7 +136,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <DrawerToggleButton isOpen={sideOpen} click={toggleSideOpen}></DrawerToggleButton>
-      <SideDrawer isDark={isDark} isOpen={sideOpen}></SideDrawer>
+      <SideDrawer isDark={isDark} isOpen={sideOpen} click={toggleSideOpen}></SideDrawer>
       <div className="contents">
         <div className="logo"><a href="/" className="logo-img"></a></div>
         <div className="pages">
