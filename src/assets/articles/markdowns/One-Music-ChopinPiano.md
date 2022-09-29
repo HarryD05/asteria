@@ -32,7 +32,10 @@ The amount of music you end up playing doesn’t matter. During practice, the on
 ## 2 - Clarity as a Tool
 Upon watching Bruce Liu’s final round performance, the first thing someone might notice is how blazingly fast Liu can play. It becomes really obvious that this guy goes at whatever speed he wants because of his technical capacity. While his competitors might be surviving through certain passages, Liu exercises his talent-founded prerogative to play them however he likes. It’s really easy to forget or outright dismiss other merits of Liu’s playing given his captivating dexterity.
 
-Complementing Liu’s demonic speed and fluidity is his crystalline clarity. We might talk about a melody being particularly embellished with cascading runs and exciting turns but Liu really does play the ornaments - there are no real embellishments. The “embellishments” are considered part of the melody. 
+<div class="image-card-left">
+    <div class="image"><div class="img"><img alt="Bruce Liu’s final round performance" src="./../images/issue1/music/Liu.png"></img></div></div>
+    <p>Complementing Liu’s demonic speed and fluidity is his crystalline clarity. We might talk about a melody being particularly embellished with cascading runs and exciting turns but Liu really does play the ornaments - there are no real embellishments. The “embellishments” are considered part of the melody.</p>
+</div>
 
 Clarity is the result of a strong technical foundation combined with true legato. Because of that, it allows us to communicate that we are technically fluent and mechanically able to express ourselves on our instrument - it gives your performance a virtuosic spice. More importantly, clarity helps communicate melodic ideas to our audience. Musical ideas may not form as a result of clarity, but they are often greatly aided by it; if the audience cannot clearly make out what we are playing, we cannot hope to communicate our musical ideas to them. 
 
@@ -41,9 +44,10 @@ Liu is clearly an incredibly talented individual and plays better than the major
 We often are easily able to achieve the connection part of legato by allowing our notes to overlap each other. However, that makes our playing hazy and we lose clarity. One way to improve clarity from practice is to practise our melodies staccato. After a few times, we can gradually lengthen the duration of the notes we play until they are connected without overlapping. At this point we will have achieved true legato with perfect clarity. 
 
 ## 3 - The Need for Musicality
-Fans of Aimi Kobayashi may look back to her showing in 2015 and remember the agitation and fire she played with. A raw, emotionally turbulent player who dictated rubato, dynamics, and articulation to create a crude sensation.
-
-In contrast, the Aimi Kobayashi who came out last year was much more controlled and deliberate. She still encapsulates reverie and effect extremely well, but there’s a hint of refinement in it. The kind of control that you’d only expect from someone who could perceive time slower - that’s what she showed us last year.
+<div class="image-card-right">
+    <p>Fans of Aimi Kobayashi may look back to her showing in 2015 and remember the agitation and fire she played with. A raw, emotionally turbulent player who dictated rubato, dynamics, and articulation to create a crude sensation.<br /><br />In contrast, the Aimi Kobayashi who came out last year was much more controlled and deliberate. She still encapsulates reverie and effect extremely well, but there’s a hint of refinement in it. The kind of control that you’d only expect from someone who could perceive time slower - that’s what she showed us last year.</p>
+    <div class="image"><div class="img"><img alt="Aimi Kobayashi" src="./../images/issue1/music/Aimi.png"></img></div></div>
+</div>
 
 In her performance of the Concerto in E minor, op.11 in the final round, Kobayashi played at a much slower tempo than the accepted interpretation. She chose to throw away virtuosity in exchange for delicate, contoured playing. It’s at this slower tempo that Kobayashi shows off her ability to craft and shape melodic lines into something beyond the standard often displayed at the highest level. Kobayashi’s delicate touches dance effortlessly across the higher register and cascade melodiously downwards. Despite the slower tempo, it’s still very much Kobayashi: emotional playing directed meticulously by the individual fingers; she’s just being honest about her interpretation. It’s a brave thing to go against the grain in any context, but especially so in a well established piece at an international competition. From a competitive standpoint it falls short, Kobayashi misses out on opportunities to show off her technicality; from a musical standpoint her gambit paid dividends: although it’s not quite the technical spectacle of Bruce Liu, it’s utterly beautiful. 
 
@@ -56,7 +60,10 @@ In practise we can work on our musicality by really playing to our ear’s decre
 ## 4 - Communication is Key
 As Tiffany Poon noted in a 2020 interview with Bachtrack, classical music has a “disconnect between the audience and the music. The composers are dead and there just isn’t that human connection anymore.” She’s profoundly right. 
 
-Hayato Sumino might not have made it into the final round, but he definitely reached a lot of people with his communicative instinct. His first round performance has so far garnered 2.8 million views, the most of any non final round performance. 
+<div class="image-card-left">
+    <div class="image"><div class="img"><img alt="Hayato Sumino" src="./../images/issue1/music/Sumino.png"></img></div></div>
+    <p>Hayato Sumino might not have made it into the final round, but he definitely reached a lot of people with his communicative instinct. His first round performance has so far garnered 2.8 million views, the most of any non final round performance. </p>
+</div>
 
 Listening to Sumino is really easy. He writes all his feelings and nuances down on a piece of paper for you to look at and read. Although Kobayashi is musically brilliant, it’s not quite as near to us as Sumino. And I feel like that’s exactly what makes him so great; Sumino has this ability to speak to us through his playing: every little articulation carries that spark of life which, in turn, gives his performances a refreshing vitality.  
 
