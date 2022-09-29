@@ -72,6 +72,13 @@ module.exports = {
       }
     }, 
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/assets/pdfs`,
+        name: `pdfs`
+      }
+    }, 
+    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         icon: `${__dirname}/src/assets/images/logo-lilac.png`,

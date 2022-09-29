@@ -1,5 +1,5 @@
 //Importing React dependencies
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useState, useRef} from "react";
 
 //Importing assets
 import InstagramLogo from "./../assets/images/social-media-logos/Instagram.png";
@@ -56,6 +56,49 @@ const SideDrawer = ({isOpen, isDark, click}) => {
 }
 
 const Navbar = () => {
+  const [degrees, setDegrees] = useState(0);
+  const [deg, setDeg] = useState(10);
+  const [rotating, setRotating] = useState(false);
+  const [slowing, setSlowing] = useState(false);
+  const degreesRef = useRef(degrees);
+  degreesRef.current = degrees;
+  const degRef = useRef(deg);
+  degRef.current = deg;
+  const rotateRef = useRef(rotating);
+  rotateRef.current = rotating;
+  const slowRef = useRef(slowing);
+  slowRef.current = slowing;
+
+  const [sideOpen, setSideOpen] = useState(false);
+  const [isDark, setIsDark] = useState(true);
+
+  useEffect(() => {
+    checkDark();
+    checkFont();
+
+    const interval = setInterval(() => {
+      if (slowRef.current) {
+        if (Math.floor((degreesRef.current + degRef.current) / 90) > Math.floor((degreesRef.current) / 90)) {
+          setSlowing(false);
+          setDegrees(degrees => degrees - (degrees % 90));
+        } else {
+          setDegrees(degrees => degrees + degRef.current);
+          setDeg(deg => deg - 0.1);
+        }
+      }
+
+      if (rotateRef.current) {
+        setDegrees(degrees => degrees + degRef.current);
+        setDeg(deg => deg + 0.1);
+      }
+    }, 50);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, [])
+
+
   const checkDark = () => {
     if (localStorage.getItem('isDark') == undefined) {
       const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -91,15 +134,7 @@ const Navbar = () => {
       document.body.setAttribute('dyslexia', localStorage.getItem('dyslexia'))
     }
   }
-
-  const [sideOpen, setSideOpen] = useState(false);
-  const [isDark, setIsDark] = useState(true);
-
-  useEffect(() => {
-    checkDark();
-    checkFont();
-  }, [])
-
+  
   const toggleSideOpen = e => {
     setSideOpen(!sideOpen);
 
@@ -145,7 +180,14 @@ const Navbar = () => {
       <DrawerToggleButton isOpen={sideOpen} click={toggleSideOpen}></DrawerToggleButton>
       <SideDrawer isDark={isDark} isOpen={sideOpen} click={toggleSideOpen}></SideDrawer>
       <div className="contents">
-        <div className="logo"><a href="/" className="logo-img"></a></div>
+        <div className="logo"><a href="/" className="logo-img" onMouseEnter={() => {
+          setRotating(true);
+          setSlowing(false);
+          setDeg(10);
+        }} onMouseLeave={() => {
+          setRotating(false);
+          setSlowing(true);
+        }} style={{transform: `rotate(${degrees}deg)`}}></a></div>
         <div className="pages">
           <a href="/articles">Articles</a>
           <a href="/meet-the-team">Meet the Team</a>
