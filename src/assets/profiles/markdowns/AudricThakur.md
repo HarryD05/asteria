@@ -7,7 +7,7 @@ pronouns: "HE/HIM"
 role: ["Writer", "Editor"]
 userID: "f"
 slug: "/profiles/f"
-profile_picture: "Audric Thakur.png"
+profile_picture: "Audric Thakur.jpeg"
 ---
 
 ## A-Level Subjects
