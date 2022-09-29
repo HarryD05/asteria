@@ -5,8 +5,8 @@ surname: "Gautam"
 school: "Reading School"
 pronouns: "HE/HIM"
 role: ["Writer"]
-userID: "A"
-slug: "/profiles/A"
+userID: "aa"
+slug: "/profiles/aa"
 profile_picture: "Yuvraj Gautam.png"
 ---
 

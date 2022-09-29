@@ -5,8 +5,8 @@ surname: "Luthra"
 school: "Reading School"
 pronouns: "HE/HIM"
 role: ["Editor"]
-userID: "B"
-slug: "/profiles/B"
+userID: "ab"
+slug: "/profiles/ab"
 profile_picture: "Rishabh Luthra.png"
 ---
 

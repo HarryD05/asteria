@@ -7,7 +7,7 @@ issue: 1
 preview_image: "economics1.jpg"
 video_url: null
 video_title: null
-userIDs: ["A"]
+userIDs: ["aa"]
 articleID: "18"
 slug: "/articles/18"
 ---
