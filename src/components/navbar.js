@@ -36,9 +36,9 @@ const SideDrawer = ({isOpen, isDark, click}) => {
   }
 
   return (
-    <>
-      <div className={bdClasses()} onClick={click}></div>
-      <div className={sideClasses()}>
+    <div>
+      <div className={bdClasses()}></div>
+      <div className={sideClasses()} onClick={click}>
         
         <div className="pages">
           <a href="/articles">Articles</a>
@@ -51,7 +51,7 @@ const SideDrawer = ({isOpen, isDark, click}) => {
           <a href="https://www.linkedin.com/company/theasteriamagazine/" target="_blank" rel="noreferrer"><img className={socialClasses()} src={LinkedInLogo} alt="LinkedIn logo"></img></a>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
@@ -78,9 +78,9 @@ const Navbar = () => {
 
     const interval = setInterval(() => {
       if (slowRef.current) {
-        if (Math.floor((degreesRef.current + degRef.current) / 90) > Math.floor((degreesRef.current) / 90) && degRef.current < 10) {
+        if (Math.floor((degreesRef.current + degRef.current) / 180) > Math.floor((degreesRef.current) / 180) && degRef.current < 15) {
           setSlowing(false);
-          setDegrees(degrees => degrees - (degrees % 90));
+          setDegrees(degrees => degrees - (degrees % 180));
         } else {
           setDegrees(degrees => degrees + degRef.current);
           setDeg(deg => deg - 0.3);
@@ -176,7 +176,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className="navbar">
+    <div className={`navbar ${sideOpen ? "topbar" : ""}`}>
       <DrawerToggleButton isOpen={sideOpen} click={toggleSideOpen}></DrawerToggleButton>
       <SideDrawer isDark={isDark} isOpen={sideOpen} click={toggleSideOpen}></SideDrawer>
       <div className="contents">
