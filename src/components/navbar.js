@@ -78,12 +78,12 @@ const Navbar = () => {
 
     const interval = setInterval(() => {
       if (slowRef.current) {
-        if (Math.floor((degreesRef.current + degRef.current) / 90) > Math.floor((degreesRef.current) / 90)) {
+        if (Math.floor((degreesRef.current + degRef.current) / 90) > Math.floor((degreesRef.current) / 90) && degRef.current < 10) {
           setSlowing(false);
           setDegrees(degrees => degrees - (degrees % 90));
         } else {
           setDegrees(degrees => degrees + degRef.current);
-          setDeg(deg => deg - 0.1);
+          setDeg(deg => deg - 0.3);
         }
       }
 
