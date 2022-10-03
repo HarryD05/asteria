@@ -10,6 +10,10 @@ $border-height: 5px;
   -webkit-filter: invert(0%);
 }
 
+.spacer {
+  height: 64px;
+}
+
 .topbar {
   position: fixed !important;
   top: 0 !important;
@@ -27,6 +31,9 @@ $border-height: 5px;
 
   font-family: 'Gontserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
+  .spacer {
+    height: 0;
+  }
 
   .toggle-btn {
     visibility: hidden;
@@ -124,13 +131,14 @@ $border-height: 5px;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    transition: all ease-in-out 0.3s;
 
     &.show {
       top: 64px;
     }
     &.hide {
-      top: -100vh;
+      top: 100vh;
     }
 
     .pages {
@@ -139,7 +147,7 @@ $border-height: 5px;
       display: flex;
       flex-direction: column;
       padding: 8px;
-      margin-top: 3rem;
+      margin-top: 1rem;
 
       a {
         text-decoration: none;
@@ -171,7 +179,7 @@ $border-height: 5px;
       flex-wrap: wrap;
       justify-content: space-evenly;
       align-items: center;
-      padding-bottom: 4px;
+      padding-top: 1rem;
       
 
       img {

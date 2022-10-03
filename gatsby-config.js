@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `STEAM Project`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `Asteria Magazine`,
+    siteUrl: `https://asteriamagazine.co.uk`
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -22,7 +22,6 @@ module.exports = {
           {
             resolve: `gatsby-remark-katex`,
             options: {
-              // Add any KaTeX options from https://github.com/KaTeX/KaTeX/blob/master/docs/options.md here
               strict: `ignore`
             }
           }
@@ -84,9 +83,17 @@ module.exports = {
         icon: `${__dirname}/src/assets/images/logo-lilac.png`,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-BW9D6S287Q",
+        ],
+        pluginConfig: {
+          head: false,
+          respectDNT: true,
+        },
+      },
+    },
   ]
 };
-
-/*
-    
-    */

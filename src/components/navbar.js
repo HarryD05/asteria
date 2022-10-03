@@ -39,17 +39,18 @@ const SideDrawer = ({isOpen, isDark, click}) => {
     <div>
       <div className={bdClasses()}></div>
       <div className={sideClasses()} onClick={click}>
-        
-        <div className="pages">
-          <a href="/articles">Articles</a>
-          <a href="/meet-the-team">Meet the Team</a>
-          <a href="/about">About</a>
-        </div>
         <div className="social-media">
           <a href="https://www.instagram.com/the_asteria_magazine/" target="_blank" rel="noreferrer"><img className={socialClasses()} src={InstagramLogo} alt="Instagram logo"></img></a>
           {displaySettingsSidebar()}
           <a href="https://www.linkedin.com/company/theasteriamagazine/" target="_blank" rel="noreferrer"><img className={socialClasses()} src={LinkedInLogo} alt="LinkedIn logo"></img></a>
         </div>
+
+        <div className="pages">
+          <a href="/articles">Articles</a>
+          <a href="/meet-the-team">Meet the Team</a>
+          <a href="/about">About</a>
+        </div>
+        
       </div>
     </div>
   )
@@ -176,32 +177,35 @@ const Navbar = () => {
   }
 
   return (
-    <div className={`navbar ${sideOpen ? "topbar" : ""}`}>
-      <DrawerToggleButton isOpen={sideOpen} click={toggleSideOpen}></DrawerToggleButton>
-      <SideDrawer isDark={isDark} isOpen={sideOpen} click={toggleSideOpen}></SideDrawer>
-      <div className="contents">
-        <div className="logo"><a href="/" className="logo-img" onMouseEnter={() => {
-          setRotating(true);
-          setSlowing(false);
-          setDeg(10);
-        }} onMouseLeave={() => {
-          setRotating(false);
-          setSlowing(true);
-        }} style={{transform: `rotate(${degrees}deg)`}}></a></div>
-        <div className="pages">
-          <a href="/articles">Articles</a>
-          <a href="/meet-the-team">Meet the Team</a>
-          <a href="/about">About</a>
+    <>
+      {sideOpen ? <div className="spacer"></div> : null}
+      <div className={`navbar ${sideOpen ? "topbar" : ""}`}>
+        <DrawerToggleButton isOpen={sideOpen} click={toggleSideOpen}></DrawerToggleButton>
+        <SideDrawer isDark={isDark} isOpen={sideOpen} click={toggleSideOpen}></SideDrawer>
+        <div className="contents">
+          <div className="logo"><a href="/" className="logo-img" onMouseEnter={() => {
+            setRotating(true);
+            setSlowing(false);
+            setDeg(10);
+          }} onMouseLeave={() => {
+            setRotating(false);
+            setSlowing(true);
+          }} style={{transform: `rotate(${degrees}deg)`}}></a></div>
+          <div className="pages">
+            <a href="/articles">Articles</a>
+            <a href="/meet-the-team">Meet the Team</a>
+            <a href="/about">About</a>
+          </div>
+          <div className="social-media">
+            <a href="https://www.instagram.com/the_asteria_magazine/" target="_blank" rel="noreferrer"><img className={invertClasses()} src={InstagramLogo} alt="Instagram logo"></img></a>
+            <a href="https://www.linkedin.com/company/theasteriamagazine/" target="_blank" rel="noreferrer"><img className={invertClasses()} src={LinkedInLogo} alt="LinkedIn logo"></img></a>
+            {displaySettingsNavbar()}
+          </div>
         </div>
-        <div className="social-media">
-          <a href="https://www.instagram.com/the_asteria_magazine/" target="_blank" rel="noreferrer"><img className={invertClasses()} src={InstagramLogo} alt="Instagram logo"></img></a>
-          <a href="https://www.linkedin.com/company/theasteriamagazine/" target="_blank" rel="noreferrer"><img className={invertClasses()} src={LinkedInLogo} alt="LinkedIn logo"></img></a>
-          {displaySettingsNavbar()}
-        </div>
+        <button className="dark-btn" onClick={toggleDarkMode}><div className={`icon ${isDark ? 'invert': 'noinvert'}`}></div></button>
+        <button className="up-btn" onClick={scrollUp}>↑</button>
       </div>
-      <button className="dark-btn" onClick={toggleDarkMode}><div className={`icon ${isDark ? 'invert': 'noinvert'}`}></div></button>
-      <button className="up-btn" onClick={scrollUp}>↑</button>
-    </div>
+    </>
   );
 }
 

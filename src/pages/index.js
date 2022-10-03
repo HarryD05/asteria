@@ -10,7 +10,7 @@ import ArticlePreview from "./../components/articles/articlePreview";
 import { ArticlesMapper } from "./../components/articles/articleHelperFunctions";
 import LoadingSpinner from "../components/loading";
 
-import issue1 from "./../assets/pdfs/Placeholder-TheAsteriaMagazine.pdf";
+import issue1 from "./../assets/pdfs/Asteria Magazine - Issue 1.pdf";
 
 //Importing constants
 import _ from "./../constants/constants";
@@ -112,7 +112,7 @@ const IndexPage = ({data}) => {
         <ArticleShowcase articles={featuredArticles} />
 
         <div className="download">
-          <a href={issue1} download>Download the most recent issue</a>
+          <a href={issue1} title={"Issue 1"} download>Download the most recent issue</a>
         </div>
 
         <div className="issues">
