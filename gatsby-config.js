@@ -69,14 +69,7 @@ module.exports = {
         path: `${__dirname}/src/assets/profiles/images`,
         name: `profile-images`
       }
-    }, 
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/assets/pdfs`,
-        name: `pdfs`
-      }
-    }, 
+    },  
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
