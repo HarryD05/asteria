@@ -110,7 +110,7 @@ const IndexPage = ({data}) => {
         <ArticleShowcase articles={featuredArticles} />
 
         <div className="download">
-          <a href="https://drive.google.com/file/d/1IBbmLboqsIrYW-M4sbWyLhZtCrmQgsh9/view?usp=sharing" target="_blank" rel="noreferrer">View the most recent issue</a>
+          <a href="https://drive.google.com/file/d/1RjE8YyARoDt9M8nLBfOUB9ZDKCwwjMVS/view" target="_blank" rel="noreferrer">View the most recent issue</a>
         </div>
 
         <div className="issues">
