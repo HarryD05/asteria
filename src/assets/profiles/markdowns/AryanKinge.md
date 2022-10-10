@@ -7,7 +7,7 @@ pronouns: "HE/HIM"
 role: ["Editor"]
 userID: "ac"
 slug: "/profiles/ac"
-profile_picture: "Aryan Kinge.png"
+profile_picture: "Aryan Kinge.jpeg"
 ---
 
 Hi! I'm Aryan, I'm interested in Environmental Economics and Sustainability, as well as renewable energy. 
