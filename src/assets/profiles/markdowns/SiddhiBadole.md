@@ -4,7 +4,7 @@ first_name: "Siddhi"
 surname: "Badole"
 school: "Kendrick School"
 role: ["Editor", "Designer"]
-pronouns: "SHE/HER"
+pronouns: "She/Her"
 userID: "y" 
 slug: "/profiles/y"
 profile_picture: "Siddhi Badole.jpeg"

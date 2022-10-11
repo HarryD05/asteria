@@ -1,8 +1,8 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 
-const defaultTitle = "Asteria";
-const defaultURL = "<URL>";
+const defaultTitle = "Asteria Magazine";
+const defaultURL = "https://asteriamagazine.co.uk";
 
 const SEO = ({ seo = {} }) => {
   const metaTags = [];
@@ -16,7 +16,7 @@ const SEO = ({ seo = {} }) => {
 
     metaTags.push({ name: "twitter:card", content: "summary_large_image" });
     metaTags.push({ name: "og:type", content: "website" });
-    metaTags.push({ name: "og:site_name", content: "Asteria" });
+    metaTags.push({ name: "og:site_name", content: "Asteria Website" });
 
     if (seo["description"] !== null && seo["description"] !== undefined) {
       metaTags.push({ name: "description", content: seo["description"] });

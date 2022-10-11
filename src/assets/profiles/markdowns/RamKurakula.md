@@ -3,7 +3,7 @@ type: "Profile"
 first_name: "Ram"
 surname: "Gautham Kurakula"
 school: "Reading School"
-pronouns: "HE/HIM"
+pronouns: "He/Him"
 role: ["Co-ordinator", "Chief editor"]
 userID: "w"
 slug: "/profiles/w"

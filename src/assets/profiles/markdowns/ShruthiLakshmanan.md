@@ -3,7 +3,7 @@ type: "Profile"
 first_name: "Shruthi"
 surname: "Lakshmanan"
 school: "Kendrick School"
-pronouns: "SHE/HER"
+pronouns: "She/Her"
 role: ["Writer"]
 userID: "x"
 slug: "/profiles/x"

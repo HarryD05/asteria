@@ -143,7 +143,7 @@ const ArticleDetails = ({ data }) => {
       <SEO seo={{
         ..._.ArticleDetails.SEO,
         title: `Asteria | ${ArticleTitle(ArticleDetails)}`,
-        image: ArticleImage(ArticleDetails),
+        image: image(),
         url
       }} />
       <main>

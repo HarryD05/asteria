@@ -3,7 +3,7 @@ type: "Profile"
 first_name: "Rujing"
 surname: "Li (Jim)"
 school: "Reading School"
-pronouns: "HE/HIM"
+pronouns: "He/Him"
 role: ["Writer"]
 userID: "p"
 slug: "/profiles/p"

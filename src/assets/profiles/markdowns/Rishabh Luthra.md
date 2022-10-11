@@ -3,7 +3,7 @@ type: "Profile"
 first_name: "Rishabh"
 surname: "Luthra"
 school: "Reading School"
-pronouns: "HE/HIM"
+pronouns: "He/Him"
 role: ["Editor"]
 userID: "ab"
 slug: "/profiles/ab"

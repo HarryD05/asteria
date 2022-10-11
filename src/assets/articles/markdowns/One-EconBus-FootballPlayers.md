@@ -16,7 +16,7 @@ Since 2014, with all factors being equal, the annual inflation growth rate on th
 
 The expensive nature of transfers originates from the marginal value of the very best football players being immense. Considering that football has risen to become the most popular sport in the world, the returns that these players can generate to their respective clubs is massive. 
 
-![Ronaldo](./../images/issue1/econbus/Ronaldo.jpg)
+![Ronaldo](./../images/issue1/econbus/Ronaldo.png)
 
 Looking from a football teams’ perspective, there are 4 main revenue streams: sales from match days (tickets, food and associated merchandise), commercial sales (shirt sales) and revenue from TV licences. For most large clubs, match day sales are mostly fixed with little fluctuation since they sell out most to all their stadium. On the other hand, the other 3 factors are massively dependent on the success of the team and their overall popularity. Sponsorships tend to also be driven by the reputation and success, where more notable and prestigious teams land higher value sponsorships; Liverpool FC’s deal with their defining sponsor Standard Chartered, a British bank, is rumoured to be worth around $59.2 million a year2. Commercial sales are a weird mix of popularity and success, for example Man United have recently been underperforming largely but have no doubt been constantly selling shirts and tickets due to strong fan loyalty. TV revenue is also determined by several ways differing by league/tournament, the Premier League for example determines the final allocation of TV money by league position, how many games were shown by the team and also by the pool of money generated from selling the rights domestically and overseas.
 

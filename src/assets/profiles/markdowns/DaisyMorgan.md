@@ -3,7 +3,7 @@ type: "Profile"
 first_name: "Daisy"
 surname: "Morgan"
 school: "Kendrick School"
-pronouns: "SHE/HER"
+pronouns: "She/Her"
 role: ["Editor"]
 userID: "h"
 slug: "/profiles/h"

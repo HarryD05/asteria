@@ -3,7 +3,7 @@ type: "Profile"
 first_name: "Antonio Hou Ting"
 surname: "Mak"
 school: "Reading School"
-pronouns: "HE/HIM"
+pronouns: "He/Him"
 role: ["Writer"]
 userID: "b"
 slug: "/profiles/b"

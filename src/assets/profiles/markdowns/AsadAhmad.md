@@ -4,7 +4,7 @@ first_name: "Asad"
 surname: "Ahmad"
 school: "Reading School"
 role: ["Writer"]
-pronouns: "HE/HIM"
+pronouns: "He/Him"
 userID: "e"
 slug: "/profiles/e"
 profile_picture: "Asad Ahmad.jpg"

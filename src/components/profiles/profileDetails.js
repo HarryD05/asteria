@@ -102,12 +102,14 @@ const ProfileDetails = ({ data }) => {
     return content;
   }
 
+  const image = () => (typeof (ProfileImage(ProfileDetails)) === "string") ? ProfileImage(ProfileDetails) : ProfileImage(ProfileDetails).default;
+
   return (ProfileDetails ?
     <>
       <SEO seo={{
         ..._.ProfileDetails.SEO,
         title: `Asteria | ${ProfileName(ProfileDetails)}`,
-        image: ProfileImage(ProfileDetails),
+        image: image(),
         url
       }} />
       <Navbar />
@@ -116,7 +118,7 @@ const ProfileDetails = ({ data }) => {
           <div className="top">
             <div className="profilePicture">
               <img 
-                src={(typeof(ProfileImage(ProfileDetails)) === "string") ? ProfileImage(ProfileDetails) : ProfileImage(ProfileDetails).default} 
+                src={image()} 
                 alt={`profile picture of ${ProfileName(ProfileDetails)}`}>
               </img>
             </div>

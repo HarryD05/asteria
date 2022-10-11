@@ -4,7 +4,7 @@ title: "Ever heard of 2.5D?"
 description: ""
 subject: "376B70"
 issue: 1
-preview_image: "drawing.png"
+preview_image: "netflix.jpg"
 video_url: null
 video_title: null
 userIDs: ["x"]
@@ -54,7 +54,7 @@ In fact, the Oscar-nominated Apple TV film “Wolf-walkers” (2020) used 3D mod
 
 <div class="image-card-left">
     <div class="image"><div class="img"><img alt="Donkey kong" src="./../images/issue1/artmedia/Donkeykong.jpg"></img></div></div>
-    <p>There is however, a key difference between 2.5D used in games and in films. In video games, this technique is used more often by playing with perspectives. An isometric view, such as the one depicted on the right, gives the illusion of 2D characters being shown as 3D. Nevertheless, like Donkey Kong Country, the side-scrolling 2D plane movement makes games like these in 2.5D perspective. The reason for using this technique was initially to do with limitations of the hardware systems - e.g. generating full 3D games required a lot more power than a NES could provide at the time. Nowadays, much like with films, it’s a choice made for the realism and in-depth, immersive feel you get from a 3D-style.</p>
+    <p>There is however, a key difference between 2.5D used in games and in films. In video games, this technique is used more often by playing with perspectives. An isometric view, such as the one depicted on the left, gives the illusion of 2D characters being shown as 3D. Nevertheless, like Donkey Kong Country, the side-scrolling 2D plane movement makes games like these in 2.5D perspective. The reason for using this technique was initially to do with limitations of the hardware systems - e.g. generating full 3D games required a lot more power than a NES could provide at the time. Nowadays, much like with films, it’s a choice made for the realism and in-depth, immersive feel you get from a 3D-style.</p>
 </div>
 
 In conclusion, 2.5D is a relatively generic term that describes a combination of animation styles used in making films and video games or an illusion of 2D and 3D. In fact, most of the entertainment that you usually consume is in fact in 2.5D - you just didn’t know it! Keep an eye out for it next time you watch a Netflix movie thinking it’s entirely either 2D or 3D, looks can be deceiving…

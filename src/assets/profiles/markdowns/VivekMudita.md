@@ -3,7 +3,7 @@ type: ""
 first_name: "Vivek"
 surname: "Mudita"
 school: "Reading School"
-pronouns: "HE/HIM"
+pronouns: "He/Him"
 role: ["Writer"]
 userID: "z"
 slug: "/profiles/z"
