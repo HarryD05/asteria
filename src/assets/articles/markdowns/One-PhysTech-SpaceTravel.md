@@ -5,8 +5,6 @@ description: ""
 subject: "9C2111"
 issue: 1
 preview_image: "planets1.jpg"
-video_url: null
-video_title: null
 userIDs: ["c"]
 articleID: "15"
 slug: "/articles/15"

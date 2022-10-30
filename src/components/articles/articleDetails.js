@@ -11,7 +11,7 @@ import Footer from "../footer";
 
 //Importing helpers
 import {
-  ArticleDescription, ArticleDetailsMapper, ArticleImage, ArticleMarkdown, ArticleSubject, ArticleTitle, VideoURL, VideoTitle,
+  ArticleDescription, ArticleDetailsMapper, ArticleImage, ArticleMarkdown, ArticleSubject, ArticleTitle,
   AuthorNames, AuthorLinkTos, AuthorImages, AuthorPronouns
 } from './articleHelperFunctions';
 
@@ -120,24 +120,6 @@ const ArticleDetails = ({ data }) => {
     return result;
   }
 
-  const displayVideo = () => {
-    const Video = {URL: VideoURL(ArticleDetails), Title: VideoTitle(ArticleDetails)}
-
-    if (Video.URL !== null) {
-      return <div className="video_container">
-        <iframe
-          src={Video.URL}
-          title={Video.Title}
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          frameBorder="0"
-          webkitallowfullscreen="true"
-          mozallowfullscreen="true"
-          allowFullScreen
-        />
-      </div>
-    }
-  }
-
   return (ArticleDetails ?
     <>
       <SEO seo={{
@@ -163,8 +145,6 @@ const ArticleDetails = ({ data }) => {
           </div>
 
           <div className={`articleContent a${ArticleSubject(ArticleDetails)}`} dangerouslySetInnerHTML={{__html: ArticleMarkdown(ArticleDetails) }}></div>
-          
-          {displayVideo()}
         </div>
       </main>
       <Footer />
@@ -193,8 +173,6 @@ export const pageQuery = graphql`
           pronouns
           school
           profile_picture
-          video_url
-          video_title
           userID
         }
         

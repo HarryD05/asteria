@@ -5,8 +5,6 @@ description: "Music is a uniting force in a society where chasms grow ever deepe
 subject: "622058"
 issue: 1
 preview_image: "music1.jpg"
-video_url: null
-video_title: null
 userIDs: ["g"]
 articleID: "12"
 slug: "/articles/12"

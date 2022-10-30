@@ -5,8 +5,6 @@ description: ""
 subject: "2BB760"
 issue: 1
 preview_image: "Optician.jpg"
-video_url: null
-video_title: null
 userIDs: ["u"]
 articleID: "3"
 slug: "/articles/3"

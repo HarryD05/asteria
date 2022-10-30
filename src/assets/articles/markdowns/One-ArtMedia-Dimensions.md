@@ -5,8 +5,6 @@ description: ""
 subject: "376B70"
 issue: 1
 preview_image: "netflix.jpg"
-video_url: null
-video_title: null
 userIDs: ["x"]
 articleID: "1"
 slug: "/articles/1"

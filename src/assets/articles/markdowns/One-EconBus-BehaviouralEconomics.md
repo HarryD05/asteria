@@ -5,8 +5,6 @@ description: "A modern replacement to Neoclassical economics?"
 subject: "BFAA34"
 issue: 1
 preview_image: "economics2.jpg"
-video_url: null
-video_title: null
 userIDs: ["v"]
 articleID: "5"
 slug: "/articles/5"

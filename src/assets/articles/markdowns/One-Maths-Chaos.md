@@ -5,8 +5,6 @@ description: "Chaos is when the present determines the future, but the approxima
 subject: "3E5FCA"
 issue: 1
 preview_image: "butterfly.jpeg"
-video_url: null
-video_title: null
 userIDs: ["q"]
 articleID: "10"
 slug: "/articles/10"

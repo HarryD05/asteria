@@ -6,14 +6,14 @@ import _ from "./../../constants/constants"
 
 import "./../../styles/index.scss";
 
-const ArticlePreview = ({ Image, Subject, Title, Issue, Authors, LinkTo, IsVideo, includeAuthor=true }) => { 
+const ArticlePreview = ({ Image, Subject, Title, Issue, Authors, LinkTo, includeAuthor=true }) => { 
   const classes = () => `articlePreview bg${Subject}-light ${(includeAuthor ? '' : 'noAuthor')}`;
 
   return (
     <a href={LinkTo} className={classes()}>
       {Issue !== undefined ? <p className="issue">{Issue}</p> : null}
       <div className="top">
-        {IsVideo ? <p className="video">Video</p> : null}
+
         <div className="img">
           <img 
             src={(typeof(Image) === "string") ? Image : Image.default} 
@@ -32,3 +32,5 @@ const ArticlePreview = ({ Image, Subject, Title, Issue, Authors, LinkTo, IsVideo
 };
 
 export default ArticlePreview;
+
+//{IsVideo ? <p className="video">Video</p> : null}

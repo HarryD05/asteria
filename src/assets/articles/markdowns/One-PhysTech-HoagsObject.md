@@ -5,8 +5,6 @@ description: "“There are at least as many galaxies in our observable universe 
 subject: "9C2111"
 issue: 1
 preview_image: "hoags.png"
-video_url: null
-video_title: null
 userIDs: ["m"]
 articleID: "13"
 slug: "/articles/13"

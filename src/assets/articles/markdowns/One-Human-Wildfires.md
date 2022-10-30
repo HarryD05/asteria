@@ -5,8 +5,6 @@ description: "Exploring some of the effects of climate change on wildfires, in r
 subject: "C8792C"
 issue: 1
 preview_image: "wildfires1.jpg"
-video_url: null
-video_title: null
 userIDs: ["o"]
 articleID: "6"
 slug: "/articles/6"

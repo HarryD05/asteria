@@ -5,8 +5,6 @@ description: "Inspired by Cambridge's Robinson college essay competition questio
 subject: "AF70BD"
 issue: 1
 preview_image: "ScienceArticles.png"
-video_url: null
-video_title: null
 userIDs: ["f"]
 articleID: "8"
 slug: "/articles/8"

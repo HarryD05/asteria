@@ -102,7 +102,7 @@ const ArticlesPage = ({data}) => {
           {articleList.map((article, index) => {
             if (article.Subject === info[0]) {
               return <ArticlePreview 
-                key={index} Image={article.Image} Title={article.Title} Issue={article.Issue} Authors={article.Authors} LinkTo={article.LinkTo} Subject={article.Subject} IsVideo={article.IsVideo}
+                key={index} Image={article.Image} Title={article.Title} Issue={article.Issue} Authors={article.Authors} LinkTo={article.LinkTo} Subject={article.Subject}
               />
             }
           })}
@@ -142,13 +142,11 @@ query articleQuery2{
         subject
         issue
         preview_image
-        video_url
         userIDs
         slug
         first_name
         surname
         userID
-      
       }
     }
   }

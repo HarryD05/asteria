@@ -5,8 +5,6 @@ description: ""
 subject: "ACADED"
 issue: 1
 preview_image: "consent.jpg"
-video_url: null
-video_title: null
 userIDs: ["j"]
 articleID: "17"
 slug: "/articles/17"

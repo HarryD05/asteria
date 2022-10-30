@@ -5,8 +5,6 @@ description: "Writing About Isekai Light novels in my school magazine but I actu
 subject: "AF70BD"
 issue: 1
 preview_image: "Novels.jpg"
-video_url: null
-video_title: null
 userIDs: ["p"]
 articleID: "7"
 slug: "/articles/7"

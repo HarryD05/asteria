@@ -5,8 +5,6 @@ description: ""
 subject: "9C2111"
 issue: 1
 preview_image: "SpaceConoly.jpg"
-video_url: null
-video_title: null
 userIDs: ["e"]
 articleID: "14"
 slug: "/articles/14"

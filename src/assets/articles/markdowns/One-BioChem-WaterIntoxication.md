@@ -5,8 +5,6 @@ description: ""
 subject: "2BB760"
 issue: 1
 preview_image: "water1.jpg"
-video_url: null
-video_title: null
 userIDs: ["s"]
 articleID: "4"
 slug: "/articles/4"

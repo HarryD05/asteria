@@ -5,8 +5,6 @@ description: "The International Chopin Piano Competition is held to honour the c
 subject: "622058"
 issue: 1
 preview_image: "piano.jpg"
-video_url: null
-video_title: null
 userIDs: ["b"]
 articleID: "11"
 slug: "/articles/11"

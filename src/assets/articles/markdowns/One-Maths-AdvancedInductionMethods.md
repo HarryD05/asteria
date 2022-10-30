@@ -5,8 +5,6 @@ description: "Induction is a common proof method in A-level further maths. I aim
 subject: "3E5FCA"
 issue: 1
 preview_image: "Domino-Effect.jpg"
-video_url: null
-video_title: null
 userIDs: ["r"]
 articleID: "9"
 slug: "/articles/9"
