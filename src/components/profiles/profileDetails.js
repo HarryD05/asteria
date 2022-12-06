@@ -21,7 +21,8 @@ import "./../../styles/index.scss";
 
 const schoolURLs = {
   'Reading School': 'https://www.reading-school.co.uk/',
-  'Kendrick School': 'https://www.kendrick.reading.sch.uk/'
+  'Kendrick School': 'https://www.kendrick.reading.sch.uk/',
+  'Abbey School': 'https://theabbey.co.uk/'
 }
 
 const ProfileDetails = ({ data }) => {
