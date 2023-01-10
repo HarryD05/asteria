@@ -1,0 +1,46 @@
+.performances {
+  scroll-behavior:smooth;
+  width: calc(100% - 2rem);
+  padding: 1rem;
+  padding-top: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+
+  @media (max-width: 840px) {
+    h1,
+    h2 {
+      text-align: center;
+    }
+
+    .banner {
+      height: 75px;
+    }
+  }
+
+  ::-webkit-scrollbar {
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888888;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555555;
+  }
+
+
+  .previews {
+    width: 100%;
+    min-height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+
+    @media (max-width: 840px) {
+      justify-content: center;
+    }
+  }
+}
+

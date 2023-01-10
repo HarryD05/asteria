@@ -68,7 +68,7 @@ const SettingsContent = () => {
 
             <label class="switch">
                 <input type="checkbox" checked={dyslexia} onChange={e => setDyslexia(e.target.checked)}></input>
-                <span class="switchSlider round"></span>
+                <span className="switchSlider round"></span>
             </label>
 
             <p>Article font size</p>

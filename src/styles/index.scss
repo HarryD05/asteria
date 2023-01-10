@@ -33,6 +33,7 @@ html {
   --shadow-colour: #0000004e;
   --nav-hover: #8499C1; //#9A69A6;
   --primary: #9A69A6;
+  --performance-bg: #bfffd87b;
 
   --biochem: #2bb760;
   --phystech: #9C2111;
@@ -143,6 +144,8 @@ body {
   @import "colours"; 
   @import "settings";
   @import "bibliography";
+  @import "performanceDetails";
+  @import "performances";
 }
 
 h1 {
@@ -205,7 +208,7 @@ h2, h3 {
   }
 }
 
-.articlePreview {
+.articlePreview, .performancePreview {
   width: 200px;
   height: 256px;
   position: relative;
@@ -217,6 +220,7 @@ h2, h3 {
   text-align: center;
   text-decoration: none;
   color: var(--text);
+  background-color: var(--nav-hover);
   box-shadow: 0 2px 4px 0 var(--shadow-colour);
   display: grid;
   grid-template-areas: 

@@ -46,6 +46,77 @@
     
   }
 
+  .article-list {
+    text-align: left;
+    max-width: 80%;
+    width: 640px;
+    margin: auto;
+    margin-top: 1rem;
+
+    .issues {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: left;
+
+      .articlePreview {
+        height: 240px;
+
+        .img {
+          width: 200px;
+        }
+
+        .articleDetails {
+          width: 200px;
+        }
+      }
+    }
+    
+    @media (max-width: 850px) {
+      text-align: center;
+      .issues {
+      justify-content: center;
+      }
+    }
+    
+  }
+
+  .performance-list {
+    text-align: left;
+    max-width: 80%;
+    width: 640px;
+    margin: auto;
+    margin-top: 1rem;
+
+    .issues {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: left;
+
+      .performancePreview {
+        height: 240px;
+
+        .img {
+          width: 200px;
+        }
+
+        .performanceDetails {
+          width: 200px;
+        }
+      }
+    }
+
+    @media (max-width: 850px) {
+      text-align: center;
+
+      .issues {
+        justify-content: center;
+      }
+    }
+
+  }
+
   .details {
     max-width: 80%;
     width: 640px;

@@ -47,7 +47,7 @@ $border-height: 5px;
     width: 32px;
     height: 32px;
 
-    @media (max-width: 640px) {
+    @media (max-width: 700px) {
       top: 20px;
     }
 
@@ -81,7 +81,7 @@ $border-height: 5px;
     height: 32px;
     z-index: 5;
 
-    @media (max-width: 640px) {
+    @media (max-width: 700px) {
       top: 55px;
     }
 
@@ -220,7 +220,7 @@ $border-height: 5px;
         }*/
       }
 
-      @media (max-width: 640px) {
+      @media (max-width: 700px) {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -239,7 +239,7 @@ $border-height: 5px;
     
     .pages {
       max-width: 70%;
-      width: 480px;
+      width: 600px;
       height: 100%;
       display: flex;
       justify-content: space-around;
@@ -310,7 +310,7 @@ $border-height: 5px;
     }
   }
 
-  @media (max-width: 640px) {
+  @media (max-width: 700px) {
     .toggle-btn {
       display: flex;
       flex-direction: column;

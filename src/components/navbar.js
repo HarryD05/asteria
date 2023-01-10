@@ -47,6 +47,7 @@ const SideDrawer = ({isOpen, isDark, click}) => {
 
         <div className="pages">
           <a href="/articles">Articles</a>
+          <a href="/performances">Performances</a>
           <a href="/meet-the-team">Meet the Team</a>
           <a href="/about">About</a>
         </div>
@@ -193,6 +194,7 @@ const Navbar = () => {
           }} style={{transform: `rotate(${degrees}deg)`}}></a></div>
           <div className="pages">
             <a href="/articles">Articles</a>
+            <a href="/performances">Performances</a>
             <a href="/meet-the-team">Meet the Team</a>
             <a href="/about">About</a>
           </div>

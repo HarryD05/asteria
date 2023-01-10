@@ -4,7 +4,7 @@ first_name: "Nicholas"
 surname: "Cade"
 school: "Reading School"
 pronouns: "He/Him"
-role: ["Writer"]
+role: ["Writer", "Performer"]
 userID: "aj"
 slug: "/profiles/aj"
 profile_picture: "Nicholas Cade.jpg"

@@ -2,7 +2,7 @@
 type: "Profile"
 first_name: "Amy Grace"
 surname: "Upton"
-school: "Abbey School"
+school: "Kendrick School"
 pronouns: "Any/All"
 role: ["Writer"]
 userID: "ae"

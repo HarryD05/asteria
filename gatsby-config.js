@@ -59,6 +59,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        path: `${__dirname}/src/assets/performances/markdowns`,
+        name: `performance-markdowns`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         path: `${__dirname}/src/assets/articles/images`,
         name: `article-images`
       }
@@ -68,6 +75,13 @@ module.exports = {
       options: {
         path: `${__dirname}/src/assets/profiles/images`,
         name: `profile-images`
+      }
+    },  
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/assets/performances/images`,
+        name: `performance-images`
       }
     },  
     {

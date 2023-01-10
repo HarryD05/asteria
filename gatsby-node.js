@@ -67,4 +67,37 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       })
     }
   })
+
+  const PerformanceTemplate = require.resolve(`./src/components/performances/performanceDetails.js`)
+  const performanceData = await graphql(`
+    {
+      allMarkdownRemark(
+        limit: 1000
+      ) {
+        nodes {
+          id
+          frontmatter {
+            slug
+            type
+          }
+        }
+        
+      }
+    }
+  `)
+  if (performanceData.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
+  performanceData.data.allMarkdownRemark.nodes.forEach((node) => {
+    if (node.frontmatter.type === "Performance") {
+      createPage({
+        path: node.frontmatter.slug,
+        component: PerformanceTemplate,
+        context: {
+          slug: node.frontmatter.slug,
+        },
+      })
+    }
+  })
 }

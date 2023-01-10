@@ -19,7 +19,7 @@ import { graphql } from "gatsby";
 import './../styles/index.scss';
 
 const MeetTheTeamPage = ({data}) => {
-  const [profiles, setProfiles] = useState([])
+  const [profiles, setProfiles] = useState([]);
 
   useEffect(() => {
     document.body.scrollTop = 0; // For Safari
@@ -37,7 +37,7 @@ const MeetTheTeamPage = ({data}) => {
     setProfiles(profileList);
   }, [data])
 
-  const displayRoles = () => {
+  const displayArticleRoles = () => {
     const profileList = ProfilesMapper(profiles);
 
     if (profileList === 0) {
@@ -82,7 +82,7 @@ const MeetTheTeamPage = ({data}) => {
           return <ProfilePreview
             key={index}
             Name={profile.Name}
-            Role={profile.Role}
+            Role={profile.Role.filter(role => role === "Co-ordinator" || role === "Designer" || role === "Editor" || role === "Writer")}
             Image={profile.Image}
             LinkTo={profile.LinkTo}
             Subject={profile.Subject}
@@ -92,7 +92,62 @@ const MeetTheTeamPage = ({data}) => {
         roleOutput.push(<p>No profiles...</p>)
       }
 
-      output.push(<div class="role"><h1>{key}s</h1><div class="profiles">{roleOutput}</div></div>)
+      output.push(<div class="role"><h2>{key}s</h2><div class="profiles">{roleOutput}</div></div>)
+    }
+
+    return output;
+  }
+
+  const displayPerformanceRoles = () => {
+    const profileList = ProfilesMapper(profiles);
+
+    if (profileList === 0) {
+      return;
+    }
+
+    const roles = {
+      "Performances lead": [],
+      "Performer": []
+    }
+
+    profileList.forEach(profile => {
+      if (profile.Role.includes("Performances lead")) {
+        roles["Performances lead"].push(profile);
+      } else if (profile.Role.includes("Performer")) {
+        roles["Performer"].push(profile);
+      } 
+    })
+
+    const output = []
+
+    for (const key of ["Performances lead", "Performer"]) {
+      const roleOutput = []
+      let roleList = roles[key];
+      roleList = roleList.sort((a, b) => {
+        if (a.Name > b.Name) {
+          return 1;
+        }
+
+        return -1;
+
+      });
+
+      if (roleList.length > 0) {
+        roleOutput.push(roleList.map((profile, index) => {
+          return <ProfilePreview
+            key={index}
+            Name={profile.Name}
+            Role={[]}
+            Image={profile.Image}
+            LinkTo={profile.LinkTo}
+            Subject={profile.Subject}
+          />
+        }));
+      } else {
+        roleOutput.push(<p>No profiles...</p>)
+      }
+
+      output.push(<div class="role"><h2>{key}s</h2><div class="profiles">{roleOutput}</div></div>)
     }
 
     return output;
@@ -104,8 +159,12 @@ const MeetTheTeamPage = ({data}) => {
       <main className="MTT">
         <SEO seo={_.MeetTheTeam.SEO} />
       
-        <div className="profiles">
-          {displayRoles()}
+        <div className="all-profiles">
+          <h1>Articles team</h1>
+          {displayArticleRoles()}
+
+          <h1>Performances team</h1>
+          {displayPerformanceRoles()}
         </div>
       </main>
       <Footer />

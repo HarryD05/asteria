@@ -9,11 +9,13 @@ import _ from "./../../constants/constants";
 import SEO from "./../seo";
 import Navbar from "./../navbar";
 import ArticlePreview from "./../articles/articlePreview";
+import PerformancePreview from "./../performances/performancePreview";
 import Footer from "./../footer";
 
 //Importing helpers
 import {ProfileDetailsMapper, ProfileMarkdown, ProfileImage, SchoolImage, ProfileName, ProfilePronouns, ProfileRole, ProfileSchool} from './profileHelperFunctions';
 import {ArticleDetailsMapper} from './../articles/articleHelperFunctions';
+import {PerformanceDetailsMapper } from './../performances/performanceHelperFunctions';
 
 import { graphql } from "gatsby";
 
@@ -30,6 +32,7 @@ const ProfileDetails = ({ data }) => {
 
   const [ProfileDetails, setProfileDetails] = useState(null);
   const [ArticlesDetails, setArticlesDetails] = useState([]);
+  const [PerformancesDetails, setPerformancesDetails] = useState([]);
   let profileId = url.slice(url.indexOf("profiles") + 9);
 
   if (profileId[profileId.length - 1] === '/') {
@@ -38,6 +41,7 @@ const ProfileDetails = ({ data }) => {
 
   const profiles = [];
   const articles = [];
+  const performances = [];
 
   useEffect(() => {
     document.body.scrollTop = 0; // For Safari
@@ -53,6 +57,10 @@ const ProfileDetails = ({ data }) => {
           } else if (info.frontmatter.type === "Article") {
             if (info.frontmatter.userIDs.indexOf(profileId) !== -1) {
               articles.push({...info.frontmatter, index})
+            }
+          } else if (info.frontmatter.type === "Performance") {
+            if (info.frontmatter.userIDs.indexOf(profileId) !== -1) {
+              performances.push({ ...info.frontmatter, index })
             }
           }
         })
@@ -72,11 +80,14 @@ const ProfileDetails = ({ data }) => {
       const ArticleList = articles.map(article => ArticleDetailsMapper({"articles": [article]}, false, false));
       setArticlesDetails([...ArticlesDetails, ...ArticleList])
 
+      const PerformanceList = performances.map(performance => PerformanceDetailsMapper({ "performances": [performance] }, false, false));
+      setPerformancesDetails([...PerformancesDetails, ...PerformanceList])
+
       setProfileDetails(ProfileDetailsMapper(Profile));
     })();
   }, [profileId]);
 
-  const createIssues = () => {
+  const createArticleIssues = () => {
     if (ArticlesDetails.length === 0) return <p>No articles...</p>
     
     const issues = {};
@@ -96,6 +107,32 @@ const ProfileDetails = ({ data }) => {
     for (let i = Math.min(...keys); i <= Math.max(...keys); i++) {
       if (issues.hasOwnProperty(i)) {
         content.push(<div className="issueArticles">{issues[i].map(article => article)}</div>)
+      }
+    }
+
+    return content;
+  }
+
+  const createPerformanceIssues = () => {
+    if (PerformancesDetails.length === 0) return <p>No performances...</p>
+
+    const issues = {};
+
+    PerformancesDetails.forEach((performance, index) => {
+      if (!issues.hasOwnProperty(performance.Issue)) {
+        issues[performance.Issue] = [];
+      }
+
+      issues[performance.Issue].push(<PerformancePreview
+        key={index} Image={performance.Image} Title={performance.Title} Issue={performance.Issue} Author={performance.Author} LinkTo={performance.LinkTo} includeAuthor={false}
+      />)
+    })
+
+    const content = [];
+    const keys = Object.keys(issues).map(issue => Number(issue));
+    for (let i = Math.min(...keys); i <= Math.max(...keys); i++) {
+      if (issues.hasOwnProperty(i)) {
+        content.push(<div className="issuePerformances">{issues[i].map(performance => performance)}</div>)
       }
     }
 
@@ -144,7 +181,13 @@ const ProfileDetails = ({ data }) => {
         <div className="article-list">
           <h2>Articles</h2>
           <div className="issues">
-            {createIssues()}
+            {createArticleIssues()}
+          </div>
+        </div>
+        <div className="performance-list">
+          <h2>Performances</h2>
+          <div className="issues">
+            {createPerformanceIssues()}
           </div>
         </div>
       </main>

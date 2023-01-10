@@ -4,7 +4,7 @@ first_name: "Antonio Hou Ting"
 surname: "Mak"
 school: "Reading School"
 pronouns: "He/Him"
-role: ["Writer"]
+role: ["Writer", "Performances lead"]
 userID: "b"
 slug: "/profiles/b"
 profile_picture: "Antonio Mak.jpg"

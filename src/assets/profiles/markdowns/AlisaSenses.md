@@ -5,8 +5,8 @@ surname: "Senses"
 school: "Abbey School"
 pronouns: "She/Her"
 role: ["Writer"]
-userID: "ac"
-slug: "/profiles/ac"
+userID: "an"
+slug: "/profiles/an"
 profile_picture: "Alisa Senses.png"
 ---
 
