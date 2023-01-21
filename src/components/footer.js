@@ -5,6 +5,7 @@ import React from "react";
 import InstagramLogo from "./../assets/images/social-media-logos/Instagram.png";
 import LinkedInLogo from "./../assets/images/social-media-logos/LinkedIn.png";
 import FacebookLogo from "./../assets/images/social-media-logos/Facebook.png";
+import AbbeySchoolLogo from "./../assets/images/schools/AbbeySchool.png";
 import ReadingSchoolLogo from "./../assets/images/schools/ReadingSchool.png";
 import KendrickSchoolLogo from "./../assets/images/schools/Kendrick.png";
 
@@ -31,9 +32,12 @@ const Footer = () => {
           <a href="https://www.reading-school.co.uk/" target="_blank" rel="noreferrer">
             <img src={ReadingSchoolLogo} alt="Reading School logo" title="Reading School"></img>
           </a>
+          <a href="https://theabbey.co.uk/" target="_blank" rel="noreferrer">
+            <img src={AbbeySchoolLogo} alt="Abbey School logo" title="Abbey School"></img>
+          </a>
         </div>
       </div>
-      <p className="base">&#169; 2022 Asteria | All Rights Reserved</p>
+      <p className="base">&#169; 2023 Asteria | All Rights Reserved</p>
     </div>
   );
 }

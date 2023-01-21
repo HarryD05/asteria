@@ -308,13 +308,26 @@
       font-size: var(--article-size);
     }
 
-    img {
-      border-radius: 8px;
-      padding: 0px;
-      margin: auto;
-      background-color: white;
-      display: flex;
-      justify-self: center;
+    .image {
+      width: 100%;
+    
+      img {
+        border-radius: 8px;
+        padding: 0px;
+        margin: auto;
+        background-color: white;
+        display: flex;
+        justify-self: center;
+      }
+
+      .vid {
+        border-radius: 8px;
+        padding: 0px;
+        margin: auto;
+        width: 200px;
+        display: flex;
+        justify-self: center;
+      }
     }
 
     h2 {
@@ -333,6 +346,10 @@
       line-height: 1.18;
     }
 
+    .right {
+      text-align: right;
+    }
+
     ul,
     ol,
     p,
@@ -341,11 +358,12 @@
       font-size: var(--article-size);
       font-family: var(--article-font);
       letter-spacing: 0.4px;
-      line-height: 1.2;
+      line-height: 1.7;
       word-wrap: break-word;
+      text-align: justify;
     }
 
-    .centre {
+    .centre, .image em {
       text-align: center;
       margin-bottom: 1rem;
       font-size: var(--article-size);
@@ -360,6 +378,10 @@
 
     a {
       text-decoration: none;      
+    }
+
+    #bibliography p, li {
+      text-align: left !important;
     }
 
     .image-card-left {
@@ -433,7 +455,7 @@
     
           .img {
             width: 90%;
-            margin: auto;
+            margin: 0 auto;
           }
 
           p {
@@ -444,6 +466,37 @@
         @media (max-width: 800px) {
           flex-direction: column;
     
+          .image {
+            width: 100%;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+
+      &-3 {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 1rem;
+        height: max-content;
+
+        .image {
+          width: 33.33%;
+          text-align: center;
+
+          .img {
+            width: 90%;
+            margin: auto;
+          }
+
+          p {
+            height: 30px;
+          }
+        }
+
+        @media (max-width: 800px) {
+          flex-direction: column;
+
           .image {
             width: 100%;
             margin-bottom: 1rem;

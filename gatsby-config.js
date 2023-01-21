@@ -20,11 +20,21 @@ module.exports = {
             },
           },
           {
+            resolve: "gatsby-remark-better-embed-video",
+            options: {
+              width: 200,
+              height: 200, 
+              related: false, 
+              noIframeBorder: true, 
+              showInfo: false
+            },
+          },
+          {
             resolve: `gatsby-remark-katex`,
             options: {
               strict: `ignore`
             }
-          }
+          },
         ],
       },
     },

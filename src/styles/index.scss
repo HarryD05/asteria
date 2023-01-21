@@ -238,7 +238,7 @@ h2, h3 {
   }
 
   .issue {
-    display: none; //Remove when have issue 2
+    //display: none; //Remove when have issue 2
     position: absolute;
     //background-color: var(--nav-hover);
     //color: var(--text);
@@ -247,8 +247,8 @@ h2, h3 {
     height: 20px;
     border-radius: 50%;
     z-index: 2;
-    left: -5px;
-    top: -5px;
+    left: 95px;
+    top: -10px;
     
     background-color: white;
     color: black;
