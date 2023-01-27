@@ -83,68 +83,33 @@ const IndexPage = ({data}) => {
     setPerformances(performanceList);
   }, [data])
 
-  const createIssues = () => {
-    const issues = {};
-
+  const createArticles = () => {
     const articleList = ArticlesMapper(articles);
 
     if (articleList === 0) return <LoadingSpinner />;
 
+    const content = [];
+
     articleList.forEach((article, index) => {
-      if (!issues.hasOwnProperty(article.Issue)) {
-        issues[article.Issue] = [];
-      }
-
-      if (article.Subject === "") {
-        return;
-      }
-
-      issues[article.Issue].push(<ArticlePreview
-        key={index} Image={article.Image} Title={article.Title} Authors={article.Authors} LinkTo={article.LinkTo} Subject={article.Subject}
-      />)
-
-
+      content.push(<ArticlePreview key={index} Image={article.Image} Title={article.Title} Authors={article.Authors} LinkTo={article.LinkTo} Subject={article.Subject} Issue={article.Issue} />)
     })
 
-    const content = [];
-    const keys = Object.keys(issues).map(issue => Number(issue));
-    for (let i = Math.max(...keys); i >= Math.min(...keys); i--) {
-      if (issues.hasOwnProperty(i)) {
-        content.push(<><h3>Issue {i}</h3><div className="issue-articles">{issues[i].map(article => article)}</div></>)
-      }
-    }
-
-    return content;
+    return <div className="articles">{content}</div>;
   }
 
   const createPerformances= () => {
-    const issues = {};
-
     const performanceList = PerformancesMapper(performances);
 
     if (performanceList === 0) return <LoadingSpinner />;
 
+    const content = [];
+
     performanceList.forEach((performance, index) => {
-      if (!issues.hasOwnProperty(performance.Issue)) {
-        issues[performance.Issue] = [];
-      }
-
-      issues[performance.Issue].push(<PerformancePreview
-        key={index} Image={performance.Image} Title={performance.Title} Composer={performance.Composer} Authors={performance.Authors} LinkTo={performance.LinkTo}
+      content.push(<PerformancePreview key={index} Image={performance.Image} Title={performance.Title} Composer={performance.Composer} Authors={performance.Authors} Issue={performance.Issue} LinkTo={performance.LinkTo}
       />)
-
-
     })
 
-    const content = [];
-    const keys = Object.keys(issues).map(issue => Number(issue));
-    for (let i = Math.max(...keys); i >= Math.min(...keys); i--) {
-      if (issues.hasOwnProperty(i)) {
-        content.push(<><h3>Issue {i}</h3><div className="issue-performances">{issues[i].map(performance => performance)}</div></>)
-      }
-    }
-
-    return content;
+    return <div className="performances">{content}</div>;
   }
 
   return (
@@ -160,10 +125,10 @@ const IndexPage = ({data}) => {
         </div>
 
         <div className="issues">
-          <h1>Archive</h1>
-          <h2>Articles</h2>
-          {createIssues()}
-          <h2>Performances</h2>
+          <h1>Articles</h1>
+          {createArticles()}
+
+          <h1>Performances</h1>
           {createPerformances()}
           </div>
       </main>
