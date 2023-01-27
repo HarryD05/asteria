@@ -100,9 +100,13 @@ At this point, Yuan Shu had not addressed the fact that Emperor Liu Xie was stil
 <div id="bibliography">
 <h2>Bibliography</div>
 
-Book of the Later Han - Fan Ye (445AD) Romance of the Three Kingdoms - Luo Guanzhong (C14) [1321 and 1323] 
+Book of the Later Han - Fan Ye (445AD) 
 
-Book of Han - Ban Gu, Ban Zhao (111AD) Record of the Three Kingdoms - Chen Shou (C3)
+Romance of the Three Kingdoms - Luo Guanzhong (C14) [1321 and 1323] 
+
+Book of Han - Ban Gu, Ban Zhao (111AD) 
+
+Record of the Three Kingdoms - Chen Shou (C3)
 
 A Biographical Dictionary of Later Han to the Three Kingdoms 23-220 AD - Rafe de Crespigny (2007)
 

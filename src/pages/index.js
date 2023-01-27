@@ -8,6 +8,8 @@ import SEO from "./../components/seo";
 import ArticleShowcase from "./../components/articleShowcase";
 import ArticlePreview from "./../components/articles/articlePreview";
 import { ArticlesMapper } from "./../components/articles/articleHelperFunctions";
+import PerformancePreview from "./../components/performances/performancePreview";
+import { PerformancesMapper } from "./../components/performances/performanceHelperFunctions";
 import LoadingSpinner from "../components/loading";
 
 //Importing constants
@@ -18,8 +20,9 @@ import { graphql } from "gatsby";
 import "./../styles/index.scss";
 
 const IndexPage = ({data}) => {
-  const [articles, setArticles] = useState([])
-  const [featuredArticles, setFeaturedArticles] = useState([])
+  const [articles, setArticles] = useState([]);
+  const [performances, setPerformances] = useState([]);
+  const [featuredArticles, setFeaturedArticles] = useState([]);
 
   useEffect(() => {
     document.body.scrollTop = 0; // For Safari
@@ -28,6 +31,7 @@ const IndexPage = ({data}) => {
 
   useEffect(() => {
     const articleList = [];
+    const performanceList = [];
     const featuredList = [];
     const authors = {};
 
@@ -36,6 +40,8 @@ const IndexPage = ({data}) => {
 
       if (info.type === "Article") {
         articleList.push(info);
+      } else if (info.type === "Performance") {
+        performanceList.push(info);
       } else if (info.type === "Profile") {
         authors[info.userID] = info;
       }
@@ -62,9 +68,19 @@ const IndexPage = ({data}) => {
       }
     })
 
+    performanceList.forEach(performance => {
+      const authorList = [];
+
+      performance.userIDs.forEach(ID => {
+        authorList.push(authors[ID])
+      })
+      performance.authors = authorList;
+    })
+
 
     setFeaturedArticles(featuredList);
     setArticles(articleList);
+    setPerformances(performanceList);
   }, [data])
 
   const createIssues = () => {
@@ -94,7 +110,37 @@ const IndexPage = ({data}) => {
     const keys = Object.keys(issues).map(issue => Number(issue));
     for (let i = Math.max(...keys); i >= Math.min(...keys); i--) {
       if (issues.hasOwnProperty(i)) {
-        content.push(<><h2>Issue {i}</h2><div className="issue-articles">{issues[i].map(article => article)}</div></>)
+        content.push(<><h3>Issue {i}</h3><div className="issue-articles">{issues[i].map(article => article)}</div></>)
+      }
+    }
+
+    return content;
+  }
+
+  const createPerformances= () => {
+    const issues = {};
+
+    const performanceList = PerformancesMapper(performances);
+
+    if (performanceList === 0) return <LoadingSpinner />;
+
+    performanceList.forEach((performance, index) => {
+      if (!issues.hasOwnProperty(performance.Issue)) {
+        issues[performance.Issue] = [];
+      }
+
+      issues[performance.Issue].push(<PerformancePreview
+        key={index} Image={performance.Image} Title={performance.Title} Composer={performance.Composer} Authors={performance.Authors} LinkTo={performance.LinkTo}
+      />)
+
+
+    })
+
+    const content = [];
+    const keys = Object.keys(issues).map(issue => Number(issue));
+    for (let i = Math.max(...keys); i >= Math.min(...keys); i--) {
+      if (issues.hasOwnProperty(i)) {
+        content.push(<><h3>Issue {i}</h3><div className="issue-performances">{issues[i].map(performance => performance)}</div></>)
       }
     }
 
@@ -115,7 +161,10 @@ const IndexPage = ({data}) => {
 
         <div className="issues">
           <h1>Archive</h1>
+          <h2>Articles</h2>
           {createIssues()}
+          <h2>Performances</h2>
+          {createPerformances()}
           </div>
       </main>
       <Footer />
@@ -132,6 +181,7 @@ query articleQuery3{
         type
         articleID
         title
+        composer
         description
         subject
         issue

@@ -4,19 +4,21 @@ export const PerformancesMapper = Performances =>
   Performances.map(Performance => ({
     Image: require(`./../../assets/performances/images/${Performance.preview_image}`),
     Title: Performance.title,
+    Composer: Performance.composer,
     Authors: Performance.authors,
     LinkTo: Performance.slug,
     Issue: Performance.issue,
   }));
 
-export const PerformanceDetailsMapper = (Performance, includeMarkDown=true, includeAuthor=true) =>
+export const PerformanceDetailsMapper = (Performance, includeMarkDown=true) =>
   Performance &&
   Performance.performances &&
   Performance.performances[0] && {
     Title: Performance.performances[0].title,
+    Composer: Performance.performances[0].composer,
     Image: require(`./../../assets/performances/images/${Performance.performances[0].preview_image}`),
     Description: Performance.performances[0].description,
-    Authors: (includeAuthor ? Performance.performances[0].authors.map(author => {
+    Authors: Performance.performances[0].authors.map(author => {
       return {
         Name: `${author.first_name} ${author.surname}`,
         LinkTo: author.slug,
@@ -24,8 +26,7 @@ export const PerformanceDetailsMapper = (Performance, includeMarkDown=true, incl
         School: author.school,
         Image: require(`./../../assets/profiles/images/${author.profile_picture}`),
       }
-    })  
-    : null),
+    }),
     Issue: Performance.performances[0].issue,
     LinkTo: Performance.performances[0].slug,
     MarkDownContent: (includeMarkDown ? Performance.performances[0].html : null),
@@ -39,6 +40,15 @@ export const PerformanceTitle = details => {
     return details.Title;
   }
 }
+
+export const PerformanceComposer = details => {
+  if (details === null || details === undefined) {
+    return '';
+  } else {
+    return details.Composer;
+  }
+}
+
 
 export const PerformanceDescription = details => {
   if (details === null || details === undefined) {

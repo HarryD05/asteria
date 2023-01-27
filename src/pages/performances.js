@@ -25,6 +25,11 @@ const PerformancesPage = ({data}) => {
   const [profiles, setProfiles] = useState([]);
 
   useEffect(() => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }, []);
+
+  useEffect(() => {
     const performanceList = [];
     const profileList = [];
     const authors = {};
@@ -38,15 +43,15 @@ const PerformancesPage = ({data}) => {
         authors[info.userID] = info;
         profileList.push(info);
       }
-    })
+    });
 
     performanceList.forEach(performance => {
       const authorList = [];
       performance.userIDs.forEach(ID => {
-        authorList.push(authors[ID])
+        authorList.push(authors[ID]);
       })
-      performance.authors = authorList
-    })
+      performance.authors = authorList;
+    });
 
     setPerformances(performanceList);
     setProfiles(profileList);
@@ -115,7 +120,7 @@ const PerformancesPage = ({data}) => {
     return <div className="previews">
       {performanceList.map((performance, index) => {
         return <PerformancePreview 
-          key={index} Image={performance.Image} Title={performance.Title} Issue={performance.Issue} Authors={performance.Authors} LinkTo={performance.LinkTo}
+          key={index} Image={performance.Image} Title={performance.Title} Composer={performance.Composer} Issue={performance.Issue} Authors={performance.Authors} LinkTo={performance.LinkTo}
         />
       })}
       </div>
@@ -148,6 +153,7 @@ query performanceQuery2{
       frontmatter {
         type
         title
+        composer
         description
         issue
         preview_image

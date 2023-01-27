@@ -42,6 +42,7 @@ const ProfileDetails = ({ data }) => {
   const profiles = [];
   const articles = [];
   const performances = [];
+  const authors = {};
 
   useEffect(() => {
     document.body.scrollTop = 0; // For Safari
@@ -54,6 +55,7 @@ const ProfileDetails = ({ data }) => {
         data.allMarkdownRemark.nodes.map((info, index) => {
           if (info.frontmatter.type === "Profile") {
             profiles.push({...info.frontmatter, index})
+            authors[info.frontmatter.userID] = info;
           } else if (info.frontmatter.type === "Article") {
             if (info.frontmatter.userIDs.indexOf(profileId) !== -1) {
               articles.push({...info.frontmatter, index})
@@ -77,10 +79,18 @@ const ProfileDetails = ({ data }) => {
         }
       }
 
+      performances.forEach(performance => {
+        const authorList = [];
+        performance.userIDs.forEach(ID => {
+          authorList.push(authors[ID].frontmatter);
+        })
+        performance.authors = authorList;
+      });
+
       const ArticleList = articles.map(article => ArticleDetailsMapper({"articles": [article]}, false, false));
       setArticlesDetails([...ArticlesDetails, ...ArticleList])
 
-      const PerformanceList = performances.map(performance => PerformanceDetailsMapper({ "performances": [performance] }, false, false));
+      const PerformanceList = performances.map(performance => PerformanceDetailsMapper({ "performances": [performance] }, false));
       setPerformancesDetails([...PerformancesDetails, ...PerformanceList])
 
       setProfileDetails(ProfileDetailsMapper(Profile));
@@ -124,7 +134,7 @@ const ProfileDetails = ({ data }) => {
       }
 
       issues[performance.Issue].push(<PerformancePreview
-        key={index} Image={performance.Image} Title={performance.Title} Issue={performance.Issue} Author={performance.Author} LinkTo={performance.LinkTo} includeAuthor={false}
+        key={index} Image={performance.Image} Title={performance.Title} Composer={performance.Composer} Issue={performance.Issue} Authors={performance.Authors} LinkTo={performance.LinkTo}
       />)
     })
 
@@ -212,6 +222,7 @@ export const pageQuery = graphql`
           slug
           profile_picture
           title
+          composer
           subject
           userID
           articleID

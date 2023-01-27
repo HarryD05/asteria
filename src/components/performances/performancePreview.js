@@ -6,12 +6,12 @@ import _ from "../../constants/constants"
 
 import "./../../styles/index.scss";
 
-const PerformancePreview = ({ Image, Title, Issue, Authors, LinkTo, includeAuthor=true }) => { 
-  const classes = () => `performancePreview ${(includeAuthor ? '' : 'noAuthor')}`;
+const PerformancePreview = ({ Image, Title, Composer, Issue, Authors, LinkTo }) => { 
+  const classes = () => `performancePreview bgPERF-light`;
 
   return (
     <a href={LinkTo} className={classes()}>
-      {Issue !== undefined ? <p className="issue">{Issue}</p> : null}
+      {Issue !== undefined ? <p className="issue">Issue {Issue}</p> : null}
       <div className="top">
 
         <div className="img">
@@ -23,9 +23,10 @@ const PerformancePreview = ({ Image, Title, Issue, Authors, LinkTo, includeAutho
       </div>
       <div className="performanceDetail">
         <h2>{Title}</h2> 
-        {includeAuthor ? <div className="authors">{Authors.map(author => {
-          return <p>{`${author.first_name} ${author.surname}`}</p>;
-        })}</div> : <p></p>}
+        <div className="composer"><em>{Composer}</em></div>
+        <div className="authors">{Authors.map(author => {
+          return <p>{(author.Name ? author.Name: `${author.first_name} ${author.surname}`)}</p>;
+        })}</div>
       </div>
     </a>
   )

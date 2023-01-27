@@ -242,13 +242,14 @@ h2, h3 {
     position: absolute;
     //background-color: var(--nav-hover);
     //color: var(--text);
-    padding: 4px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
+    padding: 1px;
+    width: 65px;
+    height: 16px;
+    font-size: small;
+    border-radius: 8px;
     z-index: 2;
-    left: 95px;
-    top: -10px;
+    left: -5px;
+    top: -5px;
     
     background-color: white;
     color: black;
@@ -269,7 +270,7 @@ h2, h3 {
     }
   }
 
-  .articleDetail {
+  .articleDetail, .performanceDetail {
     grid-area: details;
     display: grid;
     width: 200px;
@@ -295,6 +296,11 @@ h2, h3 {
         font-size:medium;
       }
     }
+    .composer {
+      grid-area: composer;
+      font-weight: bold;
+      width: 200px;
+    }
     .authors {
       grid-area: author;
       color: var(--author);
@@ -305,6 +311,19 @@ h2, h3 {
       flex-direction: column;
       height: 100%;
     }
+  }
+
+  .performanceDetail {
+    height: 166px;
+    margin-top: 12px;
+    grid-template-areas:
+      "title"
+      "composer"
+      "author";
+    grid-template-rows:
+      60px 
+      20px
+      96px;
   }
 
   .img {
@@ -320,6 +339,21 @@ h2, h3 {
     }
   }
 }
+
+ .performancePreview {
+  height: 184px;
+
+  grid-template-areas:
+    "details";
+  grid-template-rows:
+    1fr;
+
+  .img {
+    display: none;
+    grid-area: image;
+    align-self: center;
+  }
+ }
 
 .noAuthor {
   grid-template-rows:

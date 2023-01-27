@@ -1,6 +1,6 @@
 ---
 type: "Article"
-title: "Does the ocean on Enceladus meant there could be life elsewhere?"
+title: "Does the ocean on Enceladus mean there could be life elsewhere?"
 description: ""
 subject: "9C2111"
 issue: 2

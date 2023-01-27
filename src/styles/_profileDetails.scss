@@ -14,7 +14,7 @@
   .article-list {
     text-align: left;
     max-width: 80%;
-    width: 640px;
+    width: 700px;
     margin: auto;
     margin-top: 1rem;
 
@@ -49,7 +49,7 @@
   .article-list {
     text-align: left;
     max-width: 80%;
-    width: 640px;
+    width: 700px;
     margin: auto;
     margin-top: 1rem;
 
@@ -84,27 +84,15 @@
   .performance-list {
     text-align: left;
     max-width: 80%;
-    width: 640px;
+    width: 700px;
     margin: auto;
     margin-top: 1rem;
 
-    .issues {
+    .issuePerformances {
       width: 100%;
       display: flex;
       flex-wrap: wrap;
       justify-content: left;
-
-      .performancePreview {
-        height: 240px;
-
-        .img {
-          width: 200px;
-        }
-
-        .performanceDetails {
-          width: 200px;
-        }
-      }
     }
 
     @media (max-width: 850px) {
@@ -119,7 +107,7 @@
 
   .details {
     max-width: 80%;
-    width: 640px;
+    width: 700px;
     height: auto;
     margin: auto;
 

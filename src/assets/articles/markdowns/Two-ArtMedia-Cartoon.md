@@ -15,7 +15,7 @@ Animation is the process of using consecutive images (known as frames) to simula
 Before you start animating a scene, you need to picture what sort of motions are involved and you break them down to the fundamentals. If you want to animate a human running, your first instinct must be to identify the Key Poses in this movement. When do both legs stretch out the most, or when does a leg go back to its default pose? Creating a rough animation with only a few Key Poses may also help you see what needs to be changed so you don’t end up fixing major errors when you begin to create the In-between Poses later on.
 
 <div class="image">
-    <div class="vid"><iframe width="200px" height="200px" style="border:none;" preload="auto" autoplay src="https://www.youtube.com/embed/6LkwmrrrciI?autoplay=1&loop=1&autohide=1&modestbranding=1&rel=0&fs=0&color=white&controls=0&disablekb=1&playlist=6LkwmrrrciI"></iframe></div>
+    <div class="vid"><iframe src="https://giphy.com/embed/ODSVUIord8z2WqNTst" width="200" height="200" frameBorder="0" class="giphy-embed"></iframe></div>
     <em class="centre">Take this lil guy I made, we’ll be using a simple jump sequence featuring him to demonstrate some of the theories discussed in this article.</em>
 </div>
 
@@ -38,7 +38,7 @@ One way we could present recoil on the main body would be to use a technique cal
 If we still consider the idea of elastic objects, we know that some materials are more rigid than others so they are less flexible. Depending on how much stretch an object experiences when they move could be used to demonstrate their weight and stiffness. If your object is very stretchy it could imply that they’re soft, otherwise the object is sturdy. It’s not natural for an object to be able to stretch over an infinite distance. So, when you’re applying Squash-and-Stretch, try to keep size proportions believable, which is normally done to keep the object’s volume consistent. Therefore, the amount of squash should be perpendicular to the amount of stretch.
 
 <div class="image">
-    <div class="vid"><iframe width="200px" height="200px" style="border:none;" preload="auto" autoplay src="https://www.youtube.com/embed/M5nuMtmC5W4?autoplay=1&loop=1&autohide=1&modestbranding=1&rel=0&fs=0&color=white&controls=0&disablekb=1&playlist=M5nuMtmC5W4"></iframe></div>
+    <div class="vid"><iframe src="https://giphy.com/embed/3FtLPf5Luy1YsL8l6O" width="200" height="200" frameBorder="0" class="giphy-embed"></iframe></div>
 </div>
 
 <div class="image">
@@ -51,7 +51,7 @@ This looks more expressive than before since the character’s main body now sho
 We could suggest that based on the character design, the amount of soil that he carries is probably not as heavy as his main pot body therefore they both have different weights. With that in mind, it’s safe to assume that the main body would fall at a faster rate than the soil. In other words, there is an offset between when both of these things would move. This behavior is normally called __Overlapping__ or __Overlapping-Action__ which is commonly associated with __Follow-Through__. Follow-Through is the idea that some parts (or limbs) attached to a main body could continue to move even after the main body has halted. Another way of looking at how these two things work would be to imagine exaggerating inertia. Realistically the connected part should move at the same pace as the main body due to inertia, however, Overlapping and Follow-Through applies a delay in movement of the connected part.
 
 <div class="image">
-    <div class="vid"><iframe width="200px" height="200px" style="border:none;" preload="auto" autoplay src="https://www.youtube.com/embed/2y57cv1UpvU?autoplay=1&loop=1&autohide=1&modestbranding=1&rel=0&fs=0&color=white&controls=0&disablekb=1&playlist=2y57cv1UpvU"></iframe></div>
+    <div class="vid"><iframe src="https://giphy.com/embed/LlkoHQ0pL4Fjsfs745" width="200" height="200" frameBorder="0" class="giphy-embed"></iframe></div>
 </div>
 
 <div class="image">
@@ -66,7 +66,7 @@ In animation, it’s difficult to have the time and resources to make our moveme
 Most animated films typically run on 24-30 frames per second, so it’s generally hard for anyone to notice any minor changes between the current frame and the previous frames. So, one method to save money and development time is through the use of a technique called __Smearing__, which is applying motion blurs on our animation. Be aware that smearing frames look weird on their own. Some examples of smearing:
 
 <div class="multi-image-row-2">
-    <div class="image"><div class="vid"><iframe width="200px" height="200px" style="border:none;" preload="auto" autoplay src="https://www.youtube.com/embed/MXDJiahT_uw?autoplay=1&loop=1&autohide=1&modestbranding=1&rel=0&fs=0&color=white&controls=0&disablekb=1&playlist=MXDJiahT_uw"></iframe></div><em>3D Smearing Example : Candyman from Lethal League Blaze</em></div>
+    <div class="image"><div class="vid"><iframe src="https://giphy.com/embed/BndJJCXqdANurcPcEq" width="200" height="200" frameBorder="0" class="giphy-embed"></iframe></div><em>3D Smearing Example : Candyman from Lethal League Blaze</em></div>
     <div class="image"><div class="img"><img alt="Dafft duck" src="./../images/issue2/art/DaffyDuck.png"></img></div><em>2D Smearing Example : Daffy Duck</em></div>
 </div>
 

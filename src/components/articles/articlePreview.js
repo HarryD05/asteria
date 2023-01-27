@@ -11,7 +11,7 @@ const ArticlePreview = ({ Image, Subject, Title, Issue, Authors, LinkTo, include
 
   return (
     <a href={LinkTo} className={classes()}>
-      {Issue !== undefined ? <p className="issue">{Issue}</p> : null}
+      {Issue !== undefined ? <p className="issue">Issue {Issue}</p> : null}
       <div className="top">
 
         <div className="img">

@@ -21,7 +21,6 @@
     flex-direction: row;
 
     .details {
-      width: 100%;
 
       h1 {
         margin-bottom: 8px;
@@ -58,10 +57,9 @@
   .authors {
     display: flex;
     flex-direction: row;
-    //width: 300px;
-    //max-width: 80%;
-    margin: auto;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 432px;
+    justify-content: center;
     align-items: center;
     //box-shadow: 0 2px 4px 0 var(--shadow-colour);
     border-radius: 32px;
@@ -72,6 +70,7 @@
     .author {
       width: 128px;
       padding-right: 1rem;
+      padding-bottom: 1rem;
       align-self: center;
 
       @media (max-width: 640px) {
@@ -130,9 +129,10 @@
 
   .video_container {
     position: relative;
+    overflow: hidden;
     width: 100%;
     padding-top: 56.25%;
-    margin-top: 1rem;
+    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 
     iframe {
       position: absolute;

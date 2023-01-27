@@ -105,3 +105,15 @@
     background-color: #3E5FCAc1;
   }
 }
+
+.bgPERF {
+  background-color: #3eca9e;
+
+  &-light {
+    background-color: #3eca9eab;
+  }
+
+  &-light:hover {
+    background-color: #3eca9ec1;
+  }
+}

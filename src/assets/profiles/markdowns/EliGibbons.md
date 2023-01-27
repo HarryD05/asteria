@@ -4,7 +4,7 @@ first_name: "Elijah"
 surname: "Gibbons"
 school: "Reading School"
 pronouns: "He/Him"
-role: ["Writer", "Editor"]
+role: ["Writer", "Editor", "Performer"]
 userID: "j"
 slug: "/profiles/j"
 profile_picture: "Eli Gibbons.png"

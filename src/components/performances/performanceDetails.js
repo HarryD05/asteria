@@ -11,7 +11,7 @@ import Footer from "../footer";
 
 //Importing helpers
 import {
-  PerformanceDescription, PerformanceDetailsMapper, PerformanceImage, PerformanceMarkdown, PerformanceTitle,
+  PerformanceDescription, PerformanceDetailsMapper, PerformanceImage, PerformanceMarkdown, PerformanceTitle, PerformanceComposer,
   AuthorNames, AuthorLinkTos, AuthorImages, AuthorPronouns
 } from './performanceHelperFunctions';
 
@@ -116,6 +116,7 @@ const PerformanceDetails = ({ data }) => {
             <div className="authors">{authorImages()}</div>   
             <div className="details">
               <h1>{PerformanceTitle(PerformanceDetails)}</h1>
+              <em>{PerformanceComposer(PerformanceDetails)}</em>
               <p>{PerformanceDescription(PerformanceDetails)}</p>
             </div>
           </div>
@@ -138,6 +139,7 @@ export const pageQuery = graphql`
         frontmatter {
           type
           title
+          composer
           description
           issue
           slug
