@@ -84,17 +84,37 @@ const IndexPage = ({data}) => {
   }, [data])
 
   const createArticles = () => {
+    const issues = {};
+
     const articleList = ArticlesMapper(articles);
 
     if (articleList === 0) return <LoadingSpinner />;
 
-    const content = [];
-
     articleList.forEach((article, index) => {
-      content.push(<ArticlePreview key={index} Image={article.Image} Title={article.Title} Authors={article.Authors} LinkTo={article.LinkTo} Subject={article.Subject} Issue={article.Issue} />)
+      if (!issues.hasOwnProperty(article.Issue)) {
+        issues[article.Issue] = [];
+      }
+
+      if (article.Subject === "") {
+        return;
+      }
+
+      issues[article.Issue].push(<ArticlePreview
+        key={index} Image={article.Image} Title={article.Title} Authors={article.Authors} LinkTo={article.LinkTo} Subject={article.Subject}
+      />)
+
+
     })
 
-    return <div className="articles">{content}</div>;
+    const content = [];
+    const keys = Object.keys(issues).map(issue => Number(issue));
+    for (let i = Math.max(...keys); i >= Math.min(...keys); i--) {
+      if (issues.hasOwnProperty(i)) {
+        content.push(<><h3>Issue {i}</h3><div className="articlePreviews">{issues[i].map(article => article)}</div></>)
+      }
+    }
+
+    return content;
   }
 
   const createPerformances= () => {
@@ -105,11 +125,11 @@ const IndexPage = ({data}) => {
     const content = [];
 
     performanceList.forEach((performance, index) => {
-      content.push(<PerformancePreview key={index} Image={performance.Image} Title={performance.Title} Composer={performance.Composer} Authors={performance.Authors} Issue={performance.Issue} LinkTo={performance.LinkTo}
+      content.push(<PerformancePreview key={index} Image={performance.Image} Title={performance.Title} Composer={performance.Composer} Authors={performance.Authors} LinkTo={performance.LinkTo}
       />)
     })
 
-    return <div className="performances">{content}</div>;
+    return <div className="performancePreviews">{content}</div>;
   }
 
   return (
