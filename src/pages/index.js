@@ -120,7 +120,8 @@ const IndexPage = ({data}) => {
   const createPerformances= () => {
     const performanceList = PerformancesMapper(performances);
 
-    if (performanceList === 0) return <LoadingSpinner />;
+    if (performanceList === 0) return <p>No performances yet...</p>;
+    //return <LoadingSpinner />;
 
     const content = [];
 
