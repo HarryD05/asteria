@@ -98,7 +98,7 @@ const ProfileDetails = ({ data }) => {
   }, [profileId]);
 
   const createArticleIssues = () => {
-    if (ArticlesDetails.length === 0) return <p>No articles...</p>
+    if (ArticlesDetails.length === 0) return;
     
     const issues = {};
 
@@ -120,11 +120,16 @@ const ProfileDetails = ({ data }) => {
       }
     }
 
-    return content;
+    return <div className="article-list">
+      <h2>Articles</h2>
+      <div className="issues">
+        {content}
+      </div>
+    </div>
   }
 
   const createPerformanceIssues = () => {
-    if (PerformancesDetails.length === 0) return <p>No performances...</p>
+    if (PerformancesDetails.length === 0) return;
 
     const issues = {};
 
@@ -146,7 +151,12 @@ const ProfileDetails = ({ data }) => {
       }
     }
 
-    return content;
+    return <div className="performance-list">
+      <h2>Performances</h2>
+        <div className="issues">
+          {content}
+        </div>
+    </div>
   }
 
   const image = () => (typeof (ProfileImage(ProfileDetails)) === "string") ? ProfileImage(ProfileDetails) : ProfileImage(ProfileDetails).default;
@@ -188,18 +198,8 @@ const ProfileDetails = ({ data }) => {
           </div>
           <div className="content" dangerouslySetInnerHTML={{__html: ProfileMarkdown(ProfileDetails)}}></div>
         </div>
-        <div className="article-list">
-          <h2>Articles</h2>
-          <div className="issues">
-            {createArticleIssues()}
-          </div>
-        </div>
-        <div className="performance-list">
-          <h2>Performances</h2>
-          <div className="issues">
-            {createPerformanceIssues()}
-          </div>
-        </div>
+        {createArticleIssues()}
+        {createPerformanceIssues()}
       </main>
       <Footer />
     </> : null

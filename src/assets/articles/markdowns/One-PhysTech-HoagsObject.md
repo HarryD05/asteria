@@ -45,12 +45,14 @@ However, some galaxies fall outside this classification system; approximately on
 
 ## A Brief History of Ring Galaxies
 <div class="image-card-right">
-    <p>Dating back to 1950, the first ever ring galaxy, Hoag’s Object, was discovered by Art Hoag, baffling astronomers of its existence. At that time, the only method to making a ring-like object in space was where a central bright core was surrounded by a luminous halo i.e., a planetary nebula, such as the Ring Nebula in Fig. 4.<br /><br />Over the years, the number of ring galaxies being discovered has multiplied drastically, especially recently, with the current number having increased to approximately 40,000. A project called “Galaxy Zoo” [6] recruited thousands of volunteers to identify the morphology of various galaxies [6], from which an AI algorithm, called “Zoobot” was produced. It utilised the inputs from these volunteers, and accurately identified galaxy shapes as well as predicting where it may be mistaken. This algorithm helped identify these ring galaxies, providing a dataset that can be used to reveal how galaxies evolve.</p> 
+    <p>Dating back to 1950, the first ever ring galaxy, Hoag’s Object, was discovered by Art Hoag, baffling astronomers of its existence. At that time, the only method to making a ring-like object in space was where a central bright core was surrounded by a luminous halo i.e., a planetary nebula, such as the Ring Nebula in Fig. 4.<br /><br />Over the years, the number of ring galaxies being discovered has multiplied drastically, especially recently, with the current number having increased to approximately 40,000. A project called “Galaxy Zoo” [6] recruited thousands of volunteers to identify the morphology of various galaxies [6], from which an AI algorithm, called “Zoobot” was produced.</p> 
     <div class="image">
         <div class="img"><img alt="Fig 4" src="./../images/issue1/phystech/nebula.jpg"></img></div>
         <em>Fig. 4 A composite image of the Ring Nebula [5]</em>
     </div>
 </div>
+
+It utilised the inputs from these volunteers, and accurately identified galaxy shapes as well as predicting where it may be mistaken. This algorithm helped identify these ring galaxies, providing a dataset that can be used to reveal how galaxies evolve.
 
 ## Formation of Hoag’s Object
 

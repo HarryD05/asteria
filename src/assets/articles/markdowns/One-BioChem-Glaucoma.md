@@ -18,15 +18,19 @@ As mentioned by Glaucoma UK [1], glaucoma is the leading cause of blindness affe
 ## 2. Development of Glaucoma
 The aqueous humour, as shown in Figure 1, provides nutrients to the eye and maintains the eye pressure. It is produced by the ciliary body and flows to the anterior chamber where it is drained at the drainage angle. The reference of ‘angle’ is the angle between the cornea and iris. Amongst the various structures of the drainage angle, the most essential structure in the drainage of aqueous humour is the trabecular meshwork which is a spongy tissue with a sieve-like structure.
  
-![Healthy eye](./../images/issue1/biochem/Healthyeye.jpg)
-<div class="centre"><em>Figure 1 – Taken From Medirex Opticians [8]</em></div>
+<div class="image">
+    <div class="img"><img alt="Healthy eye" src="./../images/issue1/biochem/Healthyeye.png"></img></div>
+    <em>Figure 1 – Taken From Medirex Opticians [8]</em>
+</div>
 
 Following fluid drainage from the eye via the trabecular meshwork, the fluid flows through a structure called the Schlemm’s canal, into collector channels, veins and then eventually, back into the body’s circulatory system [3].
 
 A blockage in the drainage system restricts the flow of aqueous humour into the anterior chamber, resulting in increased pressure in the eye and eventually damaging the optic nerve. The optic nerve (also known as second cranial nerve) found at the back of the eye transfers visual information from the retina to the brain via electrical impulses [2]. The high pressure caused by inefficient drainage compresses the second cranial nerve resulting in cell death – this is called Glaucomatous optic atrophy. If left untreated or undetected, this can lead to irreversible blindness.
 
-![Glaucoma eye](./../images/issue1/biochem/Glaucomaeye.jpg)
-<div class="centre"><em>Figure 2 – Development Of Glaucoma Taken From Medirex Opticians [8]</em></div>
+<div class="image">
+    <div class="img"><img alt="Glaucoma eye" src="./../images/issue1/biochem/Glaucomaeye.png"></img></div>
+    <em>Figure 2 – Development Of Glaucoma Taken From Medirex Opticians [8]</em>
+</div>
 
 Recent research in Singapore has led to the discovery of a gene mutation linked to exfoliation syndrome (XFS), which is known to be the basis of secondary glaucoma [7]. If an individual has XFS, fibre-like substances existing outside of cells are deposited on ocular structures and throughout the body. The exact reason for XFS is unknown and hence, the mystery surrounding it means that the ultimate cause of glaucoma is still to be concluded. 
 
@@ -36,7 +40,9 @@ There are several types of glaucoma, some include:
 - Acute-angle closure glaucoma
 - Secondary glaucoma
 - Congenital glaucoma
+
 The most common type of glaucoma is primary open angle glaucoma (POAG). Anyone can develop POAG but there are some risk factors that may make individuals more susceptible to it. These include:
+
 - Age
     - According to Glaucoma UK [6], it is estimated that about 2% of people aged 40+ have POAG, and this rises to almost 10% in people older than 75 (Glaucoma UK, n.d.). 
 - Ethnicity
@@ -57,8 +63,10 @@ The OCT machine is a high-resolution imaging modality producing a cross-sectiona
 
 In addition to the OCT machine, a fundoscopy machine can also be used to detect glaucoma. Like the OCT machine, it is a modern medical imaging technique that enables optometrists or ophthalmologists to detect changes in the optic disc and hence, glaucoma. 
  
-![Fundoscopy](./../images/issue1/biochem/Fundoscopy.jpg)
-<div class="centre"><em>Figure 3 – Fundoscopy Pictures From Hindawi Journal Comparing Optic Disc Without and With Glaucoma [5]</em></div>
+<div class="image">
+    <div class="img"><img alt="Fundoscopy" src="./../images/issue1/biochem/Fundoscopy.png"></img></div>
+    <em>Figure 3 – Fundoscopy Pictures From Hindawi Journal Comparing Optic Disc Without and With Glaucoma [5]</em>
+</div>
 
 ## 5. Treatment of Glaucoma
 Although there are no available treatments to regain vision that has been lost, eye drops such as betaxolol hydrochloride (Betoptic S) and metipranolol (Optipranolol) have been made available to those suffering from glaucoma. These are beta blockers which reduces the production of fluid released from the eye. Prostaglandins such as latanoprost (Xalatan) are other forms of eye drops that improve the drainage of the fluid in the eye to reduce ocular hypertension. Other forms of treatments include laser procedures and surgery. Nevertheless, there is still room for further developments of treatments such as gene therapies to prevent more prevalent ocular diseases such as POAG and its eventual testing in humans. Despite ongoing research on how gene therapies may prevent POAG, Luxturna, a form of gene therapy, has been known to treat congenital blindness (another classification of glaucoma) which is a seminal accomplishment.

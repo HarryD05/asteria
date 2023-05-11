@@ -18,15 +18,19 @@ While it’s “common sense” that the overconsumption of pretty much any subs
 
 When excessive amounts of water are consumed in a short period of time, the kidneys, the organs responsible for filtering waste out of your body fluids, simply cannot work fast enough. Liters of water are now circulating throughout the bloodstream, diluting blood to a large extent. This means that there is a very high concentration of water molecules outside of the cells. In contrast, the fluid inside human cells consists of a wide array of substances, with potassium, magnesium and sulfate ions just to name a few. Hence, at this point, the concentration of water molecules is lower inside the cell than outside (it isn’t as diluted)
 
-![Osmosis](./../images/issue1/biochem/osmosis.png)
-<div class="centre"><em>A diagram that demonstrates the process of osmosis, using sucrose and water as examples.</em></div>
+<div class="image">
+    <div class="img"><img alt="Osmosis" src="./../images/issue1/biochem/osmosis.png"></img></div>
+    <em>A diagram that demonstrates the process of osmosis, using sucrose and water as examples.</em>
+</div>
 
 And this is when the principle of osmosis comes into play. For those who may not be aware, osmosis is when solvent molecules naturally diffuse from an area of high to low concentration across a semi-permeable membrane. For the sake of argument, let’s say that across such a membrane there are two sides, one with 100% water and the other side with 50% water. In this case, we would see water moving into the side with less water molecules (i.e., the 50% side). To visualize this phenomenon easily, try placing a dried raisin into water. Overtime, it will slowly expand in size as it absorbs water from its surroundings. Why? Because the inside of a raisin has less water than the outside, and by osmosis water will go in. The same applies to human cells. With much more water present in blood, they are taken up by cells which swell up massively to accommodate more liquid.
 
 Swelling cells isn’t that big of an issue for many parts of your body, but that doesn’t apply to the brain. Enclosed tightly inside the skull cavity, brain cells simply have no room to expand. What then occurs is the swollen brain tightly pressing against the sides of the skull, leading to headaches, one of the first symptoms to be observed, accompanied with nausea and mental disorientation. The heavy pressure also obstructs blood flow, leading to chances of seizures or the victim simply falling unconscious. This phenomenon, cerebral edema, is known to be a major cause of strokes and traumatic brain injuries.  	 
  
-![Cerebral edema](./../images/issue1/biochem/Cerebraledema.jpg)
-<div class="centre">MRI Scan of a brain affected by cerebral edema [2]</em></div>
+<div class="image">
+    <div class="img"><img alt="Cerebral edema" src="/../images/issue1/biochem/Cerebraledema.png"></img></div>
+    <em>MRI Scan of a brain affected by cerebral edema [2]</em>
+</div>
 
 One prominent risk factor that increases the risk of overhydration is heavy sweating and physical activity, when one is more prone to drinking an excessive amount of water unknowingly. Marathon runners are particularly susceptible, with a 2005 study [4] showing that 13% of Boston Marathon participants ended up with hyponatremia (low sodium concentration in blood), a symptom of overhydration. The researchers concluded that this was linked to “consumption of more than 3 liters of fluid during the race”. In a separate investigation by the American armed forces [5], three soldier deaths attributed to water intoxication were uncovered, where the water intakes of the victims “reached 5 liters, usually 10-20 liters in just a few hours”. 
 

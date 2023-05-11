@@ -4,7 +4,7 @@ first_name: "Ram"
 surname: "Gautham Kurakula"
 school: "Reading School"
 pronouns: "He/Him"
-role: ["Co-ordinator", "Chief editor"]
+role: ["Co-ordinator", "Chief Editor"]
 userID: "w"
 slug: "/profiles/w"
 profile_picture: "Ram Kurakula.jpg"

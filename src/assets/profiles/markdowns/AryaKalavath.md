@@ -4,7 +4,7 @@ first_name: "Arya"
 surname: "Kalavath"
 school: "Kendrick School"
 pronouns: "She/Her"
-role: ["Writer", "Editor", "Co-ordinator", "Performer"]
+role: ["Writer", "Editor", "Kendrick Co-ordinator", "Performer"]
 userID: "d"
 slug: "/profiles/d"
 profile_picture: "Arya Kalavath.jpeg"

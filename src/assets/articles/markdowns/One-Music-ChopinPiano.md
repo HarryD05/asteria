@@ -43,9 +43,11 @@ We often are easily able to achieve the connection part of legato by allowing ou
 
 ## 3 - The Need for Musicality
 <div class="image-card-right">
-    <p>Fans of Aimi Kobayashi may look back to her showing in 2015 and remember the agitation and fire she played with. A raw, emotionally turbulent player who dictated rubato, dynamics, and articulation to create a crude sensation.<br /><br />In contrast, the Aimi Kobayashi who came out last year was much more controlled and deliberate. She still encapsulates reverie and effect extremely well, but there’s a hint of refinement in it. The kind of control that you’d only expect from someone who could perceive time slower - that’s what she showed us last year.</p>
+    <p>Fans of Aimi Kobayashi may look back to her showing in 2015 and remember the agitation and fire she played with. A raw, emotionally turbulent player who dictated rubato, dynamics, and articulation to create a crude sensation.</p>
     <div class="image"><div class="img"><img alt="Aimi Kobayashi" src="./../images/issue1/music/Aimi.png"></img></div></div>
 </div>
+
+In contrast, the Aimi Kobayashi who came out last year was much more controlled and deliberate. She still encapsulates reverie and effect extremely well, but there’s a hint of refinement in it. The kind of control that you’d only expect from someone who could perceive time slower - that’s what she showed us last year.
 
 In her performance of the Concerto in E minor, op.11 in the final round, Kobayashi played at a much slower tempo than the accepted interpretation. She chose to throw away virtuosity in exchange for delicate, contoured playing. It’s at this slower tempo that Kobayashi shows off her ability to craft and shape melodic lines into something beyond the standard often displayed at the highest level. Kobayashi’s delicate touches dance effortlessly across the higher register and cascade melodiously downwards. Despite the slower tempo, it’s still very much Kobayashi: emotional playing directed meticulously by the individual fingers; she’s just being honest about her interpretation. It’s a brave thing to go against the grain in any context, but especially so in a well established piece at an international competition. From a competitive standpoint it falls short, Kobayashi misses out on opportunities to show off her technicality; from a musical standpoint her gambit paid dividends: although it’s not quite the technical spectacle of Bruce Liu, it’s utterly beautiful. 
 

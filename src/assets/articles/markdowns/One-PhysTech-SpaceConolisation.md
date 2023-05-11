@@ -81,7 +81,7 @@ $$
 
 Due to the following reasons, the spectroscopy must be done at specific times during the planet’s orbit.  For every transit there exists a secondary transit, which happens when the planet is behind the star and a secondary dip in brightness is observed. This is due to the fact that a planet is reflective so at every point except when the planet is behind the star it is also contributing very slightly to the light that reaches us. A graph of flux (a measure of brightness) against time is shown below:
 
-![Secondary transit](./../images/issue1/phystech/Secondarytransit.png)
+<div class="image"><div class="img"><img alt="Secondary transit" src="./../images/issue1/phystech/Secondarytransit.png"></img></div></div>
 
 Secondary transits are very difficult to do as the change in brightness is miniscule and indistinguishable from atmospheric disturbance in telescopes on Earth. Which is why space telescopes such as Hubble and Spitzer are used, recently the James Webb was also added to the fleet. 
 

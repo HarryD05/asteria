@@ -111,7 +111,7 @@ In the last step, we used the earlier formula $x^{n} = x^{n-1} + x^{n-2}$ for bo
 
 <div class="centre"><em>Any natural number can be written as a sum of Fibonacci numbers</em></div>
 
-![Fibonacci](./../images/issue1/maths/fibonacci.jpg)
+<div class="image"><div class="img"><img alt="Fibonacci" src="./../images/issue1/maths/fibonacci.jpg"></img></div></div>
 <div class="centre"><em>Figure: The Fibonacci numbers and the golden ratio, ϕ, are closely linked to well-known spirals and other patterns that occur in nature</em></div>
 
 ## Forward-Backward Induction
@@ -134,7 +134,7 @@ $$
 
 One thing may stand out to you: the even numbers and the odd numbers seem to be separated. Why is this? Well, the mean of an odd number and an even number is not an integer, so it does not need to be considered. This neatly splits the sequence into two parts. In fact, given a sequence, we can multiply all the terms by 2 to get a sequence of even numbers, and take away 1 from each term in that sequence to get a sequence of odd numbers which both maintain our desired property. Finally, we can simply connect those two sequences to get a valid sequence with twice the length of the original.
 
-![Diagram 1](./../images/issue1/maths/diamond.png)
+<div class="image"><div class="img"><img alt="Diagram 1 - Diamond" src="./../images/issue1/maths/diamond.png"></img></div></div>
 
 So, if we take the trivial sequence for $n = 1$ (which is just the number 1), we can use this process to construct a sequence with length 2, then a sequence with length 4, length 8, etc. But how do we fill in the gaps between these powers of 2? Well, removing a number from a sequence is certainly not going to render it invalid. So if we want a valid sequence of length 13, for example, we can just construct a sequence of length 16 and remove the numbers 14, 15, and 16. Therefore, we have shown that a valid sequence can be constructed for any natural number $n$. 
 
@@ -273,7 +273,7 @@ _For any integer $n > 2$, there are no positive integers a, b, and c such that $
 
 Wiles' proof, very briefly, works by rearranging the above equation to that of an elliptic curve, which is a family of curves typically described by the equation $y^{2} = x^{3} + ax + b$. Then, he proved a special case of the Taniyama-Shimura conjecture, otherwise known as the modularity theorem, which establishes a link between those elliptic curves and certain types of analytic functions called modular forms. Using this link, he showed that the elliptic curve resulting from Fermat's Last theorem failed to satisfy certain properties when turned into a modular form, therefore showing that the original equation has no solutions. As it happens, induction is used multiple times in intermediate steps of the proof, giving it the status of perhaps the most important applications of induction in recent years. 
 
-![Wiles](./../images/issue1/maths/wiles.jpg)
+<div class="image"><div class="img"><img alt="Wiles" src="./../images/issue1/maths/wiles.jpg"></img></div></div>
 
 ## Conclusion
 

@@ -52,7 +52,7 @@ const MeetTheTeamPage = ({data}) => {
     }
 
     profileList.forEach(profile => {
-      if (profile.Role.includes("Co-ordinator")) {
+      if (profile.Role.includes("Co-ordinator") || profile.Role.includes("Abbey Co-ordinator") || profile.Role.includes("Kendrick Co-ordinator")) {
         roles["Co-ordinator"].push(profile);
       } else if (profile.Role.includes("Designer")) {
         roles["Designer"].push(profile);
@@ -82,7 +82,7 @@ const MeetTheTeamPage = ({data}) => {
           return <ProfilePreview
             key={index}
             Name={profile.Name}
-            Role={profile.Role.filter(role => role === "Co-ordinator" || role === "Designer" || role === "Editor" || role === "Writer")}
+            Role={profile.Role.filter(role => role.indexOf("Co-ordinator") !== -1 || role === "Designer" || role.indexOf("Editor") !== -1 || role === "Writer")}
             Image={profile.Image}
             LinkTo={profile.LinkTo}
             Subject={profile.Subject}

@@ -4,7 +4,7 @@ first_name: "Josslyn"
 surname: "Wong"
 school: "Abbey School"
 pronouns: "She/Her"
-role: ["Editor", "Co-ordinator"]
+role: ["Abbey Co-ordinator"]
 userID: "aq"
 slug: "/profiles/aq"
 profile_picture: "Josslyn Wong.jpg"
